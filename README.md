@@ -1,0 +1,79 @@
+# The mechanism — paper 2's deposit
+
+**Paper 2 of three: the model applied to a self-referential substrate, in a measurement rig.**
+
+This repository is paper 2's **evidence deposit**: the paper, the measurements it cites, and the
+three lab instruments its citation appendix names. It is one of three public artifacts.
+
+| | |
+|---|---|
+| **the model** | the five-state control model of self-regulation ([published](https://doi.org/10.5281/zenodo.22943642)) |
+| **the mechanism** | **this repository** — the model applied to a self-referential substrate, in a measurement rig — *paper 2* |
+| **the worker** | [`setpoint`](https://github.com/jmars/setpoint-vlha) — the agent that does the work — *paper 3* |
+
+## This deposit is DERIVED — do not hand-edit it
+
+Every file here is materialised from a private working tree by a sync script. Edit a file here
+and the next sync overwrites it: the working tree is the source, and this repository is a
+**function** of it, not a snapshot.
+
+Regenerate it with (run from the working tree the deposit is derived from):
+
+```
+SYNC_PROFILE=selfreg bash ops/sync_setpoint.sh          # add --dry-run to preview
+```
+
+The sync is **one script with two profiles**: `setpoint` (the default) materialises the worker's
+repository, `selfreg` materialises this one. They share the rsync options, the allowlist gate,
+the content scan and the commit idiom. The sync script itself lives in the working tree, not
+here (as it does for the worker's repository), because publishing it would publish the map of
+what is *not* published. The script runs this repo's own `ops/check_tracked_set.sh` before it
+commits, and it never pushes — a push is a disclosure step and stays manual.
+
+## What is here
+
+| path | what it is |
+|---|---|
+| `paper2/paper-2-draft.md` | the paper |
+| `paper2/paper-2-results-record.md` | R1–R6 — the measurements the paper cites |
+| `paper2/load-bearing-self-design.md` | the load-bearing self design — the attempt the paper reports as falsified |
+| `paper2/future-work-axis-hunt.md` | the axis hunt behind the generalization study's failure (SR-22) |
+| `ops/density_test.py` | the self-reference density predictor (SR-22) |
+| `ops/generalization_screen.py` | the generalization screen, stage 1 — protocol, guard, NO-CHANNEL outcome (SR-22) |
+| `ops/ladder_defs.py` | the escalation-ladder rungs and the family-matched size ladder (SR-5) |
+| `README.md`, `LICENSE`, `LICENSE-paper` | this file and the licences |
+
+## What is deliberately NOT here, and why
+
+- **The paper's process notes** — `paper-2-goal.md`, `paper-3-scope.md`, `finetune-proposal.md`,
+  `outreach-britton.md`, `cult-induction-lit.md`. They are working notes rather than evidence, and
+  one of them (`paper-3-scope.md`) alone carries 37 internal node handles that resolve to nothing
+  a reader can open.
+- **The private development record and the lab's operational tooling** — the tree this deposit is
+  derived from also holds material that must not be public, so the sync publishes an allowlist and
+  nothing else.
+
+The three instruments under `ops/` were **cleaned for publication**: the internal `handoff-…`
+node handles and the lab's absolute paths were removed, or replaced by the paper's own `[SR-n]`
+citation key where the match was unambiguous. No substantive comment was dropped — the comment's
+meaning survives intact; only the pointer that a reader could not follow is gone.
+
+## Where a citation resolves
+
+The paper's Appendix B keys each `[SR-n]` citation to the artifact that carries the claim. Those
+artifacts live across three public trees:
+
+- **this repository** — the paper, its companion records, and the three instruments;
+- **the worker's repository** — `agent/`, `design/`, `dlb/`, `logical-english/`,
+  `docs/worker-scope.md`;
+- **paper 1's deposit** — `dpdr/`, `claim-audit.md`, `dual-control.md`.
+
+Four cited paths — the `exp9` and `exp21` drivers and caches, named by SR-7 and SR-9 — belong to
+paper 1's deposit domain and are not carried there; the appendix flags those two entries rather
+than leaving a reader to hit a dead path. Everything else cited in Appendix B resolves.
+
+## Licence
+
+MIT — see `LICENSE`. The paper and the companion records under `paper2/` are
+[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) — see `LICENSE-paper`, the same split
+paper 1's deposit uses.
