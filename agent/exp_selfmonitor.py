@@ -62,7 +62,7 @@ INTERPRETATION / PROJECTION.  The per-cell predictions are PROJECTIONS
 until a run happens.
 
 Run (no network):
-    cd ~/thing/agent && PYTHONPATH=/home/jaye/thing/dprd:/home/jaye/thing/agent \
+    cd <tree>/agent && PYTHONPATH=<tree>/dpdr:<tree>/agent \
         ~/thing/dpdr/.venv/bin/python exp_selfmonitor.py --plan
 Live (needs the endpoint written into campaign.json; refused without it):
     ... exp_selfmonitor.py --cell M4 --n 2 --turns 300 --outdir DIR

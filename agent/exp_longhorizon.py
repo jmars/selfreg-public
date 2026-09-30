@@ -119,7 +119,7 @@ MARKING: everything about what a live run will show is PROJECTION
 until run.  The seats this builds on are MEASURED where cited.
 
 Run (no network):
-    cd ~/thing/agent && PYTHONPATH=/home/jaye/thing/dpdr:/home/jaye/thing/agent \
+    cd <tree>/agent && PYTHONPATH=<tree>/dpdr:<tree>/agent \
         ~/thing/dpdr/.venv/bin/python exp_longhorizon.py --plan
 """
 from __future__ import annotations

@@ -205,7 +205,7 @@ content and 4 with content (2 per layout); content supply at campaign
 scale is PROJECTION.
 
 USAGE
-  cd ~/thing/agent && PYTHONPATH=/home/jaye/thing/dpdr:/home/jaye/thing/agent \
+  cd <tree>/agent && PYTHONPATH=<tree>/dpdr:<tree>/agent \
     ~/thing/dpdr/.venv/bin/python exp_agent_coupling.py --selftest   # OFFLINE
     ... exp_agent_coupling.py --pilot                                # 150 turns
     ... exp_agent_coupling.py --det-check [--det-turns 20]           # 2 x K turns

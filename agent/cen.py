@@ -11,7 +11,7 @@ trajectory.
 The design is NOT re-derived here.  arch-open-plan.md P1-P5 is the spec,
 reconciled against the later substrate decision (C10,
 handoff-selfreg-cen-datalog): the CEN is a DATALOG ENGINE (datalog-dafsa,
-/home/jaye/fixpoint-linux/datalog-dafsa/, C sources, no Python binding
+/<engine-repo>/, C sources, no Python binding
 yet — being built in a PARALLEL task) and the currency is LOGICAL ENGLISH
 <-> DATALOG.  Reconciliations, stated once:
 
