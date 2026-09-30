@@ -13,13 +13,15 @@
 # The lab tree is private, so this sha names code a reader cannot fetch: it is a
 # pin, not a link.
 
-revision:                dd315d4fb0c96cff28fd5450d4dc5c371adbd190
-revision_short:          dd315d4
-snapshot_utc:            2026-09-30T21:45:10Z
-source_dirty:            true
-source_dirty_paths:      2
-source_tracked_modified: true
+revision:                 dd315d4fb0c96cff28fd5450d4dc5c371adbd190
+revision_short:           dd315d4
+snapshot_utc:             2026-09-30T21:45:42Z
+source_dirty:             true
+source_dirty_paths:       2
+published_paths_modified: false
 
-STATE: the tree was DIRTY and at least one TRACKED file was modified. This deposit is
-therefore the working tree as it stood at sync time, and the revision above names
-its BASE, not its content — do not expect that revision to reproduce these bytes.
+STATE: the tree was DIRTY (2 uncommitted path(s) at sync time), but in
+nothing this deposit publishes: no published file was modified, and no published
+path is an uncommitted addition. Every file here is therefore the lab tree's own
+bytes at the revision above. The dirty paths are not listed — the lab's working
+set is the map of what is not published.
