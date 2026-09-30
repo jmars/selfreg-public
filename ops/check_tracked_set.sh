@@ -30,8 +30,11 @@ cd "$(dirname "$0")/.." || exit 1
 # `agent/` and `design/` were added 2026-09-30, deliberately: the worker's repository
 # (~/setpoint) went private, so the modules paper 2's Appendix B cites are carried HERE.
 # They are published by the sync's exact allowlist, not by directory wildcard.
+# `SNAPSHOT` belongs here rather than under a directory: it is the revision pin the
+# sync generates at the root, and the root is not a sync target — so it is a file
+# this repo owns, admitted deliberately.
 ALLOWED_DIRS=(paper2 ops agent design)
-ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore)
+ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore SNAPSHOT)
 
 fail=0
 while IFS= read -r f; do
