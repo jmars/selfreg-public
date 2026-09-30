@@ -1,0 +1,417 @@
+{
+  "written": "2026-09-28T19:48:00",
+  "what": "MEASURED numbers produced while BUILDING the long-horizon rig (offline, fixtures + pure ODE). Everything about a live run is PROJECTION.",
+  "model_prediction_table_MEASURED_pure_ODE": {
+    "budget_derivations_per_turn": 6,
+    "horizon_t": 4000.0,
+    "rows": [
+      {
+        "cost_per_turn": 0,
+        "a_hold": 0.0,
+        "crossing_t": null,
+        "crossing_window": null,
+        "g_end": 0.8855
+      },
+      {
+        "cost_per_turn": 1,
+        "a_hold": 0.1666666667,
+        "crossing_t": null,
+        "crossing_window": null,
+        "g_end": 0.389
+      },
+      {
+        "cost_per_turn": 2,
+        "a_hold": 0.3333333333,
+        "crossing_t": 301.15,
+        "crossing_window": 4,
+        "g_end": 0.0461
+      },
+      {
+        "cost_per_turn": 4,
+        "a_hold": 0.6666666667,
+        "crossing_t": 130.4,
+        "crossing_window": 2,
+        "g_end": 0.0447
+      },
+      {
+        "cost_per_turn": 6,
+        "a_hold": 1.0,
+        "crossing_t": 104.3,
+        "crossing_window": 2,
+        "g_end": 0.0438
+      },
+      {
+        "cost_per_turn": 8,
+        "a_hold": 1.0,
+        "crossing_t": 104.3,
+        "crossing_window": 2,
+        "g_end": 0.0438
+      }
+    ],
+    "note": "cost 0 (the free-self control) does NOT cross; the crossing window falls 4 -> 2 as the charge grows; saturating charges clamp at a_hold=1 (the map's stated ceiling) and cross at the same turn 104.3 \u2014 the table is MONOTONE (asserted by battery L3).",
+    "SUPERSEDED": "the per-turn RETRIEVAL CHARGE is no longer the cost term: it saturates at the derivation budget, so a_hold pins at 1.0 and the model predicts window 2 for EVERY arm (a constant, not a prediction).  Kept as the record of the defect.  See model_prediction_table_v2_MEASURED_pure_ODE."
+  },
+  "battery_L7_offline_run_MEASURED_fixture": {
+    "arm": "B",
+    "turns": 120,
+    "num_ctx": 1000,
+    "num_predict": 200,
+    "rows": 120,
+    "status": "OK",
+    "compactions": ">= 1 per run at the small window; events record both sides (dropped > summary chars)",
+    "retrieval_charge_values_logged": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "instruments_present": [
+      "content_chars",
+      "inward_share",
+      "coverage",
+      "retrieval_derivations",
+      "derivation_loss",
+      "derivation_loss_standing",
+      "self_steps",
+      "open_commitments",
+      "expired",
+      "talking_applied",
+      "prompt_chars"
+    ],
+    "run_prediction": "the run summary now carries `prediction` (the model's crossing window computed from the run's OWN compaction events) and `derivation_loss_events`; the prediction is recorded, NEVER spliced into the plant's schedule (the plant stays the empty schedule)"
+  },
+  "battery_L8_plant_isolation_MEASURED_fixture": {
+    "arms": "A (short trace) vs B (12x longer trace), 120 turns each",
+    "plant_G_trajectories": "BIT-IDENTICAL (120 values, exact equality) \u2014 nothing about the agent reaches a_hold; the killed rig's tautology cannot recur through this runner"
+  },
+  "battery_L9_manipulation_MEASURED_fixture": {
+    "mean_inward_A": 0.3393,
+    "mean_inward_B": 0.8612,
+    "note": "the monitoring paragraph moves the runner's own inward-share instrument end to end (fixture stand-in for the live manipulation check)"
+  },
+  "gates": {
+    "stage1_baseline": "5 OK / 0 not-OK (sha256sum -c .stage1_baseline.sha256)",
+    "batteries_exit_0": [
+      "stage2_longhorizon_tests (NEW, 58 checks, parts L1-L10)",
+      "stage2_selfmonitor_tests V1-V11",
+      "stage2_dmn_tests",
+      "stage2_self_tests H1-H11",
+      "stage2_retrieval_tests D1-D8",
+      "stage2_actions_tests T1-T10",
+      "stage2_tests",
+      "stage2_fix_tests S1-S10",
+      "stage2_interleave_tests",
+      "stage2_routing_tests",
+      "stage2_routingcrit_tests",
+      "stage2_mmin_tests",
+      "stage2_boundary_tests",
+      "stage2_vocation_tests",
+      "stage2_equiv",
+      "stage2_real_tests",
+      "heldout",
+      "stage1_tests",
+      "interleave",
+      "mmin",
+      "routing"
+    ],
+    "stage1_fix_tests": "EXIT 0 when parts are named explicitly (x1 x2 x3 x4 x5); the DEFAULT invocation crashes with KeyError 'x' \u2014 PRE-EXISTING (list('x1x2x3x4x5') iterates characters), file untouched (baseline hash OK)",
+    "stage2_longhorizon_tests": "EXIT 0 \u2014 81 checks across 11 parts (L1-L11) with -B",
+    "batteries_exit_0_rerun_with_B": [
+      "stage2_longhorizon_tests (81 checks / 11 parts)",
+      "stage2_selfmonitor_tests V1-V11",
+      "stage2_dmn_tests",
+      "stage2_self_tests H1-H11",
+      "stage2_retrieval_tests D1-D8",
+      "stage2_actions_tests T1-T10",
+      "stage2_tests",
+      "stage2_fix_tests S1-S12",
+      "stage2_interleave_tests",
+      "stage2_routing_tests",
+      "stage2_routingcrit_tests",
+      "stage2_mmin_tests",
+      "stage2_boundary_tests",
+      "stage2_vocation_tests",
+      "stage2_equiv",
+      "stage2_real_tests",
+      "stage2_heldout_tests",
+      "heldout",
+      "interleave",
+      "mmin",
+      "routing",
+      "stage1_tests",
+      "stage1_fix_tests (x1..x5)"
+    ]
+  },
+  "model_prediction_table_v2_MEASURED_pure_ODE": {
+    "what": "the term is the PER-COMPACTION DERIVATION LOSS (share of the seed's 4 steps, `standing_loss`), mapped to a_hold by the IDENTITY over [0,1]; the retired charge map is not used anywhere",
+    "n_seed_steps": 4,
+    "horizon_t": 4000.0,
+    "tau_S_turns": 100,
+    "level_axis_arrival_turn_0": [
+      {
+        "loss": 0.0,
+        "a_hold": 0.0,
+        "crossing_t": null,
+        "crossing_turn": null,
+        "crossing_window": null,
+        "g_end": 0.8855
+      },
+      {
+        "loss": 0.25,
+        "a_hold": 0.25,
+        "crossing_t": null,
+        "crossing_turn": null,
+        "crossing_window": null,
+        "g_end": 0.28
+      },
+      {
+        "loss": 0.5,
+        "a_hold": 0.5,
+        "crossing_t": 165.95000000000002,
+        "crossing_turn": 166,
+        "crossing_window": 2,
+        "g_end": 0.0453
+      },
+      {
+        "loss": 0.75,
+        "a_hold": 0.75,
+        "crossing_t": 120.9,
+        "crossing_turn": 121,
+        "crossing_window": 2,
+        "g_end": 0.0445
+      },
+      {
+        "loss": 1.0,
+        "a_hold": 1.0,
+        "crossing_t": 104.30000000000001,
+        "crossing_turn": 104,
+        "crossing_window": 2,
+        "g_end": 0.0438
+      }
+    ],
+    "arrival_axis_loss_1.0": [
+      {
+        "loss": 1.0,
+        "arrival_turn": 3,
+        "crossing_t": 107.7,
+        "crossing_turn": 108,
+        "crossing_window": 2,
+        "g_end": 0.0438
+      },
+      {
+        "loss": 1.0,
+        "arrival_turn": 100,
+        "crossing_t": 216.10000000000002,
+        "crossing_turn": 216,
+        "crossing_window": 3,
+        "g_end": 0.0438
+      },
+      {
+        "loss": 1.0,
+        "arrival_turn": 200,
+        "crossing_t": 323.35,
+        "crossing_turn": 323,
+        "crossing_window": 4,
+        "g_end": 0.0438
+      },
+      {
+        "loss": 1.0,
+        "arrival_turn": 300,
+        "crossing_t": 427.70000000000005,
+        "crossing_turn": 428,
+        "crossing_window": 5,
+        "g_end": 0.0438
+      },
+      {
+        "loss": 1.0,
+        "arrival_turn": 400,
+        "crossing_t": 530.3000000000001,
+        "crossing_turn": 530,
+        "crossing_window": 6,
+        "g_end": 0.0438
+      }
+    ],
+    "what_saturates": "the loss saturates at 1.0 = the WHOLE derivation (4 of 4 steps), an INSTRUMENT ceiling, not a clamp against a chosen budget; what the ARM-DISCRIMINATION range is: loss <= 0.25 (0..1 step) does not cross inside a 4000 tau_a horizon, loss >= 0.5 (2..4 steps) crosses (window 2 at arrival turn 0, later windows for later arrivals).  With a four-step seed the level axis alone therefore yields TWO outcomes; the arrival axis (the event's own turn) supplies the rest of the range (window 2 -> 6 across turns 3 -> 400).  A finer instrument (character-level survival of the derivation) would refine the level axis and is NOT built (stated gap).",
+    "model_threshold_measured": "a_hold ~ 0.28 is the model's own crossing threshold inside the 4000 tau_a horizon (0.25 -> g_end 0.2800, no crossing; 0.30 -> crossing t=403.95): the derivation's own granularity (quarters) straddles it"
+  },
+  "battery_L11_arm_discrimination_MEASURED_fixture": {
+    "what": "battery L11, offline: real NaiveMemory arms whose summarizers carry back different numbers of the derivation's steps; the events are the real compaction records",
+    "arms": {
+      "summary_keeps_0_of_4_steps": {
+        "loss_events": [
+          [
+            1,
+            1.0
+          ],
+          [
+            2,
+            0.0
+          ],
+          [
+            3,
+            0.0
+          ],
+          [
+            4,
+            1.0
+          ]
+        ],
+        "standing_loss_last": 1.0,
+        "a_hold_max": 1.0,
+        "crossing_t": 106.45,
+        "crossing_window": 2
+      },
+      "summary_keeps_1_of_4_steps": {
+        "loss_events": [
+          [
+            1,
+            0.75
+          ],
+          [
+            2,
+            0.0
+          ],
+          [
+            3,
+            0.0
+          ],
+          [
+            4,
+            0.75
+          ]
+        ],
+        "standing_loss_last": 0.75,
+        "a_hold_max": 0.75,
+        "crossing_t": 123.25,
+        "crossing_window": 2
+      },
+      "summary_keeps_2_of_4_steps": {
+        "loss_events": [
+          [
+            1,
+            0.5
+          ],
+          [
+            2,
+            0.0
+          ],
+          [
+            3,
+            0.0
+          ],
+          [
+            4,
+            0.5
+          ],
+          [
+            5,
+            0.5
+          ],
+          [
+            6,
+            0.5
+          ],
+          [
+            7,
+            0.5
+          ],
+          [
+            8,
+            0.5
+          ]
+        ],
+        "standing_loss_last": 0.5,
+        "a_hold_max": 0.5,
+        "crossing_t": 168.85000000000002,
+        "crossing_window": 2
+      },
+      "summary_keeps_3_of_4_steps": {
+        "loss_events": [
+          [
+            1,
+            0.25
+          ],
+          [
+            2,
+            0.0
+          ],
+          [
+            3,
+            0.0
+          ],
+          [
+            4,
+            0.25
+          ],
+          [
+            5,
+            0.25
+          ],
+          [
+            6,
+            0.25
+          ],
+          [
+            7,
+            0.25
+          ],
+          [
+            8,
+            0.25
+          ]
+        ],
+        "standing_loss_last": 0.25,
+        "a_hold_max": 0.25,
+        "crossing_t": null,
+        "crossing_window": null
+      },
+      "summary_keeps_4_of_4_steps": {
+        "loss_events": [
+          [
+            1,
+            0.0
+          ],
+          [
+            2,
+            0.0
+          ],
+          [
+            3,
+            0.0
+          ],
+          [
+            4,
+            0.0
+          ],
+          [
+            5,
+            0.0
+          ],
+          [
+            6,
+            0.0
+          ],
+          [
+            7,
+            0.0
+          ],
+          [
+            8,
+            0.0
+          ]
+        ],
+        "standing_loss_last": 0.0,
+        "a_hold_max": 0.0,
+        "crossing_t": null,
+        "crossing_window": null
+      }
+    },
+    "verdict": "the term SEPARATES the arms: 0..1 step kept (standing loss 1.0/0.75) -> crossing window 2, 3 steps kept (loss 0.25) -> NO crossing in the horizon, 4 steps kept (loss 0.0) -> no crossing.  The RETIRED constant charge term gives both arms window 2 and the discriminating check FAILS under it (asserted in L11 as the falsifier arm).",
+    "note_nonmonotone_standing": "the standing loss is NOT monotone in the event index (1.0, 0.0, 0.0, 1.0 for n_keep=0): while the seed text still rides in the verbatim KEPT turns the memory holds the derivation, and the loss falls back to 0 \u2014 a step DOWN, which the schedule represents by ending the previous span.  Measured, not assumed."
+  },
+  "updated": "2026-09-27T21:04:00",
+  "correction": "the cost term was re-pointed from the per-turn retrieval charge to the per-compaction derivation loss (lh_model.py rewritten; exp_longhorizon.py carries the term into the runner; battery L3 re-pointed and L11 added).  The retired table below is kept and marked SUPERSEDED."
+}

@@ -27,7 +27,10 @@ cd "$(dirname "$0")/.." || exit 1
 
 # THE ALLOWLIST — the only paths that may be tracked. Keep in step with
 # .gitignore's un-ignore rules; if they drift, this is the one that should win.
-ALLOWED_DIRS=(paper2 ops)
+# `agent/` and `design/` were added 2026-09-30, deliberately: the worker's repository
+# (~/setpoint) went private, so the modules paper 2's Appendix B cites are carried HERE.
+# They are published by the sync's exact allowlist, not by directory wildcard.
+ALLOWED_DIRS=(paper2 ops agent design)
 ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore)
 
 fail=0
