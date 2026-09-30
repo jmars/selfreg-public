@@ -1,0 +1,24 @@
+{
+  "title": "The Monitoring Channel Is Not Orthogonal to the Controlled Process: a Self-Defeating Sensor, and Why Measuring It Is the Same Problem",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Dual control — the closest control-theoretic precedent for the cost of monitoring — assumes the sensing channel is orthogonal to the controlled process: the probe is chosen, bounded and instrumental, and monitoring costs performance rather than damaging the plant. This paper states and begins to test the claim that a self-referential system breaks that assumption structurally: monitoring IS self-reference (it cannot be made instrumental), its cost feeds the failure variable, and the sensor is destroyed by the failure it must detect. The artifact contains the paper, its measured results record, the modules the measurements were taken in, and the instruments used. Its central empirical finding is reported as a result rather than a caveat: on this substrate the instrument and the thing measured share a channel, so the self-side readings of the agent's own depletion were reading the harness's self-description back — the measurement problem this paper's own thesis predicts. The effect is not shown to be absent; it is shown to be not yet measurable on this substrate, and the design rule the paper states names the instrument that would measure it.",
+  "creators": [
+    {
+      "name": "Jaye Timothy Marshall",
+      "orcid": "0009-0002-5209-8161"
+    }
+  ],
+  "keywords": [
+    "self-application",
+    "self-reference",
+    "dual control",
+    "monitoring cost",
+    "sensor placement",
+    "self-defeating sensor",
+    "long-horizon agents",
+    "depersonalization-derealization (DPDR)"
+  ],
+  "license": "cc-by-4.0",
+  "notes": "Deposit license is CC-BY-4.0, covering paper2/paper-2-draft.md, paper.pdf and the companion records and notes in paper2/. The code in this repository (agent/, ops/) is additionally licensed under the MIT license (see LICENSE). No third-party quoted material is included: this deposit carries no source-library translations and therefore requires no CC-BY-SA-4.0 carve-out (unlike paper 1's deposit). The repository is a SNAPSHOT of a private development tree at the revision named in SNAPSHOT; that sha is a pin, not a fetchable link."
+}

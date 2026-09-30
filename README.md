@@ -9,7 +9,7 @@ three lab instruments its citation appendix names. It is one of three public art
 |---|---|
 | **the model** | the five-state control model of self-regulation ([published](https://doi.org/10.5281/zenodo.22943642)) |
 | **the mechanism** | **this repository** — the model applied to a self-referential substrate, in a measurement rig — *paper 2* |
-| **the worker** | [`setpoint`](https://github.com/jmars/setpoint-vlha) — the agent that does the work — *paper 3* |
+| **the worker** | `setpoint` — the agent that does the work — *paper 3* (that repository is currently private; the `agent/` modules this paper cites are carried here so no citation depends on it) |
 
 ## This deposit is DERIVED — do not hand-edit it
 
@@ -43,7 +43,8 @@ later revision is legible as a new snapshot both in the tree and in the log.
 
 | path | what it is |
 |---|---|
-| `paper2/paper-2-draft.md` | the paper |
+| `paper2/paper-2-draft.md` | the paper (markdown — the source of truth) |
+| `paper.pdf` | the paper rendered to PDF: `pandoc -f markdown-yaml_metadata_block paper2/paper-2-draft.md --pdf-engine=typst -o paper.pdf` |
 | `paper2/paper-2-results-record.md` | R1–R6 — the measurements the paper cites |
 | `paper2/load-bearing-self-design.md` | the load-bearing self design — the attempt the paper reports as falsified |
 | `paper2/future-work-axis-hunt.md` | the axis hunt behind the generalization study's failure (SR-22) |

@@ -34,7 +34,7 @@ cd "$(dirname "$0")/.." || exit 1
 # sync generates at the root, and the root is not a sync target — so it is a file
 # this repo owns, admitted deliberately.
 ALLOWED_DIRS=(paper2 ops agent design)
-ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore SNAPSHOT)
+ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore SNAPSHOT paper.pdf .zenodo.json)
 
 fail=0
 while IFS= read -r f; do
