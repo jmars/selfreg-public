@@ -18,9 +18,9 @@
 # every run would be a diff), so snapshot_utc dates the moment this revision was
 # pinned, not the most recent sync.
 
-revision:                 8424e3b495e636e39bc58226c4223b121ea5f683
-revision_short:           8424e3b
-snapshot_utc:             2026-09-30T22:16:17Z
+revision:                 92ad2a785db6789d5449a11880f5c27ed1a7edcc
+revision_short:           92ad2a7
+snapshot_utc:             2026-09-30T22:57:19Z
 source_dirty:             true
 source_dirty_paths:       1
 published_paths_modified: false
