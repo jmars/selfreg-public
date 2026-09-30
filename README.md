@@ -2,6 +2,23 @@
 
 **Paper 2 of three: the model applied to a self-referential substrate, in a measurement rig.**
 
+> ### STATUS: NOT SUBMITTED — HELD, BY AUTHOR DECISION (2026-09-30)
+>
+> This deposit is **complete and verified** (it meets paper 1's hygiene and metadata standard:
+> `.zenodo.json`, a rendered PDF, dual licence, a snapshot pin, a clean allowlist gate), and it is
+> **deliberately not published**. The reason is scope, not defects: the paper's measured content is
+> **one positive result (R1) plus four instrument findings (R3–R6)**, which is weaker than paper 1's
+> six quantitative laws — and the strength is limited **structurally**, not by effort, because the
+> instrument and the measurand share a channel on this substrate.
+>
+> The author's decision is to **hold this paper and fold it into paper 3** as its methodological
+> half ("here is why the obvious instrument fails, and here is the one that works"), rather than
+> publish it standalone to make a set of three. Two strong papers are preferred to three where the
+> middle one is a negative standing alone. If it is ever published alone, this deposit is ready.
+>
+> Revisiting it should begin at `paper2/paper-2-results-record.md` (R1–R6) and **§6.2** of the
+> paper, which is where the measurement finding lives.
+
 This repository is paper 2's **evidence deposit**: the paper, the measurements it cites, and the
 three lab instruments its citation appendix names. It is one of three public artifacts.
 
