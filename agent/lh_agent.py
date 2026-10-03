@@ -225,9 +225,11 @@ LA_TIMEOUT_DEFAULT = 900.0
 #: record this mode writes per outdir is the PER-RUN record.
 LA_PREREG_NODE = "ops/lambda/P3-PREREG.md"
 
-#: WHERE THE RUN'S OWN RECORD GOES (the same convention every result
-#: node of this campaign series uses — handoff-p3-*).
-LA_RESULT_NODE = "handoff-p3-livemode-result"
+#: WHERE THE RUN'S OWN RECORD GOES. In the working tree this names an
+#: internal record node; THIS DEPOSIT neutralizes it to the record's
+#: public location (the run's own directory under `runs/`), because the
+#: internal node names are not resolvable to a reader of this deposit.
+LA_RESULT_NODE = "runs/"
 
 #: THE EVALUATION ARTIFACT'S NAME (exp_longhorizon.LH_EVALUATION's own
 #: convention: a reader of either runner looks for `evaluation.json`).

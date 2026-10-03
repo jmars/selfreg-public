@@ -44,7 +44,7 @@
   }
  },
  "licences": {
-  "note": "NO LICENCE IS ISSUED BY THIS EVALUATION.  No licence predicate for the A/B campaign is pre-registered: the pre-registration node (handoff-selfreg-longhorizon-prereg2) states the gates (the run's own verdict, task-health, the 5.3 void guard, the manipulation conjunct) and the measured floor, and licenses nothing; and the tree's only licence predicate, exp_selfmonitor.evaluate_mself, reads M1-M8 cells of a DIFFERENT rig \u2014 applying it here would report INSUFFICIENT for every cell and would put another rig's licence names on this campaign's record.  The four seats are therefore carried with the honest value (NOT ISSUED) and the gates below are reported as GATES, exactly as pre-registered.  Issuing L1-L4 requires a pre-registration that states each predicate over these readings; until one exists, a licence here would be an invented claim.",
+  "note": "NO LICENCE IS ISSUED BY THIS EVALUATION.  No licence predicate for the A/B campaign is pre-registered: the pre-registration node (runs/) states the gates (the run's own verdict, task-health, the 5.3 void guard, the manipulation conjunct) and the measured floor, and licenses nothing; and the tree's only licence predicate, exp_selfmonitor.evaluate_mself, reads M1-M8 cells of a DIFFERENT rig \u2014 applying it here would report INSUFFICIENT for every cell and would put another rig's licence names on this campaign's record.  The four seats are therefore carried with the honest value (NOT ISSUED) and the gates below are reported as GATES, exactly as pre-registered.  Issuing L1-L4 requires a pre-registration that states each predicate over these readings; until one exists, a licence here would be an invented claim.",
   "slots": {
    "L1": {
     "reason": "no predicate for the A/B campaign is pre-registered; the gates above are the readings a pre-registration would have to map onto this seat",
@@ -72,9 +72,9 @@
   "procedure": "ab_separation(summary_A, summary_B) over each repeat's pair, each run's prediction rebuilt from ITS OWN recorded derivation_loss_events",
   "status": "NOT COMPUTED \u2014 the A/B pair is not present among the completed runs (arms requested: ['G-on'])"
  },
- "prereg_node": "handoff-selfreg-longhorizon-prereg2",
+ "prereg_node": "runs/",
  "repeats": 1,
- "result_node": "handoff-selfreg-longhorizon-result",
+ "result_node": "runs/",
  "runner": "agent/exp_longhorizon.py",
  "runs": [
   {

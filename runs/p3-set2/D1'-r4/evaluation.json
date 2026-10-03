@@ -331,5 +331,5 @@
  "independence": "the launcher's independence check gates the DV read (P3-PREREG \u00a77; a clone set is VOID)",
  "marking": "the DV and mediator numbers are MEASURED (off the runs' own files); any inference over them is the analyst's, per the pre-registration's rule",
  "prereg": "ops/lambda/P3-PREREG.md",
- "result_node": "handoff-p3-livemode-result"
+ "result_node": "runs/"
 }

@@ -74,7 +74,7 @@
     "why": "the summarizer's DERIVED window (30867 tokens = the largest prompt, 20992, plus its own budget, 9875) fits inside the run's own window (32768) with 1901 tokens to spare \u2014 the transcript it must read is bounded by this run's memory budget (62304 chars), and the window is a FUNCTION of that budget, not a second number beside it"
    }
   },
-  "derivation": "num_predict from the MODEL'S OWN MEASURED TRACE (19749 chars = 6583 tokens at 3 chars/token, x 1.5 headroom = 9875); num_ctx from the desired compaction CADENCE with num_predict fixed (budget = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns; tau_S = 100 turns is a LENGTH, not this capacity \u2014 compaction is a boundary event INSIDE the window).  Source of the sizes: handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns.  THE SUMMARIZER'S OWN WINDOW, since it must read a transcript bounded by that same budget: the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
+  "derivation": "num_predict from the MODEL'S OWN MEASURED TRACE (19749 chars = 6583 tokens at 3 chars/token, x 1.5 headroom = 9875); num_ctx from the desired compaction CADENCE with num_predict fixed (budget = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns; tau_S = 100 turns is a LENGTH, not this capacity \u2014 compaction is a boundary event INSIDE the window).  Source of the sizes: runs/ \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns.  THE SUMMARIZER'S OWN WINDOW, since it must read a transcript bounded by that same budget: the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
   "note": "within the config guard's invariants",
   "ok": true,
   "reasons": [],
@@ -116,7 +116,7 @@
     "chars_per_token": 3.0,
     "factor": 1.5,
     "num_predict": 9875,
-    "source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+    "source": "runs/ \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
     "superseded_clears_factor": false,
     "superseded_clears_trace_max": true,
     "superseded_num_predict": 8192,
@@ -155,7 +155,7 @@
    ],
    "chars_per_token": 3.0,
    "max_tokens": 6583,
-   "source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+   "source": "runs/ \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
    "tokens": [
     2231,
     6583
@@ -227,7 +227,7 @@
    }
   },
   "config_check_ok": true,
-  "derivation": "num_predict from the MODEL'S OWN MEASURED TRACE (19749 chars = 6583 tokens at 3 chars/token, x 1.5 headroom = 9875); num_ctx from the desired compaction CADENCE with num_predict fixed (budget = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns; tau_S = 100 turns is a LENGTH, not this capacity \u2014 compaction is a boundary event INSIDE the window).  Source of the sizes: handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns.  THE SUMMARIZER'S OWN WINDOW, since it must read a transcript bounded by that same budget: the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
+  "derivation": "num_predict from the MODEL'S OWN MEASURED TRACE (19749 chars = 6583 tokens at 3 chars/token, x 1.5 headroom = 9875); num_ctx from the desired compaction CADENCE with num_predict fixed (budget = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns; tau_S = 100 turns is a LENGTH, not this capacity \u2014 compaction is a boundary event INSIDE the window).  Source of the sizes: runs/ \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns.  THE SUMMARIZER'S OWN WINDOW, since it must read a transcript bounded by that same budget: the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
   "derived_from": {
    "num_ctx": "the desired COMPACTION CADENCE with num_predict fixed: budget_chars = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns per compaction \u2014 a BOUNDARY event inside the tau_S = 100-turn window (the two cannot coincide: tau_S is a turn LENGTH and num_ctx a token CAPACITY)",
    "num_predict": "the MODEL'S OWN MEASURED TRACE: 19749 chars = 6583 tokens at 3 chars/token x 1.5 headroom = 9875 (the budget must sit ABOVE the trace or the trace eats it and content comes back empty \u2014 the 5.3 void signature)"
@@ -242,7 +242,7 @@
    3834,
    4104
   ],
-  "measured_sizes_source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+  "measured_sizes_source": "runs/ \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
   "measured_trace_chars": [
    6691,
    19749
@@ -258,7 +258,7 @@
     "chars_per_token": 3.0,
     "factor": 1.5,
     "num_predict": 9875,
-    "source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+    "source": "runs/ \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
     "superseded_clears_factor": false,
     "superseded_clears_trace_max": true,
     "superseded_num_predict": 8192,
@@ -382,12 +382,12 @@
   "procedure": "ab_separation(summary_A, summary_B): each run's prediction is rebuilt from ITS OWN recorded derivation_loss_events and lh_model.prediction_separation reports whether the two crossing windows differ, on which axis, and states plainly when they do not",
   "status": "NOT COMPUTED \u2014 no live run exists (--mode run is refused: no endpoint).  It runs on the pair of run summaries, never on a pre-set expectation."
  },
- "prereg_node": "handoff-selfreg-longhorizon-prereg2",
+ "prereg_node": "runs/",
  "rescue_seat": "BUILT, DEFAULT OFF, NOT RUN IN THIS EXPERIMENT (naive_memory.RescueSeat; the timing arms are the roadmap's step 2)",
- "result_node": "handoff-selfreg-longhorizon-result",
+ "result_node": "runs/",
  "seed_base": 4242,
  "sign_precondition": "the sign is a PRECONDITION, not a result (paper 2 7.2): a model is eligible only if its inward share RISES as the self thins.  THIS RUN'S MODEL, qwen3.5:9b (Alibaba/Qwen), is MEASURED on the probe itself: inward share 0.824 self-present -> 0.855 self-gone, shift +0.031, sign RISES (paper 2 section 7.1's table; the same model is in the tree's own pre-registered ops set with sign RISES, ops/density_test.py:115).  THE SHIFT IS THE SMALLEST OF THE THREE RISERS in that table (Ministral-3B +0.121, Ministral-14B +0.104) and that is stated rather than smoothed: a thin separation is a risk to the manipulation, whose live reading is the first-window inward-share comparison the evaluation already computes.  The Ministral-3B figure the note previously cited alone (0.847 -> 0.968) is the FAMILY THE LADDER IS BUILT ON, no longer this run's substrate; it is kept here as the tree's other record, not as this run's precondition.  A run on a model without the sign is a substrate-choice error, reported as such.",
- "substrate": "LINEAGE CROSSING, TAKEN AS A STATED SUBSTRATE CHOICE (handoff-selfreg-longhorizon-prereg2): qwen3.5:9b \u2014 Alibaba/Qwen, sign RISES, measured independently by the tree's own ops ladder (ops/density_test.py:115) BEFORE this choice.  It is NOT the Ministral family the size ladder is built on, because that family's thinking is an INSTRUCTED CONVENTION whose `thinking` field the chat template DROPS (MEASURED), so the trace instrument the DV is read from dies by turn 3-4 under any history-rewriting memory regime (3B, 8B and 14B alike).  THE COST, STATED: the family-matched SIZE LADDER DIES with it \u2014 its premise ('hold lineage constant, vary size') cannot carry the instrument.",
+ "substrate": "LINEAGE CROSSING, TAKEN AS A STATED SUBSTRATE CHOICE (runs/): qwen3.5:9b \u2014 Alibaba/Qwen, sign RISES, measured independently by the tree's own ops ladder (ops/density_test.py:115) BEFORE this choice.  It is NOT the Ministral family the size ladder is built on, because that family's thinking is an INSTRUCTED CONVENTION whose `thinking` field the chat template DROPS (MEASURED), so the trace instrument the DV is read from dies by turn 3-4 under any history-rewriting memory regime (3B, 8B and 14B alike).  THE COST, STATED: the family-matched SIZE LADDER DIES with it \u2014 its premise ('hold lineage constant, vary size') cannot carry the instrument.",
  "tau_S": 100,
  "timeout": 900.0,
  "turns": 40

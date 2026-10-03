@@ -55,7 +55,7 @@
  "num_ctx": 32768,
  "num_predict": 12000,
  "prereg": "ops/lambda/P3-PREREG.md",
- "result_node": "handoff-p3-livemode-result",
+ "result_node": "runs/",
  "seed_base": 17242,
  "surface": true,
  "task_health_window": 20,
