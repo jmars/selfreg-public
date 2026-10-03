@@ -22,7 +22,7 @@ data from which every headline number is re-derivable. It is one of three public
 |---|---|
 | `paper-3.md` | the paper (markdown — the source of truth) |
 | `paper-3.pdf` | the paper rendered to PDF: `pandoc paper-3.md --pdf-engine=typst -o paper-3.pdf` |
-| `paper2/` | the methods half's record — `paper-2-results-record.md` (R1–R6, the measurements the paper's methods half rests on), `future-work-axis-hunt.md` (a falsified predictor, kept as the record) |
+| `paper2/` | the methods half's record — `paper-2-results-record.md` (R1–R6, the measurements the methods half rests on), `future-work-axis-hunt.md` (a falsified predictor, kept as the record), `cult-induction-lit.md` (the coercive-induction literature note the paper's boundary section cites) |
 | `agent/` | the worker's code: `lh_agent.py`, `task_eval.py`, `harness.py`, the CEN, the boundary, the memory codecs, the stage-2 batteries, and `tasks/` (the 12-task suite with visible `tests/` and sealed `heldout/` tests) |
 | `ops/` | the rig's instruments: `density_test.py`, `generalization_screen.py`, `ladder_defs.py`, `check_tracked_set.sh`, and `ops/lambda/P3-PREREG.md` (the pre-registration, cited twice by the paper) |
 | `runs/` | the run data — for each cited run set: `campaign.json`, `state/` (.tsv), per-cell `evaluation.json`, `cell-*/runs/*.json` (summaries), `cell-*/rows/*.jsonl` (per-turn rows), `logs/*.rc` (exit codes). No `pinned/`, no `*.out`/`*.log`, no tunnels, no `*.tmp`. |
