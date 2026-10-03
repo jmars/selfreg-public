@@ -5565,7 +5565,7 @@ def _campaign_selftest(args, results) -> None:
     ids = {name: _bound(**over)["cell_id"] for name, over in {
         "base": {}, "num_predict": {"num_predict": 9000},
         "num_ctx": {"num_ctx": 16384}, "chat_model": {"chat_model": "other:7b"},
-        "chat_endpoint": {"chat_endpoint": "http://10.20.30.4:11434/api/chat"},
+        "chat_endpoint": {"chat_endpoint": "http://127.0.0.1:11434/api/chat"},
         "engine": {"engine": "real"}, "temperature": {"temperature": 0.7},
     }.items()}
     budget_ids = {campaign_identity_tag(bind_campaign_identity(
