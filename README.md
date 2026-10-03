@@ -27,9 +27,26 @@ data from which every headline number is re-derivable. It is one of three public
 | `agent/` | the worker's code: `lh_agent.py`, `task_eval.py`, `harness.py`, the CEN, the boundary, the memory codecs, the stage-2 batteries, and `tasks/` (the 12-task suite with visible `tests/` and sealed `heldout/` tests) |
 | `ops/` | the rig's instruments: `density_test.py`, `generalization_screen.py`, `ladder_defs.py`, `check_tracked_set.sh`, and `ops/lambda/P3-PREREG.md` (the pre-registration, cited twice by the paper) |
 | `runs/` | the run data — for each cited run set: `campaign.json`, `state/` (.tsv), per-cell `evaluation.json`, `cell-*/runs/*.json` (summaries), `cell-*/rows/*.jsonl` (per-turn rows), `logs/*.rc` (exit codes). No `pinned/`, no `*.out`/`*.log`, no tunnels, no `*.tmp`. |
+| `dpdr/` | the frozen five-state model package, at the revision the agent build imports (paper 1's deposit is the model's canonical home; it predates the opt-in variants — `consolidation`, `p2_backlog`, `values`, `composed*` — that this deposit carries) |
+| `dlb/` | the datalog-dafsa engine binding, needed by the CEN's `engine=real` path (the engine's own repository is `fixpoint-linux/datalog-dafsa`) |
 | `held-out-task-suite.json` | the sealed held-out task suite definition (the v2 definition covering all 12 tasks) |
 | `README.md`, `LICENSE`, `LICENSE-paper` | this file and the licences |
 | `SNAPSHOT` | the revision of the working tree this deposit was taken from — the pin |
+
+## How to run it
+
+The shipped code imports as packages, so the deposit root, the agent directory and the model
+package go on the path (the exact line used to verify this deposit):
+
+```sh
+cd <deposit>
+PYTHONPATH="$PWD:$PWD/agent:$PWD/dpdr" python -c "import lh_agent, task_eval, cen_real_engine"
+```
+
+A cell is one `lh_agent.py --mode run` invocation (see `ops/lambda/P3-PREREG.md` §5 for the
+pre-registered argv and `runs/*/campaign.json` for the exact per-set configuration). The
+batteries that verify the shipped modules are under `agent/` (`stage2_intagent_tests.py`,
+`stage2_taskeval_tests.py`); run them with the same `PYTHONPATH`.
 
 ## The held-out task suite
 
@@ -50,8 +67,8 @@ Every headline number is re-derivable from `runs/` alone:
 |---|---|
 | empty-self fraction (1.000 in every D1 cell) | `p3-set/*/cell-*/runs/*.json` → `reconstruction_outcomes` / `survival_pair_events` |
 | reconstruction calls/cell (184 + 258) | `p3-set/*/cell-*/runs/*.json` → `reconstruction_cost_series` |
-| self-directed thinking chars (medians ~400k) | `p3-set/*/cell-*/rows/*.jsonl` → `content_chars` (thinking vs returned) |
-| thinking:returned ratio (21.2x / 20.5x) | same rows, per-call `content_chars` medians |
+| self-directed thinking chars (medians ~400k) | `p3-set/*/cell-*/runs/*.json` → `reconstruction_cost_series[].thinking_chars` |
+| thinking:returned ratio (21.2x / 20.5x) | same series, `thinking_chars` vs `returned_chars` medians |
 | the DV (ordinal work score 0–12) | `p3-set/*/evaluation.json` → `dv` / `contrast_d1_d0` |
 | the finer held-out DV (set 2) | `p3-set2/*/evaluation.json` → `dv` (held-out pass fraction) |
 | the 3,123-row fold (1,358 + 1,765) | `p3-set/` + `p3-set2/` per-cell `rows/*.jsonl` |
