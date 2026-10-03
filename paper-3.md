@@ -1069,8 +1069,7 @@ the result rather than an apology.
 
 ---
 
-*Provenance. Methods half: `paper2/paper-2-draft.md` (held by author decision; folded here
-per its §8 plan) and `paper2/paper-2-results-record.md` (R1–R6; sets `runs/
+*Provenance. Methods half: `paper2/paper-2-results-record.md` (R1–R6; sets `runs/
 lambda-official` pin `f908e92`, `runs/audit-rec` pin `8cb22b6`,
 `runs/nocrutch` pin `70a66fd`, `runs/choice-go` pin `a52f383`).
 Deciding set: `runs/p3-set` (pin `645b923`; `*-r*/evaluation.json`,

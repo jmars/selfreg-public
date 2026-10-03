@@ -22,7 +22,7 @@ data from which every headline number is re-derivable. It is one of three public
 |---|---|
 | `paper-3.md` | the paper (markdown — the source of truth) |
 | `paper-3.pdf` | the paper rendered to PDF: `pandoc paper-3.md --pdf-engine=typst -o paper-3.pdf` |
-| `paper2/` | the methods half — `paper-2-draft.md` (held by author decision, folded here), `paper-2-results-record.md` (R1–R6), `load-bearing-self-design.md`, `future-work-axis-hunt.md` |
+| `paper2/` | the methods half's record — `paper-2-results-record.md` (R1–R6, the measurements the paper's methods half rests on), `future-work-axis-hunt.md` (a falsified predictor, kept as the record) |
 | `agent/` | the worker's code: `lh_agent.py`, `task_eval.py`, `harness.py`, the CEN, the boundary, the memory codecs, the stage-2 batteries, and `tasks/` (the 12-task suite with visible `tests/` and sealed `heldout/` tests) |
 | `ops/` | the rig's instruments: `density_test.py`, `generalization_screen.py`, `ladder_defs.py`, `check_tracked_set.sh`, and `ops/lambda/P3-PREREG.md` (the pre-registration, cited twice by the paper) |
 | `runs/` | the run data — for each cited run set: `campaign.json`, `state/` (.tsv), per-cell `evaluation.json`, `cell-*/runs/*.json` (summaries), `cell-*/rows/*.jsonl` (per-turn rows), `logs/*.rc` (exit codes). No `pinned/`, no `*.out`/`*.log`, no tunnels, no `*.tmp`. |
@@ -32,7 +32,7 @@ data from which every headline number is re-derivable. It is one of three public
 | `README.md`, `LICENSE`, `LICENSE-paper` | this file and the licences |
 | `SNAPSHOT` | the revision of the working tree this deposit was taken from — the pin |
 
-**Not included, by design:** the agent's internal *design record* (the constraint set and the
+**Not included, by design:** the held methods-half *draft* (`paper-2-draft.md`, whose full description of the rig's components lives on), the *design record* for an unbuilt experiment (`load-bearing-self-design.md`), and the agent's internal *design record* (the constraint set and the
 open design decisions behind the long-horizon build) is **not part of this deposit** — it is the
 product's design record rather than this paper's evidence, and several comments and the methods
 draft refer to it by path. The paper's own claims do not depend on it: each cites shipped code or
