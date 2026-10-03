@@ -223,7 +223,7 @@ self is not free even when it is helping. **MEASURED** in-model.
 Paper 1 §4.9: on the chronic inward-drive axis, the healthy equilibrium is annihilated
 **exactly on the cannibalization switching manifold E = Θ_eff** (ε_c = 0.265192279; residual
 |E − Θ_eff| = 1e-13 at the continuation's last resolvable point; the tanh switch at
-`dpdr/dpdr/model.py:93`). At the fold **no eigenvalue reaches zero** (healthy spectrum
+`dpdr/model.py:93`). At the fold **no eigenvalue reaches zero** (healthy spectrum
 [−0.0015, −0.0055, −0.0088, −0.042702, −0.5978]) — this is a border-collision fold, not a
 saddle-node — and there is **no critical slowing down** at any proximity (the dominant
 eigenvalue is bit-identical at −0.0015 across five decades of distance). Across the swept
@@ -294,7 +294,7 @@ paper claims no discovery of the lineage; what it does is quantify, on two real 
 one instance of the structure those works establish formally — and show (the worker) that the
 self's bounded reconstruction fails at the boundary, which is a *dynamical* fact the lineage
 does not supply (Zhang supplies the operator anatomy, not a mechanism for degradation;
-`reference/lit-search.md` JOB A, verified against the v2 full text).
+the project's literature search, JOB A, verified against the v2 full text).
 
 **Cited at second hand:** paper 1 refs [2] (productive circularity) and [3] (term-rewriting
 termination/confluence) are marked ◆ in paper 1 — the specific canonical references were not
@@ -365,7 +365,7 @@ the monitoring channel consuming the process's own resources. The two are not in
 this paper's claim is about *which thing in the container* fails and *why categorically*,
 where the literature records *that* it fails.
 
-Two further entries from the project's literature search (`reference/lit-search.md` JOB B6,
+Two further entries from the project's literature search (JOB B6,
 abstract-level) sharpen the placement. Zerhoudi, Mitrovic & Granitzer (2026, "The Compaction
 Cliff in Long-Running AI Agent Memory," arXiv 2608.22752) quantify in vivo that summarization
 preserves 53% of safety rules after one compaction round and 10% after five — the same
@@ -432,7 +432,8 @@ on neither claim as evidence; stated so it is not silently absent.**
 
 **Cited at second hand:** the clinical-instrument corpus (paper 1 ref [18]: Melges, Mathew,
 D'Souza, Colizzi, Simeon, Baker, Medford, Michal, Hunter, Pons, Leavitt, Guralnik, Sierra,
-Millman, Hammond) is cited via `dpdr/external-validation.md` §8; the individual primaries are
+Millman, Hammond) is cited via paper 1's deposit (`dpdr/external-validation.md`) §8; the
+individual primaries are
 not read here and are carried at the access level paper 1 records. The
 cult-induction sources (Schein, Lifton, Singer, Stein, Hassan, Feliciano, Doychak, Bailey,
 Hadding, Pons) are framework/clinical/theoretical, not experimental, and are marked as such
@@ -1077,7 +1078,8 @@ Deciding set: `runs/p3-set` (pin `645b923`; `*-r*/evaluation.json`,
 `logs/*.rc`); replication `runs/p3-set2` (pin `bfbe5d0`); pre-fix smoke
 `runs/p3-span-smoke` (pin `b51fb43`); route check `runs/p3-d1check`
 (pin `512dd0c`); cost probe `runs/p3-cost-probe` (local, free). Pre-registration
-`ops/lambda/P3-PREREG.md` with its amendments. Model-side numbers: paper 1 (`../paper.md`)
+`ops/lambda/P3-PREREG.md` with its amendments. Model-side numbers: paper 1 (Marshall 2026, *Self-Application as the Common Source of
+Benefit and Failure*, doi:10.5281/zenodo.22943642)
 §4.5, §4.9, §5.3 — cited, not re-derived. Every set-1/set-2 number above was re-verified
 against the artifacts for this paper; where a set's recorded statistic differs from this
 paper's re-computation (the set-2 ordinal p 0.35 by this paper's recomputation vs 0.33 as the set's analysis recorded it; the ratio's convention spread),
@@ -1087,8 +1089,16 @@ both are stated.*
 
 ## References
 
+*Where this paper cites "paper 1", it means Marshall, J. T., *Self-Application as the Common
+Source of Benefit and Failure: A Control-Theoretic Model of Self-Regulation, Its Escapes, and a
+Standing-Cost Budget*, doi:10.5281/zenodo.22943642 (concept doi …22943641). **"paper 1's
+deposit"** is that paper's public artifact repository (github.com/jmars/dpdr-public), where the
+documents cited under that name — `dual-control.md` and `dpdr/external-validation.md` — are
+readable. The internal working records this paper's design rests on (its pre-registration and
+run data) ship with this deposit.
+
 *The numbered entries below are the works cited inline as `[N]` in §4 and the body. The
-numbering follows paper 1 (`../paper.md`, References) for every work the two papers share,
+numbering follows paper 1's References for every work the two papers share,
 so a bracket resolves here without a cross-paper lookup; this paper cites no work paper 1
 does not, and no entry is invented. Where a work is cited only at second hand, it is marked
 — ◆ for an unread primary or an access level below full text, exactly as paper 1 marks its
@@ -1146,7 +1156,7 @@ subsection named in place of paper 1's §7.x where the engagement lives here.*
 
 [8] Zhang, Yuan & Zhang (2026). Self-reference in large language models: the introspection
     threshold for recursive self-improvement. arXiv 2607.04277. (Conjecture quoted verbatim in
-    `dpdr/dpdr/window.py:12-22` as recorded by the project. v2, 2026-09-18, read in full by the
+    `dpdr/window.py:12-22` as recorded by the project. v2, 2026-09-18, read in full by the
     project's literature search and verified against this paper's hedges: the construction
     "does not by itself prove the threshold thesis"; threshold sharpness is listed as Open
     Problem 1. Flag closed on that full read; the paper's Open Problems other than [OP1] are
@@ -1170,7 +1180,7 @@ subsection named in place of paper 1's §7.x where the engagement lives here.*
      paper's characterization — "benchmark work attributing breakdown to memory/context limits"
      — matches, with the noted refinement that memory/context limits are dominant among several
      attributed causes, not the sole one. Related benchmark work in this entry remains reached
-     through the project's sweep notes (`reference/lit-search.md`).
+     through the project's sweep notes (its literature-search record).
 
 [13] Self-reflection improves agent performance. Primary read in full by the project: Renze
      & Guven, "Self-Reflection in LLM Agents: Effects on Problem-Solving Performance," arXiv
@@ -1198,7 +1208,8 @@ subsection named in place of paper 1's §7.x where the engagement lives here.*
 [17] Madden & Serper (2026). The time collapse–entrapment model of depersonalization severity.
      *Psychiatry Research.* PMID 42288070.
 
-[18] Additional clinical instruments and datasets as cited in `dpdr/external-validation.md`
+[18] Additional clinical instruments and datasets as cited in paper 1's deposit
+  (`dpdr/external-validation.md`)
      §8 (Melges 1970; Mathew 1992/93; D'Souza 2004; Colizzi 2019; Simeon 1997/2000/2007;
      Baker 2003; Medford 2005; Michal 2024; Hunter 2023/2025; Pons 2026; Leavitt 1999;
      Guralnik 2000; Sierra 2002; Millman 2024; Hammond 2025). ◆ (The individual primaries are
@@ -1235,31 +1246,33 @@ paper's discipline; none is invented.*
 
 - **Meijer & Rantzer (2026), "Dual Control: On Exploration–Exploitation in Linear
   Systems," arXiv 2608.20073.** Read in full by the project (dual-control audit,
-  `dual-control.md`). The modern survey entry point for the Feldbaum lineage; §4.1's
+  the project's dual-control read, published in paper 1's deposit). The modern survey entry
+  point for the Feldbaum lineage; §4.1's
   positioning stands on this full read where the Feldbaum primary is unread.
 - **Filatov & Unbehauen, *Adaptive Dual Control* (LNCIS 302, Springer, 2004), §2.1.** The
   textbook statement of the original formulation ("formulated by Feldbaum 1960-61, 1965");
   not read in full by the project — carried at the level the dual-control audit records.
 - **Mesbah, A. (2018), "Stochastic model predictive control with active uncertainty
   learning: A survey on dual control," *Annual Reviews in Control* 45:107–117.** Read in full
-  by the project (`dual-control.md`).
+  by the project (paper 1's deposit, `dual-control.md`).
 - **Bar-Shalom & Tse (1974), "Dual effect, certainty equivalence, and separation in
   stochastic control," *IEEE Trans. Automatic Control* 19(5):494–500.** The formal
   definition of the dual effect; carried via the dual-control audit's survey reads, not read
   in the primary.
 - **Runggaldier & Stettner (1994), *Approximations of Discrete Time Partially Observed
   Control Problems*; and the modern partially-observed-control surveys by Yüksel.** ◆ Named
-  in `dual-control.md` §2 as the adjacent branch treating observation as a decision with a
+  in the project's dual-control read (paper 1's deposit) §2 as the adjacent branch treating
+  observation as a decision with a
   resource cost; not read in the primary — the "no state-degradation caused by observing"
   verdict stands on the dual-control audit's search-level finding.
 - **Rohrs, Valavani, Athans & Stein (1985), "Robustness of continuous-time adaptive control
   algorithms in the presence of unmodeled dynamics," *IEEE TAC* AC-30(9):881 ff.** Abstract
-  + intro read by the project (`dual-control.md`).
+  + intro read by the project (paper 1's deposit, `dual-control.md`).
 - **Anderson, B. D. O. (1985), "Adaptive systems, lack of persistency of excitation and
   bursting phenomena."** Carried via Mesbah's reference list as read in full by the project;
   the primary not read separately.
 - **Zerhoudi, Mitrovic & Granitzer (2026), "The Compaction Cliff in Long-Running AI Agent
-  Memory," arXiv 2608.22752.** ◆ Abstract-level only (`reference/lit-search.md` JOB B6).
+  Memory," arXiv 2608.22752.** ◆ Abstract-level only (the project's literature search, JOB B6).
 - **Kang et al. (2025), ACON, arXiv 2510.00615.** ◆ Abstract-level only (JOB B6).
 - **Yuan et al. (2024), "Self-Rewarding Language Models," arXiv 2401.10020.** ◆
   Abstract-level only (JOB B2).
