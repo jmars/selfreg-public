@@ -1,0 +1,153 @@
+{
+ "cells": [
+  {
+   "arm": "D0",
+   "declared_over_competent": 0.2,
+   "dv": {
+    "per_target": {
+     "f1": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f10": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f11": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f12": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f2": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f3": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f4": [
+      "USEFUL",
+      1.0
+     ],
+     "f5": [
+      "USEFUL",
+      1.0
+     ],
+     "f6": [
+      "USEFUL",
+      1.0
+     ],
+     "f7": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f8": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f9": [
+      "NOT_COMPLETE",
+      0.0
+     ]
+    },
+    "scale_note": "0..len(targets) for this cell (SECONDARY, the artifact ordinal; the PRIMARY DV is dv_rate below)",
+    "sum": 4.0
+   },
+   "dv_rate": {
+    "completions_late_minus_first": null,
+    "completions_per_window": [],
+    "declared_completions_past_last_window": 1,
+    "instrument": "declared-completion rate per window (world-adjudicated gate_log; P3-PREREG 2026-10-05)",
+    "status": "INSUFFICIENT",
+    "total_declared_completions": 1,
+    "window": 100,
+    "windows": 0
+   },
+   "identity_tag": "efaf536d41191e37",
+   "mediator": {
+    "compaction_gap_turns": [
+     4,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     2,
+     2
+    ],
+    "mean_gap_turns": 2.9,
+    "n_events_with_pair": 10,
+    "survival_pair_second_event_on": [
+     {
+      "after": [],
+      "before": [],
+      "turn": 7
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 10
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 13
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 16
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 19
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 22
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 25
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 27
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 29
+     }
+    ]
+   },
+   "n_compactions": 10,
+   "repeat": 1,
+   "rows": 30,
+   "rows_recorded": 30,
+   "status": "OK",
+   "swe_final_error": null,
+   "turns_to_first_PASS": {
+    "f6": 28
+   }
+  }
+ ],
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "contrast_d1_d0": null,
+ "created_ts": "2026-10-02T10:37:16",
+ "dv": "PRIMARY: the declared-completion rate per window (world-adjudicated gate_log); SECONDARY: swe_final_score (P3-PREREG \u00a73 + the 2026-10-05 amendment)",
+ "independence": "the launcher's independence check gates the DV read (P3-PREREG \u00a77; a clone set is VOID)",
+ "marking": "the DV and mediator numbers are MEASURED (off the runs' own files); any inference over them is the analyst's, per the pre-registration's rule",
+ "prereg": "ops/lambda/P3-PREREG.md",
+ "result_node": "handoff-p3-livemode-result"
+}

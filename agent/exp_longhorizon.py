@@ -2436,7 +2436,7 @@ def campaign_record(args, arms: list) -> dict:
         # paper-2 decisive set (run 3) was — one global seed fanned across
         # six cells, within-arm repeats identical row-for-row over their
         # shared 52-row prefix, the only differing key being the volatile
-        # per-turn wall clock `secs` (record ~/setpoint-runs/lambda; node
+        # per-turn wall clock `secs` (record runs/lambda; node
         # handoff-selfreg-run3-stopped).
         # WHY THE SEED BELONGS HERE: the emitter derives its per-turn seed
         # as `seed + turn` (dmn_llm), so the seed IS the trajectory — two
@@ -2603,7 +2603,7 @@ LH_CAMPAIGN_IDENTITY_FIELDS = ("arms", "turns", "n", "budget", "tau_S",
 #: `self.seed + int(turn)`), so the base seed IS the trajectory: two
 #: invocations at different seeds are two different experiments, and a set
 #: whose cells all drew ONE seed is a set of CLONES, not of repeats.
-#: MEASURED (record ~/setpoint-runs/lambda, node
+#: MEASURED (record runs/lambda, node
 #: handoff-selfreg-run3-stopped): the launcher passed one global
 #: `--seed-base` to all six cells, and WITHIN EACH ARM the repeats were
 #: identical row-for-row over their shared 52-row prefix — the only

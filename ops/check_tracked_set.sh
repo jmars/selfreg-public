@@ -14,10 +14,10 @@
 #
 # ITS SCOPE, STATED SO IT IS NOT MISTAKEN FOR MORE: this guards the BOUNDARY —
 # nothing from outside the published paths can be tracked. It does NOT police the
-# CONTENTS of those paths: a file placed inside `paper2/` or `ops/` is published
-# by intent, and this gate will admit it. It is deliberately NOT a copy of the
-# lab's version, which names the private source files it must exclude and would
-# therefore leak the very thing it guards.
+# CONTENTS of those paths: a file placed inside `paper2/` or `ops/` or `runs/` is
+# published by intent, and this gate will admit it. It is deliberately NOT a copy
+# of the lab's version, which names the private source files it must exclude and
+# would therefore leak the very thing it guards.
 #
 # `.git/hooks/pre-commit` runs it. Do not bypass with --no-verify.
 #
@@ -27,14 +27,13 @@ cd "$(dirname "$0")/.." || exit 1
 
 # THE ALLOWLIST — the only paths that may be tracked. Keep in step with
 # .gitignore's un-ignore rules; if they drift, this is the one that should win.
-# `agent/` and `design/` were added 2026-09-30, deliberately: the worker's repository
-# (~/setpoint) went private, so the modules paper 2's Appendix B cites are carried HERE.
-# They are published by the sync's exact allowlist, not by directory wildcard.
-# `SNAPSHOT` belongs here rather than under a directory: it is the revision pin the
-# sync generates at the root, and the root is not a sync target — so it is a file
-# this repo owns, admitted deliberately.
-ALLOWED_DIRS=(paper2 ops agent design)
-ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore SNAPSHOT paper.pdf .zenodo.json)
+# `agent/` and `design/` carry the worker's code (paper 2's Appendix B cites; paper 3
+# adds the worker's full task suite and batteries). `runs/` carries the run data
+# (campaign.json, state/, evaluation.json, per-cell runs/*.json and rows/*.jsonl,
+# logs/*.rc). `held-out-task-suite.json` is the sealed held-out definition.
+# `SNAPSHOT` is the revision pin. `paper-3.md` and `paper-3.pdf` are the unified paper.
+ALLOWED_DIRS=(paper2 ops agent design runs)
+ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore SNAPSHOT paper-3.md paper-3.pdf .zenodo.json held-out-task-suite.json)
 
 fail=0
 while IFS= read -r f; do
@@ -55,10 +54,17 @@ done < <(git ls-files)
 
 [ "$fail" -eq 0 ] || { echo >&2; echo "Fix: unstage it, or add the path here deliberately." >&2; exit 1; }
 
-# Independent check by CONTENT SHAPE: no run data, whatever it is named.
-if git ls-files | grep -qE '\.(jsonl|ndjson)$|(^|/)session-|transcript'; then
-  echo "REFUSING: run/session data (.jsonl/.ndjson) is tracked." >&2
+# Independent check by CONTENT SHAPE: no session/transcript data anywhere, and no
+# .jsonl outside runs/ (the per-turn rows under runs/ are the paper's evidence and
+# are tracked by intent).
+if git ls-files | grep -qE '(^|/)session-|transcript'; then
+  echo "REFUSING: session/transcript data is tracked." >&2
   exit 1
 fi
+while IFS= read -r f; do
+  case "$f" in runs/*) continue;; esac
+  echo "REFUSING: .jsonl/.ndjson outside runs/ is tracked: '$f'" >&2
+  exit 1
+done < <(git ls-files | grep -E '\.(jsonl|ndjson)$')
 
 echo "tracked set clean: $(git ls-files | wc -l) files, all inside the allowlist."

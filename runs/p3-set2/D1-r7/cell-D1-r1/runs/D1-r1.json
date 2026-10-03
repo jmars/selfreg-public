@@ -1,0 +1,3781 @@
+{
+ "arm": "D1",
+ "budget_guard": {
+  "empty_content_turns": 3,
+  "empty_rate": 0.05,
+  "n": 60,
+  "note": "within the budget guard's boundary",
+  "saturated_turns": 3,
+  "void": false
+ },
+ "cen_verdicts": [
+  {
+   "cut_depth": 0,
+   "derivations": 1,
+   "id": "span-2-1",
+   "provenance": [
+    "theory ran: no witness proves or refutes done(t1_rchunk)"
+   ],
+   "reason": "no_rules",
+   "status": "UNCHECKABLE",
+   "turn": 2
+  }
+ ],
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "claim_marking": "PROJECTION (offline fixture build; the arms exist to measure it, the rig assumes no outcome)",
+ "compactions": [
+  {
+   "conversation_chars_after": 32904,
+   "conversation_chars_before": 64780,
+   "dropped_chars": 32554,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "summarized_turns": 4,
+   "summary_chars": 649,
+   "turn": 4
+  },
+  {
+   "conversation_chars_after": 33757,
+   "conversation_chars_before": 65831,
+   "dropped_chars": 32904,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 801,
+   "turn": 6
+  },
+  {
+   "conversation_chars_after": 33360,
+   "conversation_chars_before": 66221,
+   "dropped_chars": 33757,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 867,
+   "turn": 8
+  },
+  {
+   "conversation_chars_after": 32978,
+   "conversation_chars_before": 65444,
+   "dropped_chars": 33360,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 865,
+   "turn": 10
+  },
+  {
+   "conversation_chars_after": 32814,
+   "conversation_chars_before": 65244,
+   "dropped_chars": 32978,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 519,
+   "turn": 12
+  },
+  {
+   "conversation_chars_after": 34867,
+   "conversation_chars_before": 66931,
+   "dropped_chars": 32814,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 721,
+   "turn": 14
+  },
+  {
+   "conversation_chars_after": 32367,
+   "conversation_chars_before": 66755,
+   "dropped_chars": 34867,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 450,
+   "turn": 16
+  },
+  {
+   "conversation_chars_after": 32731,
+   "conversation_chars_before": 64268,
+   "dropped_chars": 32367,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 801,
+   "turn": 18
+  },
+  {
+   "conversation_chars_after": 33599,
+   "conversation_chars_before": 65638,
+   "dropped_chars": 32731,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 663,
+   "turn": 20
+  },
+  {
+   "conversation_chars_after": 33821,
+   "conversation_chars_before": 66480,
+   "dropped_chars": 33599,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 911,
+   "turn": 22
+  },
+  {
+   "conversation_chars_after": 36473,
+   "conversation_chars_before": 69646,
+   "dropped_chars": 33821,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 619,
+   "turn": 24
+  },
+  {
+   "conversation_chars_after": 33799,
+   "conversation_chars_before": 69564,
+   "dropped_chars": 36473,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 679,
+   "turn": 26
+  },
+  {
+   "conversation_chars_after": 38975,
+   "conversation_chars_before": 71120,
+   "dropped_chars": 33799,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 1625,
+   "turn": 28
+  },
+  {
+   "conversation_chars_after": 34857,
+   "conversation_chars_before": 72757,
+   "dropped_chars": 38975,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 1046,
+   "turn": 30
+  },
+  {
+   "conversation_chars_after": 34325,
+   "conversation_chars_before": 68630,
+   "dropped_chars": 34857,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 523,
+   "turn": 32
+  },
+  {
+   "conversation_chars_after": 37864,
+   "conversation_chars_before": 71195,
+   "dropped_chars": 34325,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 965,
+   "turn": 34
+  },
+  {
+   "conversation_chars_after": 34077,
+   "conversation_chars_before": 71361,
+   "dropped_chars": 37864,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 551,
+   "turn": 36
+  },
+  {
+   "conversation_chars_after": 35362,
+   "conversation_chars_before": 68820,
+   "dropped_chars": 34077,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 590,
+   "turn": 38
+  },
+  {
+   "conversation_chars_after": 34311,
+   "conversation_chars_before": 69001,
+   "dropped_chars": 35362,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 643,
+   "turn": 40
+  },
+  {
+   "conversation_chars_after": 31603,
+   "conversation_chars_before": 65205,
+   "dropped_chars": 34311,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 680,
+   "turn": 42
+  },
+  {
+   "conversation_chars_after": 37599,
+   "conversation_chars_before": 68312,
+   "dropped_chars": 31603,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 861,
+   "turn": 44
+  },
+  {
+   "conversation_chars_after": 33243,
+   "conversation_chars_before": 70231,
+   "dropped_chars": 37599,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 582,
+   "turn": 46
+  },
+  {
+   "conversation_chars_after": 40727,
+   "conversation_chars_before": 73322,
+   "dropped_chars": 33243,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 619,
+   "turn": 48
+  },
+  {
+   "conversation_chars_after": 34796,
+   "conversation_chars_before": 73552,
+   "dropped_chars": 40727,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 1942,
+   "turn": 50
+  },
+  {
+   "conversation_chars_after": 32789,
+   "conversation_chars_before": 67067,
+   "dropped_chars": 34796,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 489,
+   "turn": 52
+  },
+  {
+   "conversation_chars_after": 33035,
+   "conversation_chars_before": 64925,
+   "dropped_chars": 32789,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 870,
+   "turn": 54
+  },
+  {
+   "conversation_chars_after": 32086,
+   "conversation_chars_before": 64383,
+   "dropped_chars": 33035,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 709,
+   "turn": 56
+  },
+  {
+   "conversation_chars_after": 33328,
+   "conversation_chars_before": 64603,
+   "dropped_chars": 32086,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 782,
+   "turn": 58
+  },
+  {
+   "conversation_chars_after": 33491,
+   "conversation_chars_before": 66108,
+   "dropped_chars": 33328,
+   "kept_turns": 4,
+   "self_steps_after": [],
+   "self_steps_before": [],
+   "summarized_turns": 4,
+   "summary_chars": 682,
+   "turn": 60
+  }
+ ],
+ "cost_licence": "MECHANICAL, THROUGH SHARED RESOURCES: the per-call cost series records what each self-maintenance call spent \u2014 and that spend is large and reaching.  MEASURED (a 14-turn probe): the reconstruction calls emitted ~48% of the run's entire generation, read a ~2x larger window than the work turns (34,540 vs 15,792 chars), and ran in real wall-clock time; one call exhausted its whole window and returned an empty self.  The cost therefore reaches the work through GENERATION, WINDOW OCCUPANCY and TIME \u2014 all shared, bounded resources \u2014 not merely as co-movement (an earlier version of this string said OBSERVATIONAL, which collapsed 'mechanical' into the one channel the harness does not charge; retracted).  WHAT IS ABSENT is only an ARTIFICIAL coupling: nothing here subtracts the reconstruction spend from a work budget, and building that would be inventing the mechanism the standing order forbids until the MODEL carries it.  What such a model term would need: inward spend reducing outward production, priced in the model's own units, plus a harness seat that charges it \u2014 neither exists today.",
+ "created_ts": "2026-10-03T19:12:37",
+ "derivation_loss_events": [
+  [
+   4,
+   1.0
+  ],
+  [
+   6,
+   1.0
+  ],
+  [
+   8,
+   1.0
+  ],
+  [
+   10,
+   1.0
+  ],
+  [
+   12,
+   1.0
+  ],
+  [
+   14,
+   1.0
+  ],
+  [
+   16,
+   1.0
+  ],
+  [
+   18,
+   1.0
+  ],
+  [
+   20,
+   1.0
+  ],
+  [
+   22,
+   1.0
+  ],
+  [
+   24,
+   1.0
+  ],
+  [
+   26,
+   1.0
+  ],
+  [
+   28,
+   1.0
+  ],
+  [
+   30,
+   1.0
+  ],
+  [
+   32,
+   1.0
+  ],
+  [
+   34,
+   1.0
+  ],
+  [
+   36,
+   1.0
+  ],
+  [
+   38,
+   1.0
+  ],
+  [
+   40,
+   1.0
+  ],
+  [
+   42,
+   1.0
+  ],
+  [
+   44,
+   1.0
+  ],
+  [
+   46,
+   1.0
+  ],
+  [
+   48,
+   1.0
+  ],
+  [
+   50,
+   1.0
+  ],
+  [
+   52,
+   1.0
+  ],
+  [
+   54,
+   1.0
+  ],
+  [
+   56,
+   1.0
+  ],
+  [
+   58,
+   1.0
+  ],
+  [
+   60,
+   1.0
+  ]
+ ],
+ "error": null,
+ "first_window_mean_outward": null,
+ "identity": {
+  "arm": "D1",
+  "budget": 64,
+  "engine": "real",
+  "keep_recent": 4,
+  "label": "paper 3: seat ON, monitoring ON, reconstruct \u2014 the depletable self (the worker claim's arm)",
+  "memory": "naive",
+  "monitoring_para_sha16": "1293a970d85cece0",
+  "num_ctx": 32768,
+  "num_predict": 12000,
+  "paper3": {
+   "grounding": true,
+   "inject_regime": "reconstruct",
+   "monitoring": true,
+   "seed_absent": false
+  },
+  "regulator": "none",
+  "seed_base": 30242,
+  "sn_activation_floor": 0.7,
+  "summarizer_think": false,
+  "surface": true,
+  "swe_queue_digest16": "941ef27341ddcf41",
+  "task_health_window": 20,
+  "tau_S": 100,
+  "temperature": 0.6,
+  "timeout": 900.0,
+  "turns": 60
+ },
+ "identity_tag": "63789d8cab512270",
+ "injections": [],
+ "label": "paper 3: seat ON, monitoring ON, reconstruct \u2014 the depletable self (the worker claim's arm)",
+ "mediator_licence": {
+  "cadence": "D1'-vs-D0 ONLY (the carrier comparison); BARRED from D1-vs-D1' \u2014 downstream of the DV under a spanning design (F13)",
+  "per_turn_self_steps": "NOT a licensable mediator (R5: prompt-coupled); logged as the corroborator only",
+  "reconstruction_exhaustion": "a READING of the reconstruct arm's own inward collapse (status 'exhausted_inward', budget recorded per event): the call consumed its whole generation budget as thinking and produced no self-description \u2014 inward_share 1.0, the self genuinely empty.  PRE-REGISTERED (2026-10-02 amendment) so it is not a post-hoc rescue; the DV scores the work after it NORMALLY (no exemption \u2014 dv_rate_per_window is arm-blind)",
+  "reconstruction_routes": "the reconstruction call's outcome is TWO named routes, distinguishable at the row and first-class in the summary's reconstruction_outcomes: (a) 'exhausted_inward' (empty content at done_reason='length' \u2014 the budget consumed inward); (b) 'content_without_steps' (content returned, none of the derivation's steps in it \u2014 MEASURED, p3-d1check both repeats: the self rebuilt as prose that is not the derivation).  Both are the SAME degradation by different routes; 'content_with_steps' is the regime working and rides the same list.  The DV reads the work after either route, arm-blind, no exemption",
+  "survival_pair": "D1-vs-D1' from the SECOND compaction on (S11; the event-1 pair is the seed's own spend \u2014 S5's original form RETIRED, F6 fired spuriously on it)"
+ },
+ "memory": "naive",
+ "n_compactions": 29,
+ "n_complete_windows": 0,
+ "n_injections": 0,
+ "not_built": [
+  "the OUT-OF-PROCESS TOOL OWNER (R6): the tool surface runs IN-PROCESS inside this loop; moving it behind the boundary daemon is a SEPARATE task's file (boundary_daemon.py / boundary_client.py) and is not done here (paper-3-scope 6)",
+  "a consolidation codec: the naive regime's only capacity term is the substrate's num_ctx; the engineered regime's codec is identity (paper-3-scope 3.4); the LE->codec supersession path is not on this loop",
+  "a live run: this build is exercised on OFFLINE FIXTURES only; the claim is PROJECTION until a live run measures it",
+  "theory evidence: the injected theory's evidence relations are seeded EMPTY by default (the shipped SWE suite has no blocking structure), so the derive path is LIVE but derives nothing until a caller seeds evidence \u2014 the gap is stated, not hidden behind a wider claim"
+ ],
+ "prediction_final": {
+  "a_hold_max": 1.0,
+  "crossing_t": 110.25,
+  "crossing_turn": 110,
+  "crossing_window": 2,
+  "g_end": 0.04382283301219408,
+  "loss": 1.0,
+  "n_events": 29,
+  "term": "per-compaction derivation loss (standing)"
+ },
+ "reconstruction_cost_series": [
+  {
+   "call": 1,
+   "cum_eval_count": 3442,
+   "eval_count": 3442,
+   "note": null,
+   "prompt_chars": 33173,
+   "returned_chars": 842,
+   "thinking_chars": 14643,
+   "turn": 5,
+   "window": {
+    "hi_turn": 7,
+    "lo_turn": 6,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 2,
+   "cum_eval_count": 15442,
+   "eval_count": 12000,
+   "note": null,
+   "prompt_chars": null,
+   "returned_chars": 0,
+   "thinking_chars": null,
+   "turn": 7,
+   "window": {
+    "hi_turn": 9,
+    "lo_turn": 8,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 3,
+   "cum_eval_count": 27442,
+   "eval_count": 12000,
+   "note": null,
+   "prompt_chars": null,
+   "returned_chars": 0,
+   "thinking_chars": null,
+   "turn": 9,
+   "window": {
+    "hi_turn": 11,
+    "lo_turn": 10,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 4,
+   "cum_eval_count": 34342,
+   "eval_count": 6900,
+   "note": null,
+   "prompt_chars": 33247,
+   "returned_chars": 626,
+   "thinking_chars": 26365,
+   "turn": 11,
+   "window": {
+    "hi_turn": 13,
+    "lo_turn": 12,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 5,
+   "cum_eval_count": 38424,
+   "eval_count": 4082,
+   "note": null,
+   "prompt_chars": 33083,
+   "returned_chars": 731,
+   "thinking_chars": 16779,
+   "turn": 13,
+   "window": {
+    "hi_turn": 15,
+    "lo_turn": 14,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 6,
+   "cum_eval_count": 42864,
+   "eval_count": 4440,
+   "note": null,
+   "prompt_chars": 35136,
+   "returned_chars": 731,
+   "thinking_chars": 18605,
+   "turn": 15,
+   "window": {
+    "hi_turn": 17,
+    "lo_turn": 16,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 7,
+   "cum_eval_count": 48165,
+   "eval_count": 5301,
+   "note": null,
+   "prompt_chars": 32636,
+   "returned_chars": 742,
+   "thinking_chars": 22187,
+   "turn": 17,
+   "window": {
+    "hi_turn": 19,
+    "lo_turn": 18,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 8,
+   "cum_eval_count": 52978,
+   "eval_count": 4813,
+   "note": null,
+   "prompt_chars": 33000,
+   "returned_chars": 742,
+   "thinking_chars": 20532,
+   "turn": 19,
+   "window": {
+    "hi_turn": 21,
+    "lo_turn": 20,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 9,
+   "cum_eval_count": 56231,
+   "eval_count": 3253,
+   "note": null,
+   "prompt_chars": 33868,
+   "returned_chars": 753,
+   "thinking_chars": 14760,
+   "turn": 21,
+   "window": {
+    "hi_turn": 23,
+    "lo_turn": 22,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 10,
+   "cum_eval_count": 60601,
+   "eval_count": 4370,
+   "note": null,
+   "prompt_chars": 34090,
+   "returned_chars": 624,
+   "thinking_chars": 19182,
+   "turn": 23,
+   "window": {
+    "hi_turn": 25,
+    "lo_turn": 24,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 11,
+   "cum_eval_count": 66035,
+   "eval_count": 5434,
+   "note": null,
+   "prompt_chars": 36742,
+   "returned_chars": 856,
+   "thinking_chars": 23106,
+   "turn": 25,
+   "window": {
+    "hi_turn": 27,
+    "lo_turn": 26,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 12,
+   "cum_eval_count": 73119,
+   "eval_count": 7084,
+   "note": null,
+   "prompt_chars": 34068,
+   "returned_chars": 845,
+   "thinking_chars": 28361,
+   "turn": 27,
+   "window": {
+    "hi_turn": 29,
+    "lo_turn": 28,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 13,
+   "cum_eval_count": 78459,
+   "eval_count": 5340,
+   "note": null,
+   "prompt_chars": 39244,
+   "returned_chars": 845,
+   "thinking_chars": 21682,
+   "turn": 29,
+   "window": {
+    "hi_turn": 31,
+    "lo_turn": 30,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 14,
+   "cum_eval_count": 83336,
+   "eval_count": 4877,
+   "note": null,
+   "prompt_chars": 35126,
+   "returned_chars": 777,
+   "thinking_chars": 20600,
+   "turn": 31,
+   "window": {
+    "hi_turn": 33,
+    "lo_turn": 32,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 15,
+   "cum_eval_count": 95336,
+   "eval_count": 12000,
+   "note": null,
+   "prompt_chars": null,
+   "returned_chars": 0,
+   "thinking_chars": null,
+   "turn": 33,
+   "window": {
+    "hi_turn": 35,
+    "lo_turn": 34,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 16,
+   "cum_eval_count": 102948,
+   "eval_count": 7612,
+   "note": null,
+   "prompt_chars": 38133,
+   "returned_chars": 874,
+   "thinking_chars": 30163,
+   "turn": 35,
+   "window": {
+    "hi_turn": 37,
+    "lo_turn": 36,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 17,
+   "cum_eval_count": 109572,
+   "eval_count": 6624,
+   "note": null,
+   "prompt_chars": 34346,
+   "returned_chars": 848,
+   "thinking_chars": 27699,
+   "turn": 37,
+   "window": {
+    "hi_turn": 39,
+    "lo_turn": 38,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 18,
+   "cum_eval_count": 115511,
+   "eval_count": 5939,
+   "note": null,
+   "prompt_chars": 35631,
+   "returned_chars": 742,
+   "thinking_chars": 24422,
+   "turn": 39,
+   "window": {
+    "hi_turn": 41,
+    "lo_turn": 40,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 19,
+   "cum_eval_count": 127511,
+   "eval_count": 12000,
+   "note": null,
+   "prompt_chars": null,
+   "returned_chars": 0,
+   "thinking_chars": null,
+   "turn": 41,
+   "window": {
+    "hi_turn": 43,
+    "lo_turn": 42,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 20,
+   "cum_eval_count": 134350,
+   "eval_count": 6839,
+   "note": null,
+   "prompt_chars": 31872,
+   "returned_chars": 887,
+   "thinking_chars": 28087,
+   "turn": 43,
+   "window": {
+    "hi_turn": 45,
+    "lo_turn": 44,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 21,
+   "cum_eval_count": 139154,
+   "eval_count": 4804,
+   "note": null,
+   "prompt_chars": 37868,
+   "returned_chars": 887,
+   "thinking_chars": 18764,
+   "turn": 45,
+   "window": {
+    "hi_turn": 47,
+    "lo_turn": 46,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 22,
+   "cum_eval_count": 143655,
+   "eval_count": 4501,
+   "note": null,
+   "prompt_chars": 33512,
+   "returned_chars": 887,
+   "thinking_chars": 18865,
+   "turn": 47,
+   "window": {
+    "hi_turn": 49,
+    "lo_turn": 48,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 23,
+   "cum_eval_count": 149532,
+   "eval_count": 5877,
+   "note": null,
+   "prompt_chars": 40996,
+   "returned_chars": 511,
+   "thinking_chars": 20641,
+   "turn": 49,
+   "window": {
+    "hi_turn": 51,
+    "lo_turn": 50,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 24,
+   "cum_eval_count": 156224,
+   "eval_count": 6692,
+   "note": null,
+   "prompt_chars": 35065,
+   "returned_chars": 1161,
+   "thinking_chars": 23726,
+   "turn": 51,
+   "window": {
+    "hi_turn": 53,
+    "lo_turn": 52,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 25,
+   "cum_eval_count": 164937,
+   "eval_count": 8713,
+   "note": null,
+   "prompt_chars": 33058,
+   "returned_chars": 1172,
+   "thinking_chars": 34126,
+   "turn": 53,
+   "window": {
+    "hi_turn": 55,
+    "lo_turn": 54,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 26,
+   "cum_eval_count": 176937,
+   "eval_count": 12000,
+   "note": null,
+   "prompt_chars": null,
+   "returned_chars": 0,
+   "thinking_chars": null,
+   "turn": 55,
+   "window": {
+    "hi_turn": 57,
+    "lo_turn": 56,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 27,
+   "cum_eval_count": 181496,
+   "eval_count": 4559,
+   "note": null,
+   "prompt_chars": 32355,
+   "returned_chars": 736,
+   "thinking_chars": 18476,
+   "turn": 57,
+   "window": {
+    "hi_turn": 59,
+    "lo_turn": 58,
+    "turns": 2
+   },
+   "work_in_window": 0
+  },
+  {
+   "call": 28,
+   "cum_eval_count": 193496,
+   "eval_count": 12000,
+   "note": null,
+   "prompt_chars": 33597,
+   "returned_chars": 597,
+   "thinking_chars": 41357,
+   "turn": 59,
+   "window": {
+    "hi_turn": 60,
+    "lo_turn": 60,
+    "turns": 1
+   },
+   "work_in_window": 0
+  }
+ ],
+ "reconstruction_exhaustion": [
+  {
+   "done_reason": "length",
+   "eval_count": 12000,
+   "inward_share": 1.0,
+   "num_ctx": 32768,
+   "num_predict": 12000,
+   "status": "exhausted_inward",
+   "turn": 7
+  },
+  {
+   "done_reason": "length",
+   "eval_count": 12000,
+   "inward_share": 1.0,
+   "num_ctx": 32768,
+   "num_predict": 12000,
+   "status": "exhausted_inward",
+   "turn": 9
+  },
+  {
+   "done_reason": "length",
+   "eval_count": 12000,
+   "inward_share": 1.0,
+   "num_ctx": 32768,
+   "num_predict": 12000,
+   "status": "exhausted_inward",
+   "turn": 33
+  },
+  {
+   "done_reason": "length",
+   "eval_count": 12000,
+   "inward_share": 1.0,
+   "num_ctx": 32768,
+   "num_predict": 12000,
+   "status": "exhausted_inward",
+   "turn": 41
+  },
+  {
+   "done_reason": "length",
+   "eval_count": 12000,
+   "inward_share": 1.0,
+   "num_ctx": 32768,
+   "num_predict": 12000,
+   "status": "exhausted_inward",
+   "turn": 55
+  }
+ ],
+ "reconstruction_outcomes": [
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 3442,
+   "prompt_chars": 33173,
+   "restored": false,
+   "returned_chars": 842,
+   "route": "content_without_steps",
+   "thinking_chars": 14643,
+   "turn": 5
+  },
+  {
+   "budget": 12000,
+   "done_reason": "length",
+   "eval_count": 12000,
+   "prompt_chars": null,
+   "restored": false,
+   "returned_chars": 0,
+   "route": "exhausted_inward",
+   "thinking_chars": null,
+   "turn": 7
+  },
+  {
+   "budget": 12000,
+   "done_reason": "length",
+   "eval_count": 12000,
+   "prompt_chars": null,
+   "restored": false,
+   "returned_chars": 0,
+   "route": "exhausted_inward",
+   "thinking_chars": null,
+   "turn": 9
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 6900,
+   "prompt_chars": 33247,
+   "restored": false,
+   "returned_chars": 626,
+   "route": "content_without_steps",
+   "thinking_chars": 26365,
+   "turn": 11
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4082,
+   "prompt_chars": 33083,
+   "restored": false,
+   "returned_chars": 731,
+   "route": "content_without_steps",
+   "thinking_chars": 16779,
+   "turn": 13
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4440,
+   "prompt_chars": 35136,
+   "restored": false,
+   "returned_chars": 731,
+   "route": "content_without_steps",
+   "thinking_chars": 18605,
+   "turn": 15
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 5301,
+   "prompt_chars": 32636,
+   "restored": false,
+   "returned_chars": 742,
+   "route": "content_without_steps",
+   "thinking_chars": 22187,
+   "turn": 17
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4813,
+   "prompt_chars": 33000,
+   "restored": false,
+   "returned_chars": 742,
+   "route": "content_without_steps",
+   "thinking_chars": 20532,
+   "turn": 19
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 3253,
+   "prompt_chars": 33868,
+   "restored": false,
+   "returned_chars": 753,
+   "route": "content_without_steps",
+   "thinking_chars": 14760,
+   "turn": 21
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4370,
+   "prompt_chars": 34090,
+   "restored": false,
+   "returned_chars": 624,
+   "route": "content_without_steps",
+   "thinking_chars": 19182,
+   "turn": 23
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 5434,
+   "prompt_chars": 36742,
+   "restored": false,
+   "returned_chars": 856,
+   "route": "content_without_steps",
+   "thinking_chars": 23106,
+   "turn": 25
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 7084,
+   "prompt_chars": 34068,
+   "restored": false,
+   "returned_chars": 845,
+   "route": "content_without_steps",
+   "thinking_chars": 28361,
+   "turn": 27
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 5340,
+   "prompt_chars": 39244,
+   "restored": false,
+   "returned_chars": 845,
+   "route": "content_without_steps",
+   "thinking_chars": 21682,
+   "turn": 29
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4877,
+   "prompt_chars": 35126,
+   "restored": false,
+   "returned_chars": 777,
+   "route": "content_without_steps",
+   "thinking_chars": 20600,
+   "turn": 31
+  },
+  {
+   "budget": 12000,
+   "done_reason": "length",
+   "eval_count": 12000,
+   "prompt_chars": null,
+   "restored": false,
+   "returned_chars": 0,
+   "route": "exhausted_inward",
+   "thinking_chars": null,
+   "turn": 33
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 7612,
+   "prompt_chars": 38133,
+   "restored": false,
+   "returned_chars": 874,
+   "route": "content_without_steps",
+   "thinking_chars": 30163,
+   "turn": 35
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 6624,
+   "prompt_chars": 34346,
+   "restored": false,
+   "returned_chars": 848,
+   "route": "content_without_steps",
+   "thinking_chars": 27699,
+   "turn": 37
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 5939,
+   "prompt_chars": 35631,
+   "restored": false,
+   "returned_chars": 742,
+   "route": "content_without_steps",
+   "thinking_chars": 24422,
+   "turn": 39
+  },
+  {
+   "budget": 12000,
+   "done_reason": "length",
+   "eval_count": 12000,
+   "prompt_chars": null,
+   "restored": false,
+   "returned_chars": 0,
+   "route": "exhausted_inward",
+   "thinking_chars": null,
+   "turn": 41
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 6839,
+   "prompt_chars": 31872,
+   "restored": false,
+   "returned_chars": 887,
+   "route": "content_without_steps",
+   "thinking_chars": 28087,
+   "turn": 43
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4804,
+   "prompt_chars": 37868,
+   "restored": false,
+   "returned_chars": 887,
+   "route": "content_without_steps",
+   "thinking_chars": 18764,
+   "turn": 45
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4501,
+   "prompt_chars": 33512,
+   "restored": false,
+   "returned_chars": 887,
+   "route": "content_without_steps",
+   "thinking_chars": 18865,
+   "turn": 47
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 5877,
+   "prompt_chars": 40996,
+   "restored": false,
+   "returned_chars": 511,
+   "route": "content_without_steps",
+   "thinking_chars": 20641,
+   "turn": 49
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 6692,
+   "prompt_chars": 35065,
+   "restored": false,
+   "returned_chars": 1161,
+   "route": "content_without_steps",
+   "thinking_chars": 23726,
+   "turn": 51
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 8713,
+   "prompt_chars": 33058,
+   "restored": false,
+   "returned_chars": 1172,
+   "route": "content_without_steps",
+   "thinking_chars": 34126,
+   "turn": 53
+  },
+  {
+   "budget": 12000,
+   "done_reason": "length",
+   "eval_count": 12000,
+   "prompt_chars": null,
+   "restored": false,
+   "returned_chars": 0,
+   "route": "exhausted_inward",
+   "thinking_chars": null,
+   "turn": 55
+  },
+  {
+   "budget": null,
+   "done_reason": "stop",
+   "eval_count": 4559,
+   "prompt_chars": 32355,
+   "restored": false,
+   "returned_chars": 736,
+   "route": "content_without_steps",
+   "thinking_chars": 18476,
+   "turn": 57
+  },
+  {
+   "budget": null,
+   "done_reason": "length",
+   "eval_count": 12000,
+   "prompt_chars": 33597,
+   "restored": false,
+   "returned_chars": 597,
+   "route": "content_without_steps",
+   "thinking_chars": 41357,
+   "turn": 59
+  }
+ ],
+ "regulator": {
+  "collapse_floor": null,
+  "fired": false,
+  "fired_turn": null,
+  "floor_value": 0.7,
+  "mode": "none",
+  "prediction_crossing_turn": null,
+  "prediction_crossing_window": null,
+  "prediction_events": null,
+  "prediction_loss": null,
+  "trigger": null,
+  "turns_observed": 60
+ },
+ "repeat": 1,
+ "rows": 60,
+ "status": "OK",
+ "summarizer_think": false,
+ "surface": true,
+ "survival_pair_events": [
+  {
+   "after": [],
+   "before": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "ordinal": 1,
+   "readable": false,
+   "turn": 4
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 2,
+   "readable": true,
+   "turn": 6
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 3,
+   "readable": true,
+   "turn": 8
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 4,
+   "readable": true,
+   "turn": 10
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 5,
+   "readable": true,
+   "turn": 12
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 6,
+   "readable": true,
+   "turn": 14
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 7,
+   "readable": true,
+   "turn": 16
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 8,
+   "readable": true,
+   "turn": 18
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 9,
+   "readable": true,
+   "turn": 20
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 10,
+   "readable": true,
+   "turn": 22
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 11,
+   "readable": true,
+   "turn": 24
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 12,
+   "readable": true,
+   "turn": 26
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 13,
+   "readable": true,
+   "turn": 28
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 14,
+   "readable": true,
+   "turn": 30
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 15,
+   "readable": true,
+   "turn": 32
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 16,
+   "readable": true,
+   "turn": 34
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 17,
+   "readable": true,
+   "turn": 36
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 18,
+   "readable": true,
+   "turn": 38
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 19,
+   "readable": true,
+   "turn": 40
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 20,
+   "readable": true,
+   "turn": 42
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 21,
+   "readable": true,
+   "turn": 44
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 22,
+   "readable": true,
+   "turn": 46
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 23,
+   "readable": true,
+   "turn": 48
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 24,
+   "readable": true,
+   "turn": 50
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 25,
+   "readable": true,
+   "turn": 52
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 26,
+   "readable": true,
+   "turn": 54
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 27,
+   "readable": true,
+   "turn": 56
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 28,
+   "readable": true,
+   "turn": 58
+  },
+  {
+   "after": [],
+   "before": [],
+   "ordinal": 29,
+   "readable": true,
+   "turn": 60
+  }
+ ],
+ "swe": {
+  "completed": {},
+  "declared_over_competent": 0.0,
+  "dv_rate": {
+   "completions_late_minus_first": 0,
+   "completions_per_window": [
+    0,
+    0,
+    0
+   ],
+   "declared_completions_past_last_window": 0,
+   "instrument": "declared-completion rate per window (world-adjudicated gate_log; P3-PREREG 2026-10-05)",
+   "status": "READ",
+   "total_declared_completions": 0,
+   "window": 20,
+   "windows": 3
+  },
+  "final": {
+   "f1": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.5111,
+    "heldout": {
+     "collected": [
+      "heldout/test_rchunk_heldout.py::test_remainder_chunk_is_exact_not_short",
+      "heldout/test_rchunk_heldout.py::test_size_one",
+      "heldout/test_rchunk_heldout.py::test_exact_division_has_no_trailing_empty_or_short"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 3,
+      "failed": 3,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/score",
+     "duration_s": 0.2484,
+     "exit_code": 1,
+     "failed": [
+      "heldout/test_rchunk_heldout.py::test_remainder_chunk_is_exact_not_short",
+      "heldout/test_rchunk_heldout.py::test_size_one",
+      "heldout/test_rchunk_heldout.py::test_exact_division_has_no_trailing_empty_or_short"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "FFF                                                                      [100%]\n=================================== FAILURES ===================================\n___________________ test_remainder_chunk_is_exact_not_short ____________________\nheldout/test_rchunk_heldout.py:21: in test_remainder_chunk_is_exact_not_short\n    assert got == [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]\nE   assert [] == [[0, 1, 2], [...6, 7, 8], [9]]\nE     \nE     Right contains 4 more items, first extra item: [0, 1, 2]\nE     Use -v to get more diff\n________________________________ test_size_one _________________________________\nheldout/test_rchunk_heldout.py:25: in test_size_one\n    assert list(chunk_rows(\"xy\", 1)) == [[\"x\"], [\"y\"]]\nE   AssertionError: assert ['x', 'y'] == [['x'], ['y']]\nE     \nE     At index 0 diff: 'x' != ['x']\nE     Use -v to get more diff\n______________ test_exact_division_has_no_trailing_empty_or_short ______________\nheldout/test_rchunk_heldout.py:30: in test_exact_division_has_no_trailing_empty_or_short\n    assert got == [[0, 1, 2], [3, 4, 5]]\nE   assert [range(0, 3), range(3, 6)] == [[0, 1, 2], [3, 4, 5]]\nE     \nE     At index 0 diff: range(0, 3) != [0, 1, 2]\nE     Use -v to get more diff\n=========================== short test summary info ============================\nFAILED heldout/test_rchunk_heldout.py::test_remainder_chunk_is_exact_not_short\nFAILED heldout/test_rchunk_heldout.py::test_size_one - AssertionError: assert...\nFAILED heldout/test_rchunk_heldout.py::test_exact_division_has_no_trailing_empty_or_short\n3 failed in 0.02s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:29",
+    "task": "t1_rchunk",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [
+      "tests/test_rchunk.py::test_exact_size_chunks",
+      "tests/test_rchunk.py::test_chunks_are_lists",
+      "tests/test_rchunk.py::test_empty_input_yields_nothing",
+      "tests/test_rchunk.py::test_size_larger_than_input_is_refused"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 4,
+      "failed": 3,
+      "passed": 1
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/work",
+     "duration_s": 0.2568,
+     "exit_code": 1,
+     "failed": [
+      "tests/test_rchunk.py::test_exact_size_chunks",
+      "tests/test_rchunk.py::test_chunks_are_lists",
+      "tests/test_rchunk.py::test_size_larger_than_input_is_refused"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_rchunk.py::test_empty_input_yields_nothing"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t1_rchunk-q3rv0xrm/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "FF.F                                                                     [100%]\n=================================== FAILURES ===================================\n____________________________ test_exact_size_chunks ____________________________\ntests/test_rchunk.py:14: in test_exact_size_chunks\n    assert got == [[0, 1, 2], [3, 4, 5], [6, 7, 8]]\nE   assert [range(0, 3),..., range(6, 9)] == [[0, 1, 2], [...5], [6, 7, 8]]\nE     \nE     At index 0 diff: range(0, 3) != [0, 1, 2]\nE     Use -v to get more diff\n____________________________ test_chunks_are_lists _____________________________\ntests/test_rchunk.py:19: in test_chunks_are_lists\n    assert all(isinstance(c, list) for c in got)\nE   assert False\nE    +  where False = all(<generator object test_chunks_are_lists.<locals>.<genexpr> at 0x7ff707c64c80>)\n____________________ test_size_larger_than_input_is_refused ____________________\ntests/test_rchunk.py:29: in test_size_larger_than_input_is_refused\n    list(chunk_rows([1, 2], 0))\nrchunk.py:2: in chunk_rows\n    if len(rows) % size != 0:\n       ^^^^^^^^^^^^^^^^\nE   ZeroDivisionError: integer modulo by zero\n=========================== short test summary info ============================\nFAILED tests/test_rchunk.py::test_exact_size_chunks - assert [range(0, 3),......\nFAILED tests/test_rchunk.py::test_chunks_are_lists - assert False\nFAILED tests/test_rchunk.py::test_size_larger_than_input_is_refused - ZeroDiv...\n3 failed, 1 passed in 0.02s\n"
+    }
+   },
+   "f10": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.5052,
+    "heldout": {
+     "collected": [
+      "heldout/test_caesar_heldout.py::test_uppercase_stays_uppercase",
+      "heldout/test_caesar_heldout.py::test_mixed_case_preserves_case_per_letter",
+      "heldout/test_caesar_heldout.py::test_uppercase_wraps_to_the_start",
+      "heldout/test_caesar_heldout.py::test_uppercase_round_trip",
+      "heldout/test_caesar_heldout.py::test_negative_shift_wraps_backwards",
+      "heldout/test_caesar_heldout.py::test_shift_char_directly_both_cases"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 6,
+      "failed": 6,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/score",
+     "duration_s": 0.2569,
+     "exit_code": 1,
+     "failed": [
+      "heldout/test_caesar_heldout.py::test_uppercase_stays_uppercase",
+      "heldout/test_caesar_heldout.py::test_mixed_case_preserves_case_per_letter",
+      "heldout/test_caesar_heldout.py::test_uppercase_wraps_to_the_start",
+      "heldout/test_caesar_heldout.py::test_uppercase_round_trip",
+      "heldout/test_caesar_heldout.py::test_negative_shift_wraps_backwards",
+      "heldout/test_caesar_heldout.py::test_shift_char_directly_both_cases"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "FFFFFF                                                                   [100%]\n=================================== FAILURES ===================================\n________________________ test_uppercase_stays_uppercase ________________________\nheldout/test_caesar_heldout.py:19: in test_uppercase_stays_uppercase\n    assert caesar(\"HELLO\", 3) == \"KHOOR\"\nE   AssertionError: assert 'khoor' == 'KHOOR'\nE     \nE     - KHOOR\nE     + khoor\n__________________ test_mixed_case_preserves_case_per_letter ___________________\nheldout/test_caesar_heldout.py:23: in test_mixed_case_preserves_case_per_letter\n    assert caesar(\"Hello, World!\", 3) == \"Khoor, Zruog!\"\nE   AssertionError: assert 'khoor, zruog!' == 'Khoor, Zruog!'\nE     \nE     - Khoor, Zruog!\nE     ? ^      ^\nE     + khoor, zruog!\nE     ? ^      ^\n______________________ test_uppercase_wraps_to_the_start _______________________\nheldout/test_caesar_heldout.py:27: in test_uppercase_wraps_to_the_start\n    assert caesar(\"XYZ\", 3) == \"ABC\"\nE   AssertionError: assert 'abc' == 'ABC'\nE     \nE     - ABC\nE     + abc\n__________________________ test_uppercase_round_trip ___________________________\nheldout/test_caesar_heldout.py:31: in test_uppercase_round_trip\n    assert caesar(caesar(\"Mixed CASE Text\", 13), 13) \\\nE   AssertionError: assert 'mixed case text' == 'Mixed CASE Text'\nE     \nE     - Mixed CASE Text\nE     + mixed case text\n_____________________ test_negative_shift_wraps_backwards ______________________\nheldout/test_caesar_heldout.py:37: in test_negative_shift_wraps_backwards\n    assert caesar(\"ABC\", -1) == \"ZAB\"\nE   AssertionError: assert 'zab' == 'ZAB'\nE     \nE     - ZAB\nE     + zab\n_____________________ test_shift_char_directly_both_cases ______________________\nheldout/test_caesar_heldout.py:42: in test_shift_char_directly_both_cases\n    assert shift_char(\"A\", 1) == \"B\"\nE   AssertionError: assert 'b' == 'B'\nE     \nE     - B\nE     + b\n=========================== short test summary info ============================\nFAILED heldout/test_caesar_heldout.py::test_uppercase_stays_uppercase - Asser...\nFAILED heldout/test_caesar_heldout.py::test_mixed_case_preserves_case_per_letter\nFAILED heldout/test_caesar_heldout.py::test_uppercase_wraps_to_the_start - As...\nFAILED heldout/test_caesar_heldout.py::test_uppercase_round_trip - AssertionE...\nFAILED heldout/test_caesar_heldout.py::test_negative_shift_wraps_backwards - ...\nFAILED heldout/test_caesar_heldout.py::test_shift_char_directly_both_cases - ...\n6 failed in 0.03s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:29",
+    "task": "t10_caesar",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [
+      "tests/test_caesar.py::test_lowercase_shift",
+      "tests/test_caesar.py::test_lowercase_wraps_to_the_start",
+      "tests/test_caesar.py::test_non_letters_pass_through",
+      "tests/test_caesar.py::test_lowercase_round_trip",
+      "tests/test_caesar.py::test_uppercase_example_from_the_requirement",
+      "tests/test_caesar.py::test_one_character_only"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 6,
+      "failed": 1,
+      "passed": 5
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/work",
+     "duration_s": 0.247,
+     "exit_code": 1,
+     "failed": [
+      "tests/test_caesar.py::test_uppercase_example_from_the_requirement"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_caesar.py::test_lowercase_shift",
+      "tests/test_caesar.py::test_lowercase_wraps_to_the_start",
+      "tests/test_caesar.py::test_non_letters_pass_through",
+      "tests/test_caesar.py::test_lowercase_round_trip",
+      "tests/test_caesar.py::test_one_character_only"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t10_caesar-fb6kz2y1/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "....F.                                                                   [100%]\n=================================== FAILURES ===================================\n_________________ test_uppercase_example_from_the_requirement __________________\ntests/test_caesar.py:38: in test_uppercase_example_from_the_requirement\n    assert caesar(\"Hello\", 3) == \"Khoor\"\nE   AssertionError: assert 'khoor' == 'Khoor'\nE     \nE     - Khoor\nE     ? ^\nE     + khoor\nE     ? ^\n=========================== short test summary info ============================\nFAILED tests/test_caesar.py::test_uppercase_example_from_the_requirement - As...\n1 failed, 5 passed in 0.02s\n"
+    }
+   },
+   "f11": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.504,
+    "heldout": {
+     "collected": [
+      "heldout/test_cronext_heldout.py::test_star_at_59_wraps_to_0",
+      "heldout/test_cronext_heldout.py::test_step_15_at_45_wraps_to_0",
+      "heldout/test_cronext_heldout.py::test_step_15_at_50_wraps_to_0",
+      "heldout/test_cronext_heldout.py::test_single_minute_past_it_wraps_to_itself",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[*-59-0]",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[5,55 * * * *-55-5]",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[0 * * * *-0-0]",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[0 * * * *-59-0]"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 8,
+      "failed": 8,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/score",
+     "duration_s": 0.2579,
+     "exit_code": 1,
+     "failed": [
+      "heldout/test_cronext_heldout.py::test_star_at_59_wraps_to_0",
+      "heldout/test_cronext_heldout.py::test_step_15_at_45_wraps_to_0",
+      "heldout/test_cronext_heldout.py::test_step_15_at_50_wraps_to_0",
+      "heldout/test_cronext_heldout.py::test_single_minute_past_it_wraps_to_itself",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[*-59-0]",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[5,55 * * * *-55-5]",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[0 * * * *-0-0]",
+      "heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[0 * * * *-59-0]"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "FFFFFFFF                                                                 [100%]\n=================================== FAILURES ===================================\n__________________________ test_star_at_59_wraps_to_0 __________________________\nheldout/test_cronext_heldout.py:19: in test_star_at_59_wraps_to_0\n    assert next_minute(\"* * * * *\", 59) == 0\nE   AssertionError: assert 60 == 0\nE    +  where 60 = next_minute('* * * * *', 59)\n________________________ test_step_15_at_45_wraps_to_0 _________________________\nheldout/test_cronext_heldout.py:23: in test_step_15_at_45_wraps_to_0\n    assert next_minute(\"0,15,30,45 * * * *\", 45) == 0\nE   AssertionError: assert 60 == 0\nE    +  where 60 = next_minute('0,15,30,45 * * * *', 45)\n________________________ test_step_15_at_50_wraps_to_0 _________________________\nheldout/test_cronext_heldout.py:27: in test_step_15_at_50_wraps_to_0\n    assert next_minute(\"0,15,30,45 * * * *\", 50) == 0\nE   AssertionError: assert 60 == 0\nE    +  where 60 = next_minute('0,15,30,45 * * * *', 50)\n__________________ test_single_minute_past_it_wraps_to_itself __________________\nheldout/test_cronext_heldout.py:31: in test_single_minute_past_it_wraps_to_itself\n    assert next_minute(\"15 * * * *\", 15) == 15\nE   AssertionError: assert 75 == 15\nE    +  where 75 = next_minute('15 * * * *', 15)\n____________________ test_every_wrap_lands_in_0_59[*-59-0] _____________________\nheldout/test_cronext_heldout.py:43: in test_every_wrap_lands_in_0_59\n    assert got == want and 0 <= got <= 59\nE   assert (60 == 0)\n_______________ test_every_wrap_lands_in_0_59[5,55 * * * *-55-5] _______________\nheldout/test_cronext_heldout.py:43: in test_every_wrap_lands_in_0_59\n    assert got == want and 0 <= got <= 59\nE   assert (65 == 5)\n_________________ test_every_wrap_lands_in_0_59[0 * * * *-0-0] _________________\nheldout/test_cronext_heldout.py:43: in test_every_wrap_lands_in_0_59\n    assert got == want and 0 <= got <= 59\nE   assert (60 == 0)\n________________ test_every_wrap_lands_in_0_59[0 * * * *-59-0] _________________\nheldout/test_cronext_heldout.py:43: in test_every_wrap_lands_in_0_59\n    assert got == want and 0 <= got <= 59\nE   assert (60 == 0)\n=========================== short test summary info ============================\nFAILED heldout/test_cronext_heldout.py::test_star_at_59_wraps_to_0 - Assertio...\nFAILED heldout/test_cronext_heldout.py::test_step_15_at_45_wraps_to_0 - Asser...\nFAILED heldout/test_cronext_heldout.py::test_step_15_at_50_wraps_to_0 - Asser...\nFAILED heldout/test_cronext_heldout.py::test_single_minute_past_it_wraps_to_itself\nFAILED heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[*-59-0]\nFAILED heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[5,55 * * * *-55-5]\nFAILED heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[0 * * * *-0-0]\nFAILED heldout/test_cronext_heldout.py::test_every_wrap_lands_in_0_59[0 * * * *-59-0]\n8 failed in 0.03s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:30",
+    "task": "t11_cronext",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [
+      "tests/test_cronext.py::test_star_after_0",
+      "tests/test_cronext.py::test_list_mid_hour",
+      "tests/test_cronext.py::test_single_minute_before",
+      "tests/test_cronext.py::test_star_at_58",
+      "tests/test_cronext.py::test_star_at_59_wraps",
+      "tests/test_cronext.py::test_bad_types_are_refused"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 6,
+      "failed": 1,
+      "passed": 5
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/work",
+     "duration_s": 0.245,
+     "exit_code": 1,
+     "failed": [
+      "tests/test_cronext.py::test_star_at_59_wraps"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_cronext.py::test_star_after_0",
+      "tests/test_cronext.py::test_list_mid_hour",
+      "tests/test_cronext.py::test_single_minute_before",
+      "tests/test_cronext.py::test_star_at_58",
+      "tests/test_cronext.py::test_bad_types_are_refused"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t11_cronext-7y95xd7z/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "....F.                                                                   [100%]\n=================================== FAILURES ===================================\n____________________________ test_star_at_59_wraps _____________________________\ntests/test_cronext.py:33: in test_star_at_59_wraps\n    assert next_minute(\"* * * * *\", 59) == 0\nE   AssertionError: assert 60 == 0\nE    +  where 60 = next_minute('* * * * *', 59)\n=========================== short test summary info ============================\nFAILED tests/test_cronext.py::test_star_at_59_wraps - AssertionError: assert ...\n1 failed, 5 passed in 0.02s\n"
+    }
+   },
+   "f12": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.5357,
+    "heldout": {
+     "collected": [
+      "heldout/test_flatten_heldout.py::test_a_string_is_one_atom",
+      "heldout/test_flatten_heldout.py::test_string_characters_are_not_exploded",
+      "heldout/test_flatten_heldout.py::test_bytes_is_one_atom",
+      "heldout/test_flatten_heldout.py::test_deeply_nested_strings",
+      "heldout/test_flatten_heldout.py::test_single_character_string_is_still_one_atom"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 5,
+      "failed": 5,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/score",
+     "duration_s": 0.2782,
+     "exit_code": 1,
+     "failed": [
+      "heldout/test_flatten_heldout.py::test_a_string_is_one_atom",
+      "heldout/test_flatten_heldout.py::test_string_characters_are_not_exploded",
+      "heldout/test_flatten_heldout.py::test_bytes_is_one_atom",
+      "heldout/test_flatten_heldout.py::test_deeply_nested_strings",
+      "heldout/test_flatten_heldout.py::test_single_character_string_is_still_one_atom"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "FFFFF                                                                    [100%]\n=================================== FAILURES ===================================\n__________________________ test_a_string_is_one_atom ___________________________\nheldout/test_flatten_heldout.py:18: in test_a_string_is_one_atom\n    assert list(flatten([\"ab\", [\"cd\"]])) == [\"ab\", \"cd\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)\n___________________ test_string_characters_are_not_exploded ____________________\nheldout/test_flatten_heldout.py:22: in test_string_characters_are_not_exploded\n    assert list(flatten([[\"xy\"], \"z\"])) == [\"xy\", \"z\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nflatten.py:20: in flatten\n    yield from flatten(it)\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)\n____________________________ test_bytes_is_one_atom ____________________________\nheldout/test_flatten_heldout.py:26: in test_bytes_is_one_atom\n    assert list(flatten([b\"ab\", [b\"cd\"]])) == [b\"ab\", b\"cd\"]\nE   AssertionError: assert [97, 98, 99, 100] == [b'ab', b'cd']\nE     \nE     At index 0 diff: 97 != b'ab'\nE     Left contains 2 more items, first extra item: 99\nE     Use -v to get more diff\n__________________________ test_deeply_nested_strings __________________________\nheldout/test_flatten_heldout.py:30: in test_deeply_nested_strings\n    assert list(flatten([[\"a\", [\"b\"]], \"c\"])) == [\"a\", \"b\", \"c\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nflatten.py:20: in flatten\n    yield from flatten(it)\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)\n________________ test_single_character_string_is_still_one_atom ________________\nheldout/test_flatten_heldout.py:34: in test_single_character_string_is_still_one_atom\n    assert list(flatten([\"a\"])) == [\"a\"]\n           ^^^^^^^^^^^^^^^^^^^^\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)\n=========================== short test summary info ============================\nFAILED heldout/test_flatten_heldout.py::test_a_string_is_one_atom - Recursion...\nFAILED heldout/test_flatten_heldout.py::test_string_characters_are_not_exploded\nFAILED heldout/test_flatten_heldout.py::test_bytes_is_one_atom - AssertionErr...\nFAILED heldout/test_flatten_heldout.py::test_deeply_nested_strings - Recursio...\nFAILED heldout/test_flatten_heldout.py::test_single_character_string_is_still_one_atom\n5 failed in 0.04s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:30",
+    "task": "t12_flatten",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [
+      "tests/test_flatten.py::test_flat_list",
+      "tests/test_flatten.py::test_one_level_of_nesting",
+      "tests/test_flatten.py::test_deep_nesting",
+      "tests/test_flatten.py::test_tuples_nest_too",
+      "tests/test_flatten.py::test_empty_containers",
+      "tests/test_flatten.py::test_none_is_an_atom",
+      "tests/test_flatten.py::test_a_string_is_an_atom"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 7,
+      "failed": 1,
+      "passed": 6
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/work",
+     "duration_s": 0.2565,
+     "exit_code": 1,
+     "failed": [
+      "tests/test_flatten.py::test_a_string_is_an_atom"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_flatten.py::test_flat_list",
+      "tests/test_flatten.py::test_one_level_of_nesting",
+      "tests/test_flatten.py::test_deep_nesting",
+      "tests/test_flatten.py::test_tuples_nest_too",
+      "tests/test_flatten.py::test_empty_containers",
+      "tests/test_flatten.py::test_none_is_an_atom"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t12_flatten-h3zdxfqj/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "......F                                                                  [100%]\n=================================== FAILURES ===================================\n___________________________ test_a_string_is_an_atom ___________________________\ntests/test_flatten.py:40: in test_a_string_is_an_atom\n    assert list(flatten([\"ab\"])) == [\"ab\"]\n           ^^^^^^^^^^^^^^^^^^^^^\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nflatten.py:22: in flatten\n    yield from flatten(list(it))\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)\n=========================== short test summary info ============================\nFAILED tests/test_flatten.py::test_a_string_is_an_atom - RecursionError: maxi...\n1 failed, 6 passed in 0.03s\n"
+    }
+   },
+   "f2": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.7745,
+    "heldout": {
+     "collected": [],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/score",
+     "duration_s": 0.3851,
+     "exit_code": 2,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "ERROR",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "\n==================================== ERRORS ====================================\n______________ ERROR collecting heldout/test_histstat_heldout.py _______________\n../dpdr/.venv/lib64/python3.13/site-packages/_pytest/python.py:508: in importtestmodule\n    mod = import_path(\n../dpdr/.venv/lib64/python3.13/site-packages/_pytest/pathlib.py:596: in import_path\n    importlib.import_module(module_name)\n/usr/lib64/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n<frozen importlib._bootstrap>:1395: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1360: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1331: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:935: in _load_unlocked\n    ???\n../dpdr/.venv/lib64/python3.13/site-packages/_pytest/assertion/rewrite.py:188: in exec_module\n    exec(co, module.__dict__)\nheldout/test_histstat_heldout.py:33: in <module>\n    from histstat import mean_value, mode_value\nE     File \"/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/score/histstat.py\", line 4\nE       \"\"\"The mean of the histogram's values, weighted by counts.\nE                                   ^\nE   SyntaxError: unterminated string literal (detected at line 4)\n=========================== short test summary info ============================\nERROR heldout/test_histstat_heldout.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.14s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:31",
+    "task": "t2_histstat",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/work",
+     "duration_s": 0.3883,
+     "exit_code": 2,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "ERROR",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "\n==================================== ERRORS ====================================\n___________________ ERROR collecting tests/test_histstat.py ____________________\n../dpdr/.venv/lib64/python3.13/site-packages/_pytest/python.py:508: in importtestmodule\n    mod = import_path(\n../dpdr/.venv/lib64/python3.13/site-packages/_pytest/pathlib.py:596: in import_path\n    importlib.import_module(module_name)\n/usr/lib64/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n<frozen importlib._bootstrap>:1395: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1360: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1331: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:935: in _load_unlocked\n    ???\n../dpdr/.venv/lib64/python3.13/site-packages/_pytest/assertion/rewrite.py:188: in exec_module\n    exec(co, module.__dict__)\ntests/test_histstat.py:9: in <module>\n    from histstat import mean_value, mode_value\nE     File \"/tmp/realtools-sszsk8gi/scoring/taskeval-t2_histstat-coeymv6s/work/histstat.py\", line 4\nE       \"\"\"The mean of the histogram's values, weighted by counts.\nE                                   ^\nE   SyntaxError: unterminated string literal (detected at line 4)\n=========================== short test summary info ============================\nERROR tests/test_histstat.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.14s\n"
+    }
+   },
+   "f3": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.7086,
+    "heldout": {
+     "collected": [
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[ 1.2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1.2.3.4 ]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1. 2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[+1.2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1_0.2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1.2.3_0.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_more_leading_zeros",
+      "heldout/test_netmask_heldout.py::test_refuses_non_ascii_digits",
+      "heldout/test_netmask_heldout.py::test_canonical_zero_is_still_accepted"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 9,
+      "failed": 0,
+      "passed": 9
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/score",
+     "duration_s": 0.2946,
+     "exit_code": 0,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[ 1.2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1.2.3.4 ]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1. 2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[+1.2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1_0.2.3.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_int_traps[1.2.3_0.4]",
+      "heldout/test_netmask_heldout.py::test_refuses_more_leading_zeros",
+      "heldout/test_netmask_heldout.py::test_refuses_non_ascii_digits",
+      "heldout/test_netmask_heldout.py::test_canonical_zero_is_still_accepted"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "PASS",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": ".........                                                                [100%]\n9 passed in 0.01s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:32",
+    "task": "t3_netmask",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/work",
+     "duration_s": 0.4126,
+     "exit_code": 2,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "ERROR",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "\n==================================== ERRORS ====================================\n____________________ ERROR collecting tests/test_netmask.py ____________________\nImportError while importing test module '/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/work/tests/test_netmask.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib64/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests/test_netmask.py:13: in <module>\n    from netmask import mask_prefix, parse_ipv4\nE   ImportError: cannot import name 'mask_prefix' from 'netmask' (/tmp/realtools-sszsk8gi/scoring/taskeval-t3_netmask-m2mocfvd/work/netmask.py)\n=========================== short test summary info ============================\nERROR tests/test_netmask.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.12s\n"
+    }
+   },
+   "f4": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.5786,
+    "heldout": {
+     "collected": [
+      "heldout/test_celsius_heldout.py::test_fractional_value",
+      "heldout/test_celsius_heldout.py::test_tiny_fraction",
+      "heldout/test_celsius_heldout.py::test_round_trip_over_a_range",
+      "heldout/test_celsius_heldout.py::test_far_below_zero",
+      "heldout/test_celsius_heldout.py::test_a_value_that_resists_the_offset_shortcut"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 5,
+      "failed": 0,
+      "passed": 5
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/score",
+     "duration_s": 0.3048,
+     "exit_code": 0,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "heldout/test_celsius_heldout.py::test_fractional_value",
+      "heldout/test_celsius_heldout.py::test_tiny_fraction",
+      "heldout/test_celsius_heldout.py::test_round_trip_over_a_range",
+      "heldout/test_celsius_heldout.py::test_far_below_zero",
+      "heldout/test_celsius_heldout.py::test_a_value_that_resists_the_offset_shortcut"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "PASS",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": ".....                                                                    [100%]\n5 passed in 0.01s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:32",
+    "task": "t4_celsius",
+    "task_complete": true,
+    "timed_out": false,
+    "useful": true,
+    "verdict": "USEFUL",
+    "visible": {
+     "collected": [
+      "tests/test_celsius.py::test_common_values[0-32.0]",
+      "tests/test_celsius.py::test_common_values[100-212.0]",
+      "tests/test_celsius.py::test_common_values[-40--40.0]",
+      "tests/test_celsius.py::test_common_values[-15-5.0]",
+      "tests/test_celsius.py::test_common_values[37-98.6]",
+      "tests/test_celsius.py::test_inverse_at_the_fixed_points",
+      "tests/test_celsius.py::test_non_number_is_refused"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 7,
+      "failed": 0,
+      "passed": 7
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/work",
+     "duration_s": 0.2726,
+     "exit_code": 0,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_celsius.py::test_common_values[0-32.0]",
+      "tests/test_celsius.py::test_common_values[100-212.0]",
+      "tests/test_celsius.py::test_common_values[-40--40.0]",
+      "tests/test_celsius.py::test_common_values[-15-5.0]",
+      "tests/test_celsius.py::test_common_values[37-98.6]",
+      "tests/test_celsius.py::test_inverse_at_the_fixed_points",
+      "tests/test_celsius.py::test_non_number_is_refused"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t4_celsius-btfsa35s/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "PASS",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": ".......                                                                  [100%]\n7 passed in 0.01s\n"
+    }
+   },
+   "f5": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.6952,
+    "heldout": {
+     "collected": [],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/score",
+     "duration_s": 0.3408,
+     "exit_code": 2,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "ERROR",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "\n==================================== ERRORS ====================================\n_________________ ERROR collecting heldout/test_rle_heldout.py _________________\nImportError while importing test module '/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/score/heldout/test_rle_heldout.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib64/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nheldout/test_rle_heldout.py:13: in <module>\n    from rle import rle, unrle\nE   ImportError: cannot import name 'unrle' from 'rle' (/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/score/rle.py)\n=========================== short test summary info ============================\nERROR heldout/test_rle_heldout.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.10s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:33",
+    "task": "t5_rle",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/work",
+     "duration_s": 0.3531,
+     "exit_code": 2,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "ERROR",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "\n==================================== ERRORS ====================================\n______________________ ERROR collecting tests/test_rle.py ______________________\nImportError while importing test module '/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/work/tests/test_rle.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib64/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests/test_rle.py:9: in <module>\n    from rle import rle, unrle\nE   ImportError: cannot import name 'unrle' from 'rle' (/tmp/realtools-sszsk8gi/scoring/taskeval-t5_rle-6nf43sgu/work/rle.py)\n=========================== short test summary info ============================\nERROR tests/test_rle.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.10s\n"
+    }
+   },
+   "f6": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.6899,
+    "heldout": {
+     "collected": [],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/score",
+     "duration_s": 0.3471,
+     "exit_code": 2,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "ERROR",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "\n==================================== ERRORS ====================================\n________________ ERROR collecting heldout/test_paren_heldout.py ________________\nImportError while importing test module '/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/score/heldout/test_paren_heldout.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib64/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nheldout/test_paren_heldout.py:14: in <module>\n    from paren import is_balanced\nE   ImportError: cannot import name 'is_balanced' from 'paren' (/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/score/paren.py)\n=========================== short test summary info ============================\nERROR heldout/test_paren_heldout.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.10s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:34",
+    "task": "t6_paren",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 0,
+      "failed": 0,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/work",
+     "duration_s": 0.3417,
+     "exit_code": 2,
+     "failed": [],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "ERROR",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "\n==================================== ERRORS ====================================\n_____________________ ERROR collecting tests/test_paren.py _____________________\nImportError while importing test module '/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/work/tests/test_paren.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib64/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests/test_paren.py:11: in <module>\n    from paren import is_balanced\nE   ImportError: cannot import name 'is_balanced' from 'paren' (/tmp/realtools-sszsk8gi/scoring/taskeval-t6_paren-k7sx1wmy/work/paren.py)\n=========================== short test summary info ============================\nERROR tests/test_paren.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.09s\n"
+    }
+   },
+   "f7": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.5645,
+    "heldout": {
+     "collected": [
+      "heldout/test_slug_heldout.py::test_character_policy[Hello World-hello-world]",
+      "heldout/test_slug_heldout.py::test_character_policy[  leading and trailing  -leading-and-trailing]",
+      "heldout/test_slug_heldout.py::test_character_policy[multiple   spaces\\tbetween-multiple-spaces-between]",
+      "heldout/test_slug_heldout.py::test_character_policy[C++ Reference-c-reference]",
+      "heldout/test_slug_heldout.py::test_character_policy[snake_case keys-snakecase-keys]",
+      "heldout/test_slug_heldout.py::test_character_policy[3 blind mice-3-blind-mice]",
+      "heldout/test_slug_heldout.py::test_character_policy[na\\xefve caf\\xe9-na\\xefve-caf\\xe9]",
+      "heldout/test_slug_heldout.py::test_character_policy[Hello, World!-hello-world]",
+      "heldout/test_slug_heldout.py::test_character_policy[!!!-]",
+      "heldout/test_slug_heldout.py::test_character_policy[a---b-ab]",
+      "heldout/test_slug_heldout.py::test_max_words_applies_after_collapsing",
+      "heldout/test_slug_heldout.py::test_no_leading_or_trailing_separator"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 12,
+      "failed": 12,
+      "passed": 0
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/score",
+     "duration_s": 0.2862,
+     "exit_code": 1,
+     "failed": [
+      "heldout/test_slug_heldout.py::test_character_policy[Hello World-hello-world]",
+      "heldout/test_slug_heldout.py::test_character_policy[  leading and trailing  -leading-and-trailing]",
+      "heldout/test_slug_heldout.py::test_character_policy[multiple   spaces\\tbetween-multiple-spaces-between]",
+      "heldout/test_slug_heldout.py::test_character_policy[C++ Reference-c-reference]",
+      "heldout/test_slug_heldout.py::test_character_policy[snake_case keys-snakecase-keys]",
+      "heldout/test_slug_heldout.py::test_character_policy[3 blind mice-3-blind-mice]",
+      "heldout/test_slug_heldout.py::test_character_policy[na\\xefve caf\\xe9-na\\xefve-caf\\xe9]",
+      "heldout/test_slug_heldout.py::test_character_policy[Hello, World!-hello-world]",
+      "heldout/test_slug_heldout.py::test_character_policy[!!!-]",
+      "heldout/test_slug_heldout.py::test_character_policy[a---b-ab]",
+      "heldout/test_slug_heldout.py::test_max_words_applies_after_collapsing",
+      "heldout/test_slug_heldout.py::test_no_leading_or_trailing_separator"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": ") == want\nE   AssertionError: assert 'multiple spaces between' == 'multiple-spaces-between'\nE     \nE     - multiple-spaces-between\nE     ?         ^      ^\nE     + multiple spaces between\nE     ?         ^      ^\n_______________ test_character_policy[C++ Reference-c-reference] _______________\nheldout/test_slug_heldout.py:31: in test_character_policy\n    assert slugify(title) == want\nE   AssertionError: assert 'C++ Reference' == 'c-reference'\nE     \nE     - c-reference\nE     + C++ Reference\n____________ test_character_policy[snake_case keys-snakecase-keys] _____________\nheldout/test_slug_heldout.py:31: in test_character_policy\n    assert slugify(title) == want\nE   AssertionError: assert 'snake_case keys' == 'snakecase-keys'\nE     \nE     - snakecase-keys\nE     ?          ^\nE     + snake_case keys\nE     ?      +    ^\n_______________ test_character_policy[3 blind mice-3-blind-mice] _______________\nheldout/test_slug_heldout.py:31: in test_character_policy\n    assert slugify(title) == want\nE   AssertionError: assert '3 blind mice' == '3-blind-mice'\nE     \nE     - 3-blind-mice\nE     ?  ^     ^\nE     + 3 blind mice\nE     ?  ^     ^\n___________ test_character_policy[na\\xefve caf\\xe9-na\\xefve-caf\\xe9] ___________\nheldout/test_slug_heldout.py:31: in test_character_policy\n    assert slugify(title) == want\nE   AssertionError: assert 'na\u00efve caf\u00e9' == 'na\u00efve-caf\u00e9'\nE     \nE     - na\u00efve-caf\u00e9\nE     ?      ^\nE     + na\u00efve caf\u00e9\nE     ?      ^\n_______________ test_character_policy[Hello, World!-hello-world] _______________\nheldout/test_slug_heldout.py:31: in test_character_policy\n    assert slugify(title) == want\nE   AssertionError: assert 'Hello, World!' == 'hello-world'\nE     \nE     - hello-world\nE     + Hello, World!\n_________________________ test_character_policy[!!!-] __________________________\nheldout/test_slug_heldout.py:31: in test_character_policy\n    assert slugify(title) == want\nE   AssertionError: assert '!!!' == ''\nE     \nE     + !!!\n_______________________ test_character_policy[a---b-ab] ________________________\nheldout/test_slug_heldout.py:31: in test_character_policy\n    assert slugify(title) == want\nE   AssertionError: assert 'a---b' == 'ab'\nE     \nE     - ab\nE     + a---b\n___________________ test_max_words_applies_after_collapsing ____________________\nheldout/test_slug_heldout.py:35: in test_max_words_applies_after_collapsing\n    assert slugify(\"Hello,  Brave New   World!\", max_words=2) \\\nE   AssertionError: assert 'Hello, Brave' == 'hello-brave'\nE     \nE     - hello-brave\nE     + Hello, Brave\n____________________ test_no_leading_or_trailing_separator _____________________\nheldout/test_slug_heldout.py:40: in test_no_leading_or_trailing_separator\n    assert slugify(\" !!! hello !!! \") == \"hello\"\nE   AssertionError: assert '!!! hello !!!' == 'hello'\nE     \nE     - hello\nE     + !!! hello !!!\n=========================== short test summary info ============================\nFAILED heldout/test_slug_heldout.py::test_character_policy[Hello World-hello-world]\nFAILED heldout/test_slug_heldout.py::test_character_policy[  leading and trailing  -leading-and-trailing]\nFAILED heldout/test_slug_heldout.py::test_character_policy[multiple   spaces\\tbetween-multiple-spaces-between]\nFAILED heldout/test_slug_heldout.py::test_character_policy[C++ Reference-c-reference]\nFAILED heldout/test_slug_heldout.py::test_character_policy[snake_case keys-snakecase-keys]\nFAILED heldout/test_slug_heldout.py::test_character_policy[3 blind mice-3-blind-mice]\nFAILED heldout/test_slug_heldout.py::test_character_policy[na\\xefve caf\\xe9-na\\xefve-caf\\xe9]\nFAILED heldout/test_slug_heldout.py::test_character_policy[Hello, World!-hello-world]\nFAILED heldout/test_slug_heldout.py::test_character_policy[!!!-] - AssertionE...\nFAILED heldout/test_slug_heldout.py::test_character_policy[a---b-ab] - Assert...\nFAILED heldout/test_slug_heldout.py::test_max_words_applies_after_collapsing\nFAILED heldout/test_slug_heldout.py::test_no_leading_or_trailing_separator - ...\n12 failed in 0.04s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:34",
+    "task": "t7_slug",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [
+      "tests/test_slug.py::test_two_words",
+      "tests/test_slug.py::test_single_word",
+      "tests/test_slug.py::test_three_words",
+      "tests/test_slug.py::test_empty",
+      "tests/test_slug.py::test_max_words_keeps_first_n",
+      "tests/test_slug.py::test_max_words_zero_keeps_all",
+      "tests/test_slug.py::test_bad_max_words_is_refused"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 7,
+      "failed": 4,
+      "passed": 3
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/work",
+     "duration_s": 0.277,
+     "exit_code": 1,
+     "failed": [
+      "tests/test_slug.py::test_two_words",
+      "tests/test_slug.py::test_three_words",
+      "tests/test_slug.py::test_max_words_keeps_first_n",
+      "tests/test_slug.py::test_max_words_zero_keeps_all"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_slug.py::test_single_word",
+      "tests/test_slug.py::test_empty",
+      "tests/test_slug.py::test_bad_max_words_is_refused"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t7_slug-segih3kz/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "F.F.FF.                                                                  [100%]\n=================================== FAILURES ===================================\n________________________________ test_two_words ________________________________\ntests/test_slug.py:14: in test_two_words\n    assert slugify(\"hello world\") == \"hello-world\"\nE   AssertionError: assert 'hello world' == 'hello-world'\nE     \nE     - hello-world\nE     ?      ^\nE     + hello world\nE     ?      ^\n_______________________________ test_three_words _______________________________\ntests/test_slug.py:22: in test_three_words\n    assert slugify(\"one two three\") == \"one-two-three\"\nE   AssertionError: assert 'one two three' == 'one-two-three'\nE     \nE     - one-two-three\nE     ?    ^   ^\nE     + one two three\nE     ?    ^   ^\n_________________________ test_max_words_keeps_first_n _________________________\ntests/test_slug.py:30: in test_max_words_keeps_first_n\n    assert slugify(\"one two three\", max_words=2) == \"one-two\"\nE   AssertionError: assert 'one two' == 'one-two'\nE     \nE     - one-two\nE     ?    ^\nE     + one two\nE     ?    ^\n________________________ test_max_words_zero_keeps_all _________________________\ntests/test_slug.py:34: in test_max_words_zero_keeps_all\n    assert slugify(\"one two\", max_words=0) == \"one-two\"\nE   AssertionError: assert 'one two' == 'one-two'\nE     \nE     - one-two\nE     ?    ^\nE     + one two\nE     ?    ^\n=========================== short test summary info ============================\nFAILED tests/test_slug.py::test_two_words - AssertionError: assert 'hello wor...\nFAILED tests/test_slug.py::test_three_words - AssertionError: assert 'one two...\nFAILED tests/test_slug.py::test_max_words_keeps_first_n - AssertionError: ass...\nFAILED tests/test_slug.py::test_max_words_zero_keeps_all - AssertionError: as...\n4 failed, 3 passed in 0.02s\n"
+    }
+   },
+   "f8": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.5973,
+    "heldout": {
+     "collected": [
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[4-IV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[9-IX]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[14-XIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[40-XL]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[90-XC]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[400-CD]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[444-CDXLIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[900-CM]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[999-CMXCIX]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[1904-MCMIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[1954-MCMLIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[1994-MCMXCIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[2024-MMXXIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[3999-MMMCMXCIX]",
+      "heldout/test_roman_heldout.py::test_round_trip_over_every_value",
+      "heldout/test_roman_heldout.py::test_additive_form_is_refused"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 16,
+      "failed": 15,
+      "passed": 1
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/score",
+     "duration_s": 0.3212,
+     "exit_code": 1,
+     "failed": [
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[4-IV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[9-IX]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[14-XIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[40-XL]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[90-XC]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[400-CD]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[444-CDXLIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[900-CM]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[999-CMXCIX]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[1904-MCMIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[1954-MCMLIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[1994-MCMXCIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[2024-MMXXIV]",
+      "heldout/test_roman_heldout.py::test_subtractive_pairs[3999-MMMCMXCIX]",
+      "heldout/test_roman_heldout.py::test_additive_form_is_refused"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "heldout/test_roman_heldout.py::test_round_trip_over_every_value"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "E     \nE     - XC\nE     + LXXXX\n________________________ test_subtractive_pairs[400-CD] ________________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'CCCC' == 'CD'\nE     \nE     - CD\nE     + CCCC\n______________________ test_subtractive_pairs[444-CDXLIV] ______________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'CCCCXXXXIIII' == 'CDXLIV'\nE     \nE     - CDXLIV\nE     + CCCCXXXXIIII\n________________________ test_subtractive_pairs[900-CM] ________________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'DCCCC' == 'CM'\nE     \nE     - CM\nE     + DCCCC\n______________________ test_subtractive_pairs[999-CMXCIX] ______________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'DCCCCLXXXXVIIII' == 'CMXCIX'\nE     \nE     - CMXCIX\nE     + DCCCCLXXXXVIIII\n______________________ test_subtractive_pairs[1904-MCMIV] ______________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'MDCCCCIIII' == 'MCMIV'\nE     \nE     - MCMIV\nE     + MDCCCCIIII\n_____________________ test_subtractive_pairs[1954-MCMLIV] ______________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'MDCCCCLIIII' == 'MCMLIV'\nE     \nE     - MCMLIV\nE     + MDCCCCLIIII\n_____________________ test_subtractive_pairs[1994-MCMXCIV] _____________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'MDCCCCLXXXXIIII' == 'MCMXCIV'\nE     \nE     - MCMXCIV\nE     + MDCCCCLXXXXIIII\n_____________________ test_subtractive_pairs[2024-MMXXIV] ______________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'MMXXIIII' == 'MMXXIV'\nE     \nE     - MMXXIV\nE     + MMXXIIII\n____________________ test_subtractive_pairs[3999-MMMCMXCIX] ____________________\nheldout/test_roman_heldout.py:35: in test_subtractive_pairs\n    assert to_roman(n) == want\nE   AssertionError: assert 'MMMDCCCCLXXXXVIIII' == 'MMMCMXCIX'\nE     \nE     - MMMCMXCIX\nE     + MMMDCCCCLXXXXVIIII\n________________________ test_additive_form_is_refused _________________________\nheldout/test_roman_heldout.py:45: in test_additive_form_is_refused\n    with pytest.raises(ValueError):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\nE   Failed: DID NOT RAISE ValueError\n=========================== short test summary info ============================\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[4-IV] - Assertio...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[9-IX] - Assertio...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[14-XIV] - Assert...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[40-XL] - Asserti...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[90-XC] - Asserti...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[400-CD] - Assert...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[444-CDXLIV] - As...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[900-CM] - Assert...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[999-CMXCIX] - As...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[1904-MCMIV] - As...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[1954-MCMLIV] - A...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[1994-MCMXCIV] - ...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[2024-MMXXIV] - A...\nFAILED heldout/test_roman_heldout.py::test_subtractive_pairs[3999-MMMCMXCIX]\nFAILED heldout/test_roman_heldout.py::test_additive_form_is_refused - Failed:...\n15 failed, 1 passed in 0.06s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:35",
+    "task": "t8_roman",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [
+      "tests/test_roman.py::test_additive_values[1-I]",
+      "tests/test_roman.py::test_additive_values[3-III]",
+      "tests/test_roman.py::test_additive_values[8-VIII]",
+      "tests/test_roman.py::test_additive_values[30-XXX]",
+      "tests/test_roman.py::test_additive_values[200-CC]",
+      "tests/test_roman.py::test_additive_values[1000-M]",
+      "tests/test_roman.py::test_additive_values[3000-MMM]",
+      "tests/test_roman.py::test_additive_values[3888-MMMDCCCLXXXVIII]",
+      "tests/test_roman.py::test_additive_values[4-IV]",
+      "tests/test_roman.py::test_additive_values[9-IX]",
+      "tests/test_roman.py::test_additive_values[90-XC]",
+      "tests/test_roman.py::test_from_roman_additive",
+      "tests/test_roman.py::test_out_of_range_is_refused[0]",
+      "tests/test_roman.py::test_out_of_range_is_refused[4000]",
+      "tests/test_roman.py::test_out_of_range_is_refused[-1]",
+      "tests/test_roman.py::test_out_of_range_is_refused[40000]",
+      "tests/test_roman.py::test_bool_is_refused"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 17,
+      "failed": 3,
+      "passed": 14
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/work",
+     "duration_s": 0.2746,
+     "exit_code": 1,
+     "failed": [
+      "tests/test_roman.py::test_additive_values[4-IV]",
+      "tests/test_roman.py::test_additive_values[9-IX]",
+      "tests/test_roman.py::test_additive_values[90-XC]"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_roman.py::test_additive_values[1-I]",
+      "tests/test_roman.py::test_additive_values[3-III]",
+      "tests/test_roman.py::test_additive_values[8-VIII]",
+      "tests/test_roman.py::test_additive_values[30-XXX]",
+      "tests/test_roman.py::test_additive_values[200-CC]",
+      "tests/test_roman.py::test_additive_values[1000-M]",
+      "tests/test_roman.py::test_additive_values[3000-MMM]",
+      "tests/test_roman.py::test_additive_values[3888-MMMDCCCLXXXVIII]",
+      "tests/test_roman.py::test_from_roman_additive",
+      "tests/test_roman.py::test_out_of_range_is_refused[0]",
+      "tests/test_roman.py::test_out_of_range_is_refused[4000]",
+      "tests/test_roman.py::test_out_of_range_is_refused[-1]",
+      "tests/test_roman.py::test_out_of_range_is_refused[40000]",
+      "tests/test_roman.py::test_bool_is_refused"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t8_roman-guvlmacf/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "........FFF......                                                        [100%]\n=================================== FAILURES ===================================\n__________________________ test_additive_values[4-IV] __________________________\ntests/test_roman.py:33: in test_additive_values\n    assert to_roman(n) == want\nE   AssertionError: assert 'IIII' == 'IV'\nE     \nE     - IV\nE     + IIII\n__________________________ test_additive_values[9-IX] __________________________\ntests/test_roman.py:33: in test_additive_values\n    assert to_roman(n) == want\nE   AssertionError: assert 'VIIII' == 'IX'\nE     \nE     - IX\nE     + VIIII\n_________________________ test_additive_values[90-XC] __________________________\ntests/test_roman.py:33: in test_additive_values\n    assert to_roman(n) == want\nE   AssertionError: assert 'LXXXX' == 'XC'\nE     \nE     - XC\nE     + LXXXX\n=========================== short test summary info ============================\nFAILED tests/test_roman.py::test_additive_values[4-IV] - AssertionError: asse...\nFAILED tests/test_roman.py::test_additive_values[9-IX] - AssertionError: asse...\nFAILED tests/test_roman.py::test_additive_values[90-XC] - AssertionError: ass...\n3 failed, 14 passed in 0.03s\n"
+    }
+   },
+   "f9": {
+    "class_c_split": false,
+    "definition_note": "sealed definition v2 at held-out-task-suite.json",
+    "definition_path": "held-out-task-suite.json",
+    "definition_version": 2,
+    "duration_s": 0.552,
+    "heldout": {
+     "collected": [
+      "heldout/test_luhn_heldout.py::test_valid_even_length[4532015112830366]",
+      "heldout/test_luhn_heldout.py::test_valid_even_length[30569309025904]",
+      "heldout/test_luhn_heldout.py::test_valid_even_length[3530111333300000]",
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[4532015112830361]",
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[4532015112830365]",
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[1234567812345678]",
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[5105105105105102]",
+      "heldout/test_luhn_heldout.py::test_composition_property",
+      "heldout/test_luhn_heldout.py::test_one_transposition_changes_the_verdict",
+      "heldout/test_luhn_heldout.py::test_the_17_digit_numbers_the_readings_agree_on"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "heldout",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 10,
+      "failed": 5,
+      "passed": 5
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/score",
+     "duration_s": 0.2767,
+     "exit_code": 1,
+     "failed": [
+      "heldout/test_luhn_heldout.py::test_valid_even_length[4532015112830366]",
+      "heldout/test_luhn_heldout.py::test_valid_even_length[30569309025904]",
+      "heldout/test_luhn_heldout.py::test_valid_even_length[3530111333300000]",
+      "heldout/test_luhn_heldout.py::test_composition_property",
+      "heldout/test_luhn_heldout.py::test_one_transposition_changes_the_verdict"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[4532015112830361]",
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[4532015112830365]",
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[1234567812345678]",
+      "heldout/test_luhn_heldout.py::test_invalid_even_length[5105105105105102]",
+      "heldout/test_luhn_heldout.py::test_the_17_digit_numbers_the_readings_agree_on"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/score",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": true,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/score:/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/score",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "heldout",
+     "timed_out": false,
+     "transcript": "FFF....FF.                                                               [100%]\n=================================== FAILURES ===================================\n___________________ test_valid_even_length[4532015112830366] ___________________\nheldout/test_luhn_heldout.py:28: in test_valid_even_length\n    assert luhn_ok(digits) is True\nE   AssertionError: assert False is True\nE    +  where False = luhn_ok('4532015112830366')\n____________________ test_valid_even_length[30569309025904] ____________________\nheldout/test_luhn_heldout.py:28: in test_valid_even_length\n    assert luhn_ok(digits) is True\nE   AssertionError: assert False is True\nE    +  where False = luhn_ok('30569309025904')\n___________________ test_valid_even_length[3530111333300000] ___________________\nheldout/test_luhn_heldout.py:28: in test_valid_even_length\n    assert luhn_ok(digits) is True\nE   AssertionError: assert False is True\nE    +  where False = luhn_ok('3530111333300000')\n__________________________ test_composition_property ___________________________\nheldout/test_luhn_heldout.py:45: in test_composition_property\n    assert luhn_ok(partial + str(d)) is True, partial\nE   AssertionError: 453201511283036\nE   assert False is True\nE    +  where False = luhn_ok(('453201511283036' + '6'))\nE    +    where '6' = str(6)\n__________________ test_one_transposition_changes_the_verdict __________________\nheldout/test_luhn_heldout.py:51: in test_one_transposition_changes_the_verdict\n    assert luhn_ok(\"4532015112830366\") is True\nE   AssertionError: assert False is True\nE    +  where False = luhn_ok('4532015112830366')\n=========================== short test summary info ============================\nFAILED heldout/test_luhn_heldout.py::test_valid_even_length[4532015112830366]\nFAILED heldout/test_luhn_heldout.py::test_valid_even_length[30569309025904]\nFAILED heldout/test_luhn_heldout.py::test_valid_even_length[3530111333300000]\nFAILED heldout/test_luhn_heldout.py::test_composition_property - AssertionErr...\nFAILED heldout/test_luhn_heldout.py::test_one_transposition_changes_the_verdict\n5 failed, 5 passed in 0.03s\n"
+    },
+    "kept": false,
+    "refusal": "",
+    "sandbox_root": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y",
+    "sealed": true,
+    "started_ts": "2026-10-03T19:12:35",
+    "task": "t9_luhn",
+    "task_complete": false,
+    "timed_out": false,
+    "useful": false,
+    "verdict": "NOT_COMPLETE",
+    "visible": {
+     "collected": [
+      "tests/test_luhn.py::test_valid_numbers[4111111111111111]",
+      "tests/test_luhn.py::test_valid_numbers[4012888888881881]",
+      "tests/test_luhn.py::test_valid_numbers[5105105105105100]",
+      "tests/test_luhn.py::test_valid_numbers[79927398713]",
+      "tests/test_luhn.py::test_valid_numbers[0]",
+      "tests/test_luhn.py::test_invalid_numbers[5105105105105101]",
+      "tests/test_luhn.py::test_invalid_numbers[5105105105105107]",
+      "tests/test_luhn.py::test_invalid_numbers[79927398714]",
+      "tests/test_luhn.py::test_invalid_numbers[79927398712]",
+      "tests/test_luhn.py::test_invalid_numbers[7]",
+      "tests/test_luhn.py::test_invalid_numbers[10]",
+      "tests/test_luhn.py::test_invalid_numbers[11]",
+      "tests/test_luhn.py::test_check_digit_of_the_worked_example",
+      "tests/test_luhn.py::test_non_digit_input_is_refused"
+     ],
+     "command": [
+      "/usr/bin/unshare",
+      "-rn",
+      "../dpdr/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "taskeval_report"
+     ],
+     "counts": {
+      "collected": 14,
+      "failed": 4,
+      "passed": 10
+     },
+     "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/work",
+     "duration_s": 0.274,
+     "exit_code": 1,
+     "failed": [
+      "tests/test_luhn.py::test_valid_numbers[4111111111111111]",
+      "tests/test_luhn.py::test_valid_numbers[4012888888881881]",
+      "tests/test_luhn.py::test_valid_numbers[5105105105105100]",
+      "tests/test_luhn.py::test_invalid_numbers[5105105105105107]"
+     ],
+     "network_enforced": true,
+     "network_reachable": false,
+     "not_run": [],
+     "note": "network namespace (unshare -rn): a new netns with only a down lo",
+     "passed": [
+      "tests/test_luhn.py::test_valid_numbers[79927398713]",
+      "tests/test_luhn.py::test_valid_numbers[0]",
+      "tests/test_luhn.py::test_invalid_numbers[5105105105105101]",
+      "tests/test_luhn.py::test_invalid_numbers[79927398714]",
+      "tests/test_luhn.py::test_invalid_numbers[79927398712]",
+      "tests/test_luhn.py::test_invalid_numbers[7]",
+      "tests/test_luhn.py::test_invalid_numbers[10]",
+      "tests/test_luhn.py::test_invalid_numbers[11]",
+      "tests/test_luhn.py::test_check_digit_of_the_worked_example",
+      "tests/test_luhn.py::test_non_digit_input_is_refused"
+     ],
+     "sandbox": {
+      "cwd": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/work",
+      "dns": "gaierror: [Errno -3] Temporary failure in name resolution",
+      "euid": 0,
+      "home": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/home",
+      "kind": "sandbox",
+      "mechanism_modules_importable": {
+       "cen": false,
+       "dpdr": false,
+       "heldout": false,
+       "retrieval": false,
+       "salience": false,
+       "stage2_harness": false,
+       "task_eval": false
+      },
+      "network_error": "OSError: [Errno 101] Network is unreachable",
+      "network_reachable": false,
+      "pythonpath": "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/work:/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/plugin",
+      "sys_path": [
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/work",
+       "/tmp/realtools-sszsk8gi/scoring/taskeval-t9_luhn-_426yy9y/plugin",
+       "/usr/lib64/python313.zip",
+       "/usr/lib64/python3.13",
+       "/usr/lib64/python3.13/lib-dynload",
+       "../dpdr/.venv/lib64/python3.13/site-packages",
+       "../dpdr/.venv/lib/python3.13/site-packages"
+      ],
+      "uid": 0
+     },
+     "skipped": [],
+     "status": "FAIL",
+     "suite": "visible",
+     "timed_out": false,
+     "transcript": "FFF...F.......                                                           [100%]\n=================================== FAILURES ===================================\n_____________________ test_valid_numbers[4111111111111111] _____________________\ntests/test_luhn.py:33: in test_valid_numbers\n    assert luhn_ok(digits) is True\nE   AssertionError: assert False is True\nE    +  where False = luhn_ok('4111111111111111')\n_____________________ test_valid_numbers[4012888888881881] _____________________\ntests/test_luhn.py:33: in test_valid_numbers\n    assert luhn_ok(digits) is True\nE   AssertionError: assert False is True\nE    +  where False = luhn_ok('4012888888881881')\n_____________________ test_valid_numbers[5105105105105100] _____________________\ntests/test_luhn.py:33: in test_valid_numbers\n    assert luhn_ok(digits) is True\nE   AssertionError: assert False is True\nE    +  where False = luhn_ok('5105105105105100')\n____________________ test_invalid_numbers[5105105105105107] ____________________\ntests/test_luhn.py:48: in test_invalid_numbers\n    assert luhn_ok(digits) is False\nE   AssertionError: assert True is False\nE    +  where True = luhn_ok('5105105105105107')\n=========================== short test summary info ============================\nFAILED tests/test_luhn.py::test_valid_numbers[4111111111111111] - AssertionEr...\nFAILED tests/test_luhn.py::test_valid_numbers[4012888888881881] - AssertionEr...\nFAILED tests/test_luhn.py::test_valid_numbers[5105105105105100] - AssertionEr...\nFAILED tests/test_luhn.py::test_invalid_numbers[5105105105105107] - Assertion...\n4 failed, 10 passed in 0.03s\n"
+    }
+   }
+  },
+  "gate_log": [],
+  "heldout_fraction": {
+   "n_null_tasks": 3,
+   "n_targets": 12,
+   "per_target": {
+    "f1": 0.0,
+    "f10": 0.0,
+    "f11": 0.0,
+    "f12": 0.0,
+    "f2": null,
+    "f3": 1.0,
+    "f4": 1.0,
+    "f5": null,
+    "f6": null,
+    "f7": 0.0,
+    "f8": 0.0625,
+    "f9": 0.5
+   },
+   "scale_note": "CONTINUOUS 0..len(targets): the held-out pass fraction per task (len(passed)/len(collected)), summed; None = the task's held-out suite collected zero tests (explicit, never 0/0).  The coarse verdict ordinal is UNCHANGED and rides `dv` beside this.",
+   "sum": 2.5625
+  },
+  "heldout_pin": {
+   "digest16": "4be28f05d39c0a8c",
+   "path": "held-out-task-suite.json",
+   "version": 2
+  },
+  "n_run_tests": 6,
+  "n_tool_calls": 56,
+  "refusals": [
+   "(unparseable):malformed_block",
+   "read:io_error",
+   "(unparseable):malformed_block",
+   "run_tests:undeclared_target",
+   "(unparseable):malformed_block",
+   "(unparseable):malformed_block",
+   "(unparseable):malformed_block",
+   "run_tests:undeclared_target"
+  ],
+  "targets": [
+   "f1",
+   "f10",
+   "f11",
+   "f12",
+   "f2",
+   "f3",
+   "f4",
+   "f5",
+   "f6",
+   "f7",
+   "f8",
+   "f9"
+  ]
+ },
+ "task_health": {
+  "gate_verdicts_per_window": [
+   0,
+   0,
+   0
+  ],
+  "note": "at least one window made NO tool calls and raised no completion verdict \u2014 the task was abandoned there (windows []; no tool activity in []), and any collapse reading over that window is obedience-limited",
+  "status": "NOT_OK",
+  "surface": "tool/swe",
+  "targets_completed": 0,
+  "tool_calls_per_window": [
+   17,
+   20,
+   19
+  ],
+  "tool_calls_total": 56,
+  "windows": 3
+ },
+ "task_health_p2_instrument": {
+  "note": "no complete window \u2014 the gate cannot read a partial window",
+  "status": "INSUFFICIENT",
+  "windows": 0
+ },
+ "task_health_window": 20,
+ "turns": 60,
+ "wall_s": 6449.238790512085,
+ "window_means_outward": []
+}

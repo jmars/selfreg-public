@@ -4,8 +4,8 @@
 further spend, so that later runs add to a record rather than replace one. Every claim is
 marked **MEASURED** / **INTERPRETATION** / **PROJECTION** per the project convention.
 
-**Provenance.** Set `~/setpoint-runs/lambda-official` (16 cells, Lambda A10, pin `f908e92`),
-plus the audit probe `~/setpoint-runs/audit-rec` (pin `8cb22b6`). Nodes
+**Provenance.** Set `runs/lambda-official` (16 cells, Lambda A10, pin `f908e92`),
+plus the audit probe `runs/audit-rec` (pin `8cb22b6`). Nodes
 `handoff-selfreg-costterm-zero`, `handoff-selfreg-session-report-3`.
 
 ---
@@ -133,7 +133,7 @@ must not be reported as pure self-depletion.
 
 ## R5. THE CRUTCH — the grounding=ON readings measure the RIG, not the agent (2026-09-29)
 
-**MEASURED**, `~/setpoint-runs/nocrutch`, pin `70a66fd`, dark probe at turn 4, no compaction:
+**MEASURED**, `runs/nocrutch`, pin `70a66fd`, dark probe at turn 4, no compaction:
 
 | arm | what the prompt carries | fidelity | steps | text written |
 |---|---|---|---|---|
@@ -178,7 +178,7 @@ reclassified after one.
 
 ## R6. The forced choice is decided by RENDER ORDER, not by preference — the run is VOID
 
-**MEASURED**, `~/setpoint-runs/choice-go`, pin `a52f383`, 4 cells (`S+`×2 / `S−`×2), 40 turns,
+**MEASURED**, `runs/choice-go`, pin `a52f383`, 4 cells (`S+`×2 / `S−`×2), 40 turns,
 `ChoiceWorld` seed 230019, Lambda A10.
 
 **The DV came back clean and useless.** `S+` mean treadmill fraction **0.652**, `S−` **0.662**,

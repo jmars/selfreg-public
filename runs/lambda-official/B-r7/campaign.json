@@ -1,0 +1,385 @@
+{
+ "api": "chat",
+ "arms": {
+  "B": {
+   "identity": {
+    "api": "chat",
+    "arm": "B",
+    "budget": 6,
+    "chars_per_token": 3.0,
+    "floor_fraction": 0.1,
+    "framing_sha16": "398d5e9ecebbf3d2",
+    "keep_recent": 4,
+    "memory_regime": "naive",
+    "model": "qwen3.5:9b",
+    "monitoring_para_sha16": "1293a970d85cece0",
+    "num_ctx": 32768,
+    "num_predict": 12000,
+    "self_T": 100,
+    "summary_num_ctx": 30867,
+    "summary_num_predict": 9875,
+    "tau_S": 100,
+    "temperature": 0.6,
+    "timeout": 900.0,
+    "turns": 300,
+    "world_seed": 11
+   },
+   "label": "self + goal + task + monitoring, naive memory",
+   "prediction": "THE EXPERIMENT: the monitoring paragraph rides every turn's prompt, so the transcript fills the window SOONER (ARRIVAL), compaction arrives at an EARLIER turn than A's, and the crossing follows the event's own turn plus the model's fixed lag \u2014 an earlier predicted window than A on the same seeds, with the inward share risen over A's on the way"
+  }
+ },
+ "budget": 6,
+ "compaction_budget_chars": 62304,
+ "compaction_cadence": {
+  "budget_chars": 62304,
+  "convention": "turn size = the smoke's measured worst case (prompt 4104 + answer 999 chars); the budget is the memory layer's own (num_ctx - num_predict) x chars_per_token, one source",
+  "note": "a BOUNDARY event inside the tau_S window (the two cannot be made to coincide: the window is a token capacity and tau_S is a turn count \u2014 see `generation_policy`'s own derivation)",
+  "prompts_per_budget": 15.18,
+  "tau_S_turns": 100,
+  "turns_per_budget": 12.21
+ },
+ "config_check": {
+  "checks": {
+   "budget_holds_a_summarizable_span": {
+    "got": 62304,
+    "need": 25515,
+    "ok": true,
+    "why": "budget_chars 62304 < keep_recent+1 (5) x one measured turn (5103 chars) = 25515: the budget cannot hold even the 4 turns kept verbatim plus one to summarize, so compaction fires on the very next turn \u2014 ~1 compaction per turn, not a boundary event"
+   },
+   "generation_room_above_trace": {
+    "got": 12000,
+    "need": 9875,
+    "ok": true,
+    "why": "num_predict 12000 < 1.5 x the measured trace (6583 tokens, 19749 chars at 3 chars/token) = 9875: the trace would consume the budget and `content` would come back empty (the 5.3 void signature)"
+   },
+   "positive_room": {
+    "got": 20768,
+    "need": 1,
+    "ok": true,
+    "why": "num_ctx 32768 <= num_predict 12000: the conversation is given no room at all"
+   },
+   "summary_window_fits_run_window": {
+    "got": 30867,
+    "need": 32768,
+    "ok": true,
+    "why": "the summarizer's DERIVED window (30867 tokens = the largest prompt, 20992, plus its own budget, 9875) fits inside the run's own window (32768) with 1901 tokens to spare \u2014 the transcript it must read is bounded by this run's memory budget (62304 chars), and the window is a FUNCTION of that budget, not a second number beside it"
+   }
+  },
+  "derivation": "num_predict from the MODEL'S OWN MEASURED TRACE (19749 chars = 6583 tokens at 3 chars/token, x 1.5 headroom = 9875); num_ctx from the desired compaction CADENCE with num_predict fixed (budget = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns; tau_S = 100 turns is a LENGTH, not this capacity \u2014 compaction is a boundary event INSIDE the window).  Source of the sizes: handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns.  THE SUMMARIZER'S OWN WINDOW, since it must read a transcript bounded by that same budget: the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
+  "note": "within the config guard's invariants",
+  "ok": true,
+  "reasons": [],
+  "sensitivity": {
+   "2.5": {
+    "budget_chars": 51920,
+    "ok": false,
+    "required_budget_chars": 25515,
+    "required_num_predict": 11850,
+    "summary_fits_run_window": false,
+    "summary_window_slack_tokens": -85,
+    "summary_window_tokens": 32853
+   },
+   "3.0": {
+    "budget_chars": 62304,
+    "ok": true,
+    "required_budget_chars": 25515,
+    "required_num_predict": 9875,
+    "summary_fits_run_window": true,
+    "summary_window_slack_tokens": 1901,
+    "summary_window_tokens": 30867
+   },
+   "4.0": {
+    "budget_chars": 83072,
+    "ok": true,
+    "required_budget_chars": 25515,
+    "required_num_predict": 7407,
+    "summary_fits_run_window": true,
+    "summary_window_slack_tokens": 4390,
+    "summary_window_tokens": 28378
+   }
+  },
+  "summary_policy": {
+   "budget_chars": 62304,
+   "chars_per_token": 3.0,
+   "derivation": "the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
+   "fits_run_window": true,
+   "generation_budget": {
+    "chars_per_token": 3.0,
+    "factor": 1.5,
+    "num_predict": 9875,
+    "source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+    "superseded_clears_factor": false,
+    "superseded_clears_trace_max": true,
+    "superseded_num_predict": 8192,
+    "trace_chars_max": 19749,
+    "trace_tokens_max": 6583
+   },
+   "keep_recent": 4,
+   "keep_recent_note": "keep_recent does not enter the window bound: the transcript is the conversation MINUS the turns kept verbatim, so a larger keep_recent only makes it shorter; it enters the layer's config invariant (the budget must hold keep_recent+1 measured turns)",
+   "num_ctx": 30867,
+   "num_predict": 9875,
+   "overhead_chars": 167,
+   "prompt_chars_max": 62975,
+   "prompt_max_chars": 4104,
+   "prompt_tokens_max": 20992,
+   "refusal": null,
+   "run_num_ctx": 32768,
+   "run_num_predict": 12000,
+   "slack_tokens": 1901,
+   "superseded": {
+    "note": "the summarizer's stated constants, sized when the run's num_ctx was 8192 (num_predict 'half the window'); they did not follow when the run's window grew and the transcript became larger than the summarizer's window (MEASURED: 18530 tokens of prompt inside 16384)",
+    "num_ctx": 16384,
+    "num_predict": 8192
+   },
+   "transcript_chars_max": 62808,
+   "transcript_content_chars_max": 62304,
+   "transcript_markup_chars": 504,
+   "transcript_messages_max": 36,
+   "transcript_overshoot_chars": 0,
+   "transcript_turns_max": 17,
+   "turn_min_chars": 3834
+  },
+  "trace_allowance": {
+   "chars": [
+    6691,
+    19749
+   ],
+   "chars_per_token": 3.0,
+   "max_tokens": 6583,
+   "source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+   "tokens": [
+    2231,
+    6583
+   ]
+  },
+  "values": {
+   "budget_chars": 62304,
+   "chars_per_token": 3.0,
+   "keep_recent": 4,
+   "num_ctx": 32768,
+   "num_predict": 12000,
+   "prompt_chars_max": 4104,
+   "prompts_per_budget": 15.18,
+   "required_budget_chars": 25515,
+   "required_num_predict": 9875,
+   "summary_fits_run_window": true,
+   "summary_generation_budget_tokens": 9875,
+   "summary_prompt_tokens_max": 20992,
+   "summary_window_slack_tokens": 1901,
+   "summary_window_tokens": 30867,
+   "track_base_chars_per_token": 3.0,
+   "turn_chars_max": 5103,
+   "turns_per_budget": 12.21
+  }
+ },
+ "cost_term": "the PER-COMPACTION DERIVATION LOSS (seed survival lost at the context window, both sides measured by naive_memory.NaiveMemory), mapped to a_hold by the identity over [0,1]; the per-turn retrieval charge is measured and logged as an instrument but is NOT the term (it saturates at the derivation budget and cannot separate the arms).  Each run's prediction is computed from ITS OWN compaction events before its DV is read (prediction.crossing_window in the run summary)",
+ "created_ts": "2026-09-29T11:28:00",
+ "dv": "windows to collapse: the first complete window whose mean outward content (chars/turn) is at or below the floor, the floor DERIVED from the arms' own measured first-window levels x 0.1",
+ "endpoint_bound": {
+  "cost_of_raising_it": "a genuinely hung endpoint costs that many seconds before it is refused, in every cell, per turn",
+  "default_s": 300.0,
+  "in_deciding_surface": true,
+  "measured_failure_it_answers": "MEASURED, live (the paper-2 decisive set, 2026-09-28): FOUR OF EIGHT cells died with `TimeoutError` at turns 6-7 \u2014 not turn 1 \u2014 against the 300 s default, while a surviving cell's per-turn walls ran 30-208 s (31, 71, 30, 39, 46, 125, 32, 97, 74, 61, 33, 138, 208)",
+  "timeout_s": 900.0,
+  "what_it_bounds": "WALL CLOCK PER TURN, and per summarization call (the live summarizer posts through the same transport): `LLM_DMN`'s own `timeout`, handed to `urlopen` AND re-checked AFTER the call, so a turn that overran it is REFUSED rather than accepted as a good one",
+  "what_it_does_not_fix": "INTERPRETATION over those MEASURED seconds: the variance is the MODEL'S OWN TRACE LENGTH (qwen3.5:9b emits 9k-23k chars of reasoning per turn), so a larger bound makes a slow turn SURVIVABLE, not FAST.  The wall-clock and cost estimates built on ~4.4k tok/turn must be RE-DERIVED from the per-turn seconds the runs actually produce \u2014 this bound does not restore them, and it makes no claim about accuracy"
+ },
+ "fidelity_notes": [
+  "the plant is NOT the DV: nothing about the agent reaches a_hold or any plant input (the killed rig's tautology)",
+  "the self is PRESENT and DEPLETABLE in every arm (C3)",
+  "the arms differ in the monitoring paragraph ALONE (C2)",
+  "the memory regime is a STATED SINGLE CONDITION (naive summarization) and is not an arm field \u2014 the engineered regime left this experiment with arm C",
+  "the A-vs-B prediction rests on the ARRIVAL axis and its separation is computed per run pair and reported, including when it cannot separate them",
+  "the model's prediction is computed from the measured PER-COMPACTION DERIVATION LOSS (both sides of every compaction event), never from the thinning, the coverage or the outward content"
+ ],
+ "floor_convention": "floor = 0.1 x mean(first complete window mean outward content across the runs); None (unscoreable) when no run yields a complete first window",
+ "generation_policy": {
+  "chars_per_token": 3.0,
+  "checks": {
+   "budget_holds_a_summarizable_span": {
+    "got": 62304,
+    "need": 25515,
+    "ok": true
+   },
+   "generation_room_above_trace": {
+    "got": 12000,
+    "need": 9875,
+    "ok": true
+   },
+   "positive_room": {
+    "got": 20768,
+    "need": 1,
+    "ok": true
+   },
+   "summary_window_fits_run_window": {
+    "got": 30867,
+    "need": 32768,
+    "ok": true
+   }
+  },
+  "config_check_ok": true,
+  "derivation": "num_predict from the MODEL'S OWN MEASURED TRACE (19749 chars = 6583 tokens at 3 chars/token, x 1.5 headroom = 9875); num_ctx from the desired compaction CADENCE with num_predict fixed (budget = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns; tau_S = 100 turns is a LENGTH, not this capacity \u2014 compaction is a boundary event INSIDE the window).  Source of the sizes: handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns.  THE SUMMARIZER'S OWN WINDOW, since it must read a transcript bounded by that same budget: the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
+  "derived_from": {
+   "num_ctx": "the desired COMPACTION CADENCE with num_predict fixed: budget_chars = (num_ctx - num_predict) x chars_per_token = 62304 chars = 15.18 measured prompts = 12.21 measured turns per compaction \u2014 a BOUNDARY event inside the tau_S = 100-turn window (the two cannot coincide: tau_S is a turn LENGTH and num_ctx a token CAPACITY)",
+   "num_predict": "the MODEL'S OWN MEASURED TRACE: 19749 chars = 6583 tokens at 3 chars/token x 1.5 headroom = 9875 (the budget must sit ABOVE the trace or the trace eats it and content comes back empty \u2014 the 5.3 void signature)"
+  },
+  "hardware_cost": "STATED, NOT VERIFIED: 4x the previous window (32768 vs 8192 tokens) and 2x the generation budget.  The KV cache for 32768 tokens is the serving box's to serve; this build does not verify it.  The numbers are derived from the substrate's measured trace and the stated cadence, NOT shrunk to make the run cheap",
+  "keep_recent": 4,
+  "measured_answer_chars": [
+   678,
+   999
+  ],
+  "measured_prompt_chars": [
+   3834,
+   4104
+  ],
+  "measured_sizes_source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+  "measured_trace_chars": [
+   6691,
+   19749
+  ],
+  "num_ctx": 32768,
+  "num_predict": 12000,
+  "summary_call": {
+   "budget_chars": 62304,
+   "derived_arithmetic": "the summarizer's window is DERIVED from the run's own memory budget: budget_chars = (num_ctx 32768 - num_predict 12000) x 3 chars/token = 62304 chars; the transcript it must read is that budget plus the rendering markup of at most 36 messages (17 turns of >= 3834 chars) (+504 chars) = 62808 chars; the call's own prompt overhead is 167 chars, so the largest prompt is 62975 chars = 20992 tokens, and the call's own generation budget is 9875 tokens: window = 20992 + 9875 = 30867 tokens, which leaves 1901 tokens inside the run's own window (32768)",
+   "derived_from": "THE RUN'S OWN MEMORY BUDGET, one source (`naive_memory.conversation_budget_chars`, the same expression the compaction trigger uses): the summarizer is handed THE TRANSCRIPT, which is bounded by that budget, so its window is a FUNCTION of the budget and not a second number beside it.  The call's generation budget is derived from the MODEL'S OWN MEASURED TRACE at the same headroom factor the run turns use (the summarizer is a reasoning call on the same model)",
+   "fits_run_window": true,
+   "generation_budget": {
+    "chars_per_token": 3.0,
+    "factor": 1.5,
+    "num_predict": 9875,
+    "source": "handoff-selfreg-qwen-verdict \u2014 the 10-turn qwen3.5:9b smoke, 2026-09-27 (arm A, num_ctx 8192, num_predict 6000, local :11435); the trace sizes are that run's recorded per-turn trace_chars, the prompt sizes its recorded prompt_chars, the answer sizes the content_chars of its non-void turns",
+    "superseded_clears_factor": false,
+    "superseded_clears_trace_max": true,
+    "superseded_num_predict": 8192,
+    "trace_chars_max": 19749,
+    "trace_tokens_max": 6583
+   },
+   "generation_budget_tokens": 9875,
+   "keep_recent_note": "keep_recent does not enter the window bound: the transcript is the conversation MINUS the turns kept verbatim, so a larger keep_recent only makes it shorter; it enters the layer's config invariant (the budget must hold keep_recent+1 measured turns)",
+   "prompt_tokens_max": 20992,
+   "refusal": null,
+   "run_num_ctx": 32768,
+   "slack_tokens": 1901,
+   "superseded": {
+    "note": "the summarizer's stated constants, sized when the run's num_ctx was 8192 (num_predict 'half the window'); they did not follow when the run's window grew and the transcript became larger than the summarizer's window (MEASURED: 18530 tokens of prompt inside 16384)",
+    "num_ctx": 16384,
+    "num_predict": 8192
+   },
+   "transcript_chars_max": 62808,
+   "window_tokens": 30867
+  },
+  "superseded": {
+   "num_ctx": 8192,
+   "num_predict": 6000,
+   "source": "exp_agent_coupling's campaign constants, inherited by this rig from the Ministral campaign whose traces are 2-4k chars",
+   "why_it_failed": [
+    "generation_room_above_trace: num_predict 6000 < 1.5 x the measured trace (6583 tokens, 19749 chars at 3 chars/token) = 9875: the trace would consume the budget and `content` would come back empty (the 5.3 void signature)",
+    "budget_holds_a_summarizable_span: budget_chars 6576 < keep_recent+1 (5) x one measured turn (5103 chars) = 25515: the budget cannot hold even the 4 turns kept verbatim plus one to summarize, so compaction fires on the very next turn \u2014 ~1 compaction per turn, not a boundary event",
+    "summary_window_fits_run_window: the summarizer's DERIVED window (12151 tokens: prompt 2276 + its own budget 9875) exceeds the window this run declares (8192) by 3959 tokens.  The window is NOT shrunk to fit: the transcript the summarizer must read is bounded by THIS run's own memory budget (6576 chars), so a smaller window re-creates the failure this derivation removes (MEASURED, live: the call refused with -2146 tokens of room).  Fix the CONFIG (the run's window, or the model's trace allowance it is derived from), not the number."
+   ]
+  }
+ },
+ "memory_regime": "A STATED SINGLE CONDITION, NOT A FACTOR: every arm runs ordinary naive summarization at num_ctx (chars/token = 3, headroom = num_predict, keep_recent kept verbatim).  THE SUMMARIZATION CALL ITSELF HAS ITS OWN DERIVED POLICY (num_predict = 9875 inside a window of 30867 tokens, BOTH DERIVED from this run's own memory budget at naive_memory.summary_policy / exp_longhorizon.summary_policy_for): the transcript the summarizer must read is bounded by that budget, so a window that is STATED rather than derived drifts out of step with it \u2014 MEASURED, live, 2026-09-27: the run's window grew to 32768 and the summarizer's stated 16384 (set when the window was 8192) refused an 18530-token prompt with -2146 tokens of room, stopping the run.  The derived window fits this run's own window with 1901 tokens to spare and the relationship is CHECKED, not assumed (`summary_window_fits_run_window`).  The engineered priced reconstruction is OUT of this experiment (arm C removed by stage=correction on the pre-registration): it is paper 3's product claim, it changed two things at once so it was no control for the monitoring cause, and a non-collapsing arm would invite 'the collapse is contingent on memory design'.  The regime is not an arm field (`arm_spec` refuses one) and not a module knob (`memory_regime` refuses a changed constant)",
+ "model": "qwen3.5:9b",
+ "model_prediction_arrival_table": [
+  {
+   "arrival_turn": 3,
+   "crossing_t": 107.7,
+   "crossing_turn": 108,
+   "crossing_window": 2,
+   "g_end": 0.04382279094445691,
+   "loss": 1.0
+  },
+  {
+   "arrival_turn": 100,
+   "crossing_t": 216.10000000000002,
+   "crossing_turn": 216,
+   "crossing_window": 3,
+   "g_end": 0.043823342626987706,
+   "loss": 1.0
+  },
+  {
+   "arrival_turn": 200,
+   "crossing_t": 323.35,
+   "crossing_turn": 323,
+   "crossing_window": 4,
+   "g_end": 0.04382355640966068,
+   "loss": 1.0
+  },
+  {
+   "arrival_turn": 300,
+   "crossing_t": 427.70000000000005,
+   "crossing_turn": 428,
+   "crossing_window": 5,
+   "g_end": 0.0438238111547824,
+   "loss": 1.0
+  },
+  {
+   "arrival_turn": 400,
+   "crossing_t": 530.3000000000001,
+   "crossing_turn": 530,
+   "crossing_window": 6,
+   "g_end": 0.04382411015114005,
+   "loss": 1.0
+  }
+ ],
+ "model_prediction_table": [
+  {
+   "a_hold": 0.0,
+   "crossing_t": null,
+   "crossing_turn": null,
+   "crossing_window": null,
+   "g_end": 0.8855259313140605,
+   "loss": 0.0
+  },
+  {
+   "a_hold": 0.25,
+   "crossing_t": null,
+   "crossing_turn": null,
+   "crossing_window": null,
+   "g_end": 0.2799760539713107,
+   "loss": 0.25
+  },
+  {
+   "a_hold": 0.5,
+   "crossing_t": 165.95000000000002,
+   "crossing_turn": 166,
+   "crossing_window": 2,
+   "g_end": 0.045342142667596196,
+   "loss": 0.5
+  },
+  {
+   "a_hold": 0.75,
+   "crossing_t": 120.9,
+   "crossing_turn": 121,
+   "crossing_window": 2,
+   "g_end": 0.04446953240834082,
+   "loss": 0.75
+  },
+  {
+   "a_hold": 1.0,
+   "crossing_t": 104.30000000000001,
+   "crossing_turn": 104,
+   "crossing_window": 2,
+   "g_end": 0.043822660439175515,
+   "loss": 1.0
+  }
+ ],
+ "n": 1,
+ "prediction_ab": "A vs B, one variable.  Both arms run the stated naive regime, so the derivation loss per event is the same instrument in both and the prediction rests on the ARRIVAL axis: the monitoring paragraph rides every turn's prompt (MEASURED, byte-exact, at 288 chars/turn = the 286-char paragraph plus its blank line \u2014 the CARRIER is the instruction's own context cost, NOT the thinking channel: the trace is instrumented as the inward share but is not part of the conversation the memory holds), so B's transcript reaches the window budget sooner, its compaction event carries an earlier turn, and lh_model.predict_crossing_from_events crosses no later for it \u2014 a later arrival crosses later, the falsifiable property of the construction.  WHETHER THE TWO ARE SEPARATED IS COMPUTED, NOT ASSERTED: lh_model.prediction_separation reports the two windows and, when they coincide, says so plainly (identical measured events => the prediction cannot separate the arms and does not claim to; the seed's four-step granularity is the stated reason a differing record can still map to the same window, and an arrival shift that spans no window boundary is one).",
+ "prediction_separation": {
+  "procedure": "ab_separation(summary_A, summary_B): each run's prediction is rebuilt from ITS OWN recorded derivation_loss_events and lh_model.prediction_separation reports whether the two crossing windows differ, on which axis, and states plainly when they do not",
+  "status": "NOT COMPUTED \u2014 no live run exists (--mode run is refused: no endpoint).  It runs on the pair of run summaries, never on a pre-set expectation."
+ },
+ "prereg_node": "handoff-selfreg-longhorizon-prereg2",
+ "rescue_seat": "BUILT, DEFAULT OFF, NOT RUN IN THIS EXPERIMENT (naive_memory.RescueSeat; the timing arms are the roadmap's step 2)",
+ "result_node": "handoff-selfreg-longhorizon-result",
+ "seed_base": 18242,
+ "sign_precondition": "the sign is a PRECONDITION, not a result (paper 2 7.2): a model is eligible only if its inward share RISES as the self thins.  THIS RUN'S MODEL, qwen3.5:9b (Alibaba/Qwen), is MEASURED on the probe itself: inward share 0.824 self-present -> 0.855 self-gone, shift +0.031, sign RISES (paper 2 section 7.1's table; the same model is in the tree's own pre-registered ops set with sign RISES, ops/density_test.py:115).  THE SHIFT IS THE SMALLEST OF THE THREE RISERS in that table (Ministral-3B +0.121, Ministral-14B +0.104) and that is stated rather than smoothed: a thin separation is a risk to the manipulation, whose live reading is the first-window inward-share comparison the evaluation already computes.  The Ministral-3B figure the note previously cited alone (0.847 -> 0.968) is the FAMILY THE LADDER IS BUILT ON, no longer this run's substrate; it is kept here as the tree's other record, not as this run's precondition.  A run on a model without the sign is a substrate-choice error, reported as such.",
+ "substrate": "LINEAGE CROSSING, TAKEN AS A STATED SUBSTRATE CHOICE (handoff-selfreg-longhorizon-prereg2): qwen3.5:9b \u2014 Alibaba/Qwen, sign RISES, measured independently by the tree's own ops ladder (ops/density_test.py:115) BEFORE this choice.  It is NOT the Ministral family the size ladder is built on, because that family's thinking is an INSTRUCTED CONVENTION whose `thinking` field the chat template DROPS (MEASURED), so the trace instrument the DV is read from dies by turn 3-4 under any history-rewriting memory regime (3B, 8B and 14B alike).  THE COST, STATED: the family-matched SIZE LADDER DIES with it \u2014 its premise ('hold lineage constant, vary size') cannot carry the instrument.",
+ "tau_S": 100,
+ "timeout": 900.0,
+ "turns": 300
+}

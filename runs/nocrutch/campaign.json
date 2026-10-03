@@ -1,0 +1,19 @@
+{
+  "provider": "lambda",
+  "instance_type": "gpu_1x_a10",
+  "region": "us-east-1",
+  "arms": "G-off G-on",
+  "n_per_arm": 1,
+  "cells": 2,
+  "turns": 30,
+  "model": "qwen3.5:9b",
+  "num_ctx": 65536,
+  "num_predict": 12000,
+  "keep_recent": 4,
+  "timeout_s": 900,
+  "seed_base": 4242,
+  "seed_stride": 1000,
+  "agent_sha": "70a66fd9c0524f894a91058c544124dd419171b1",
+  "agent_dirty": "no",
+  "written_at": "2026-09-30T01:18:59Z"
+}

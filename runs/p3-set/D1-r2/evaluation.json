@@ -1,0 +1,808 @@
+{
+ "cells": [
+  {
+   "arm": "D1",
+   "declared_over_competent": 1.0,
+   "dv": {
+    "per_target": {
+     "f1": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f10": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f11": [
+      "USEFUL",
+      1.0
+     ],
+     "f12": [
+      "USEFUL",
+      1.0
+     ],
+     "f2": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f3": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f4": [
+      "USEFUL",
+      1.0
+     ],
+     "f5": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f6": [
+      "USEFUL",
+      1.0
+     ],
+     "f7": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f8": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f9": [
+      "NOT_COMPLETE",
+      0.0
+     ]
+    },
+    "scale_note": "0..len(targets) for this cell (SECONDARY, the artifact ordinal; the PRIMARY DV is dv_rate below)",
+    "sum": 7.0
+   },
+   "dv_rate": {
+    "completions_late_minus_first": 6,
+    "completions_per_window": [
+     6,
+     4,
+     0
+    ],
+    "declared_completions_past_last_window": 0,
+    "instrument": "declared-completion rate per window (world-adjudicated gate_log; P3-PREREG 2026-10-05)",
+    "status": "READ",
+    "total_declared_completions": 10,
+    "window": 20,
+    "windows": 3
+   },
+   "identity_tag": "45ed480e940d87a7",
+   "mediator": {
+    "compaction_gap_turns": [
+     4,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     4,
+     4,
+     5,
+     6,
+     5,
+     5,
+     5
+    ],
+    "mean_gap_turns": 2.761904761904762,
+    "n_events_with_pair": 21,
+    "survival_pair_second_event_on": [
+     {
+      "after": [],
+      "before": [],
+      "turn": 6
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 8
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 10
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 12
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 14
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 16
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 17
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 18
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 19
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 20
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 21
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 22
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 24
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 28
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 32
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 37
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 43
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 48
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 53
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 58
+     }
+    ]
+   },
+   "n_compactions": 21,
+   "reconstruction_cost_series": [
+    {
+     "call": 1,
+     "cum_eval_count": 12000,
+     "eval_count": 12000,
+     "note": null,
+     "prompt_chars": null,
+     "returned_chars": 0,
+     "thinking_chars": null,
+     "turn": 5,
+     "window": {
+      "hi_turn": 7,
+      "lo_turn": 6,
+      "turns": 2
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 2,
+     "cum_eval_count": 24000,
+     "eval_count": 12000,
+     "note": null,
+     "prompt_chars": null,
+     "returned_chars": 0,
+     "thinking_chars": null,
+     "turn": 7,
+     "window": {
+      "hi_turn": 9,
+      "lo_turn": 8,
+      "turns": 2
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 3,
+     "cum_eval_count": 27327,
+     "eval_count": 3327,
+     "note": null,
+     "prompt_chars": 34765,
+     "returned_chars": 827,
+     "thinking_chars": 14429,
+     "turn": 9,
+     "window": {
+      "hi_turn": 11,
+      "lo_turn": 10,
+      "turns": 2
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 4,
+     "cum_eval_count": 31061,
+     "eval_count": 3734,
+     "note": null,
+     "prompt_chars": 33643,
+     "returned_chars": 827,
+     "thinking_chars": 15400,
+     "turn": 11,
+     "window": {
+      "hi_turn": 13,
+      "lo_turn": 12,
+      "turns": 2
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 5,
+     "cum_eval_count": 31571,
+     "eval_count": 510,
+     "note": null,
+     "prompt_chars": 34405,
+     "returned_chars": 873,
+     "thinking_chars": 1653,
+     "turn": 13,
+     "window": {
+      "hi_turn": 15,
+      "lo_turn": 14,
+      "turns": 2
+     },
+     "work_in_window": 2
+    },
+    {
+     "call": 6,
+     "cum_eval_count": 38490,
+     "eval_count": 6919,
+     "note": null,
+     "prompt_chars": 36307,
+     "returned_chars": 716,
+     "thinking_chars": 27698,
+     "turn": 15,
+     "window": {
+      "hi_turn": 17,
+      "lo_turn": 16,
+      "turns": 2
+     },
+     "work_in_window": 4
+    },
+    {
+     "call": 7,
+     "cum_eval_count": 39578,
+     "eval_count": 1088,
+     "note": null,
+     "prompt_chars": 49771,
+     "returned_chars": 804,
+     "thinking_chars": 4230,
+     "turn": 17,
+     "window": {
+      "hi_turn": 18,
+      "lo_turn": 18,
+      "turns": 1
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 8,
+     "cum_eval_count": 44608,
+     "eval_count": 5030,
+     "note": null,
+     "prompt_chars": 58880,
+     "returned_chars": 819,
+     "thinking_chars": 19965,
+     "turn": 18,
+     "window": {
+      "hi_turn": 19,
+      "lo_turn": 19,
+      "turns": 1
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 9,
+     "cum_eval_count": 50295,
+     "eval_count": 5687,
+     "note": null,
+     "prompt_chars": 54153,
+     "returned_chars": 804,
+     "thinking_chars": 23529,
+     "turn": 19,
+     "window": {
+      "hi_turn": 20,
+      "lo_turn": 20,
+      "turns": 1
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 10,
+     "cum_eval_count": 55646,
+     "eval_count": 5351,
+     "note": null,
+     "prompt_chars": 57574,
+     "returned_chars": 6192,
+     "thinking_chars": 13541,
+     "turn": 20,
+     "window": {
+      "hi_turn": 21,
+      "lo_turn": 21,
+      "turns": 1
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 11,
+     "cum_eval_count": 56503,
+     "eval_count": 857,
+     "note": null,
+     "prompt_chars": 53537,
+     "returned_chars": 1346,
+     "thinking_chars": 2396,
+     "turn": 21,
+     "window": {
+      "hi_turn": 22,
+      "lo_turn": 22,
+      "turns": 1
+     },
+     "work_in_window": 2
+    },
+    {
+     "call": 12,
+     "cum_eval_count": 57113,
+     "eval_count": 610,
+     "note": null,
+     "prompt_chars": 42034,
+     "returned_chars": 892,
+     "thinking_chars": 2122,
+     "turn": 22,
+     "window": {
+      "hi_turn": 23,
+      "lo_turn": 23,
+      "turns": 1
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 13,
+     "cum_eval_count": 63247,
+     "eval_count": 6134,
+     "note": null,
+     "prompt_chars": 40617,
+     "returned_chars": 708,
+     "thinking_chars": 24440,
+     "turn": 23,
+     "window": {
+      "hi_turn": 25,
+      "lo_turn": 24,
+      "turns": 2
+     },
+     "work_in_window": 1
+    },
+    {
+     "call": 14,
+     "cum_eval_count": 75247,
+     "eval_count": 12000,
+     "note": null,
+     "prompt_chars": null,
+     "returned_chars": 0,
+     "thinking_chars": null,
+     "turn": 25,
+     "window": {
+      "hi_turn": 29,
+      "lo_turn": 26,
+      "turns": 4
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 15,
+     "cum_eval_count": 80817,
+     "eval_count": 5570,
+     "note": null,
+     "prompt_chars": 20931,
+     "returned_chars": 966,
+     "thinking_chars": 22601,
+     "turn": 29,
+     "window": {
+      "hi_turn": 33,
+      "lo_turn": 30,
+      "turns": 4
+     },
+     "work_in_window": 1
+    },
+    {
+     "call": 16,
+     "cum_eval_count": 86477,
+     "eval_count": 5660,
+     "note": null,
+     "prompt_chars": 20927,
+     "returned_chars": 633,
+     "thinking_chars": 23544,
+     "turn": 33,
+     "window": {
+      "hi_turn": 38,
+      "lo_turn": 34,
+      "turns": 5
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 17,
+     "cum_eval_count": 98477,
+     "eval_count": 12000,
+     "note": null,
+     "prompt_chars": null,
+     "returned_chars": 0,
+     "thinking_chars": null,
+     "turn": 38,
+     "window": {
+      "hi_turn": 44,
+      "lo_turn": 39,
+      "turns": 6
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 18,
+     "cum_eval_count": 103340,
+     "eval_count": 4863,
+     "note": null,
+     "prompt_chars": 20318,
+     "returned_chars": 702,
+     "thinking_chars": 19892,
+     "turn": 44,
+     "window": {
+      "hi_turn": 49,
+      "lo_turn": 45,
+      "turns": 5
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 19,
+     "cum_eval_count": 106972,
+     "eval_count": 3632,
+     "note": null,
+     "prompt_chars": 19539,
+     "returned_chars": 718,
+     "thinking_chars": 14782,
+     "turn": 49,
+     "window": {
+      "hi_turn": 54,
+      "lo_turn": 50,
+      "turns": 5
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 20,
+     "cum_eval_count": 118041,
+     "eval_count": 11069,
+     "note": null,
+     "prompt_chars": 18206,
+     "returned_chars": 627,
+     "thinking_chars": 44545,
+     "turn": 54,
+     "window": {
+      "hi_turn": 59,
+      "lo_turn": 55,
+      "turns": 5
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 21,
+     "cum_eval_count": 118941,
+     "eval_count": 900,
+     "note": null,
+     "prompt_chars": 20204,
+     "returned_chars": 798,
+     "thinking_chars": 3417,
+     "turn": 59,
+     "window": {
+      "hi_turn": 60,
+      "lo_turn": 60,
+      "turns": 1
+     },
+     "work_in_window": 0
+    }
+   ],
+   "reconstruction_outcome_counts": {
+    "content_with_steps": 0,
+    "content_without_steps": 17,
+    "exhausted_inward": 4
+   },
+   "reconstruction_outcomes": [
+    {
+     "budget": 12000,
+     "done_reason": "length",
+     "eval_count": 12000,
+     "prompt_chars": null,
+     "restored": false,
+     "returned_chars": 0,
+     "route": "exhausted_inward",
+     "thinking_chars": null,
+     "turn": 5
+    },
+    {
+     "budget": 12000,
+     "done_reason": "length",
+     "eval_count": 12000,
+     "prompt_chars": null,
+     "restored": false,
+     "returned_chars": 0,
+     "route": "exhausted_inward",
+     "thinking_chars": null,
+     "turn": 7
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 3327,
+     "prompt_chars": 34765,
+     "restored": false,
+     "returned_chars": 827,
+     "route": "content_without_steps",
+     "thinking_chars": 14429,
+     "turn": 9
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 3734,
+     "prompt_chars": 33643,
+     "restored": false,
+     "returned_chars": 827,
+     "route": "content_without_steps",
+     "thinking_chars": 15400,
+     "turn": 11
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 510,
+     "prompt_chars": 34405,
+     "restored": false,
+     "returned_chars": 873,
+     "route": "content_without_steps",
+     "thinking_chars": 1653,
+     "turn": 13
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 6919,
+     "prompt_chars": 36307,
+     "restored": false,
+     "returned_chars": 716,
+     "route": "content_without_steps",
+     "thinking_chars": 27698,
+     "turn": 15
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 1088,
+     "prompt_chars": 49771,
+     "restored": false,
+     "returned_chars": 804,
+     "route": "content_without_steps",
+     "thinking_chars": 4230,
+     "turn": 17
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 5030,
+     "prompt_chars": 58880,
+     "restored": false,
+     "returned_chars": 819,
+     "route": "content_without_steps",
+     "thinking_chars": 19965,
+     "turn": 18
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 5687,
+     "prompt_chars": 54153,
+     "restored": false,
+     "returned_chars": 804,
+     "route": "content_without_steps",
+     "thinking_chars": 23529,
+     "turn": 19
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 5351,
+     "prompt_chars": 57574,
+     "restored": false,
+     "returned_chars": 6192,
+     "route": "content_without_steps",
+     "thinking_chars": 13541,
+     "turn": 20
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 857,
+     "prompt_chars": 53537,
+     "restored": false,
+     "returned_chars": 1346,
+     "route": "content_without_steps",
+     "thinking_chars": 2396,
+     "turn": 21
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 610,
+     "prompt_chars": 42034,
+     "restored": false,
+     "returned_chars": 892,
+     "route": "content_without_steps",
+     "thinking_chars": 2122,
+     "turn": 22
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 6134,
+     "prompt_chars": 40617,
+     "restored": false,
+     "returned_chars": 708,
+     "route": "content_without_steps",
+     "thinking_chars": 24440,
+     "turn": 23
+    },
+    {
+     "budget": 12000,
+     "done_reason": "length",
+     "eval_count": 12000,
+     "prompt_chars": null,
+     "restored": false,
+     "returned_chars": 0,
+     "route": "exhausted_inward",
+     "thinking_chars": null,
+     "turn": 25
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 5570,
+     "prompt_chars": 20931,
+     "restored": false,
+     "returned_chars": 966,
+     "route": "content_without_steps",
+     "thinking_chars": 22601,
+     "turn": 29
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 5660,
+     "prompt_chars": 20927,
+     "restored": false,
+     "returned_chars": 633,
+     "route": "content_without_steps",
+     "thinking_chars": 23544,
+     "turn": 33
+    },
+    {
+     "budget": 12000,
+     "done_reason": "length",
+     "eval_count": 12000,
+     "prompt_chars": null,
+     "restored": false,
+     "returned_chars": 0,
+     "route": "exhausted_inward",
+     "thinking_chars": null,
+     "turn": 38
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 4863,
+     "prompt_chars": 20318,
+     "restored": false,
+     "returned_chars": 702,
+     "route": "content_without_steps",
+     "thinking_chars": 19892,
+     "turn": 44
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 3632,
+     "prompt_chars": 19539,
+     "restored": false,
+     "returned_chars": 718,
+     "route": "content_without_steps",
+     "thinking_chars": 14782,
+     "turn": 49
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 11069,
+     "prompt_chars": 18206,
+     "restored": false,
+     "returned_chars": 627,
+     "route": "content_without_steps",
+     "thinking_chars": 44545,
+     "turn": 54
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 900,
+     "prompt_chars": 20204,
+     "restored": false,
+     "returned_chars": 798,
+     "route": "content_without_steps",
+     "thinking_chars": 3417,
+     "turn": 59
+    }
+   ],
+   "repeat": 1,
+   "rows": 60,
+   "rows_recorded": 60,
+   "status": "OK",
+   "swe_final_error": null,
+   "turns_to_first_PASS": {
+    "f1": 14,
+    "f11": 22,
+    "f12": 22,
+    "f2": 16,
+    "f3": 16,
+    "f4": 14,
+    "f5": 16,
+    "f6": 16,
+    "f7": 25,
+    "f8": 32
+   }
+  }
+ ],
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "contrast_d1_d0": null,
+ "created_ts": "2026-10-03T13:44:15",
+ "dv": "PRIMARY: the declared-completion rate per window (world-adjudicated gate_log); SECONDARY: swe_final_score (P3-PREREG \u00a73 + the 2026-10-05 amendment)",
+ "independence": "the launcher's independence check gates the DV read (P3-PREREG \u00a77; a clone set is VOID)",
+ "marking": "the DV and mediator numbers are MEASURED (off the runs' own files); any inference over them is the analyst's, per the pre-registration's rule",
+ "prereg": "ops/lambda/P3-PREREG.md",
+ "result_node": "handoff-p3-livemode-result"
+}

@@ -1,0 +1,412 @@
+{
+ "cells": [
+  {
+   "arm": "D1'",
+   "declared_over_competent": 1.0,
+   "dv": {
+    "per_target": {
+     "f1": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f10": [
+      "USEFUL",
+      1.0
+     ],
+     "f11": [
+      "USEFUL",
+      1.0
+     ],
+     "f12": [
+      "USEFUL",
+      1.0
+     ],
+     "f2": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f3": [
+      "USEFUL",
+      1.0
+     ],
+     "f4": [
+      "USEFUL",
+      1.0
+     ],
+     "f5": [
+      "USEFUL",
+      1.0
+     ],
+     "f6": [
+      "USEFUL",
+      1.0
+     ],
+     "f7": [
+      "USEFUL",
+      1.0
+     ],
+     "f8": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f9": [
+      "USEFUL",
+      1.0
+     ]
+    },
+    "scale_note": "0..len(targets) for this cell (SECONDARY, the artifact ordinal; the PRIMARY DV is dv_rate below)",
+    "sum": 10.5
+   },
+   "dv_rate": {
+    "completions_late_minus_first": -1,
+    "completions_per_window": [
+     4,
+     3,
+     5
+    ],
+    "declared_completions_past_last_window": 0,
+    "instrument": "declared-completion rate per window (world-adjudicated gate_log; P3-PREREG 2026-10-05)",
+    "status": "READ",
+    "total_declared_completions": 12,
+    "window": 20,
+    "windows": 3
+   },
+   "identity_tag": "70b8e4d3d7d4ff24",
+   "mediator": {
+    "compaction_gap_turns": [
+     4,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     4,
+     4,
+     5
+    ],
+    "mean_gap_turns": 2.7142857142857144,
+    "n_events_with_pair": 21,
+    "survival_pair_second_event_on": [
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [],
+      "turn": 6
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 8
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 10
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 12
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 14
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 16
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 18
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 20
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 22
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 24
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 26
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 29
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 32
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 35
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 38
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 41
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 44
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 48
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 52
+     },
+     {
+      "after": [],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 57
+     }
+    ]
+   },
+   "n_compactions": 21,
+   "reconstruction_cost_series": [],
+   "reconstruction_outcome_counts": {
+    "content_with_steps": 0,
+    "content_without_steps": 0,
+    "exhausted_inward": 0
+   },
+   "reconstruction_outcomes": [],
+   "repeat": 1,
+   "rows": 60,
+   "rows_recorded": 60,
+   "status": "OK",
+   "swe_final_error": null,
+   "swe_heldout_fraction": {
+    "n_null_tasks": 0,
+    "n_targets": 12,
+    "per_target": {
+     "f1": 0.6666666666666666,
+     "f10": 1.0,
+     "f11": 1.0,
+     "f12": 1.0,
+     "f2": 0.6666666666666666,
+     "f3": 1.0,
+     "f4": 1.0,
+     "f5": 1.0,
+     "f6": 1.0,
+     "f7": 1.0,
+     "f8": 0.9375,
+     "f9": 1.0
+    },
+    "scale_note": "CONTINUOUS 0..len(targets): the held-out pass fraction per task (len(passed)/len(collected)), summed; None = the task's held-out suite collected zero tests (explicit, never 0/0).  The coarse verdict ordinal is UNCHANGED and rides `dv` beside this.",
+    "sum": 11.270833333333334
+   },
+   "swe_heldout_fraction_sum": 11.270833333333334,
+   "turns_to_first_PASS": {
+    "f1": 35,
+    "f10": 55,
+    "f11": 58,
+    "f12": 58,
+    "f2": 36,
+    "f3": 16,
+    "f4": 13,
+    "f5": 20,
+    "f6": 20,
+    "f7": 27,
+    "f8": 51,
+    "f9": 55
+   }
+  }
+ ],
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "contrast_d1_d0": null,
+ "created_ts": "2026-10-03T18:15:49",
+ "dv": "PRIMARY: the declared-completion rate per window (world-adjudicated gate_log); SECONDARY: swe_final_score (P3-PREREG \u00a73 + the 2026-10-05 amendment)",
+ "independence": "the launcher's independence check gates the DV read (P3-PREREG \u00a77; a clone set is VOID)",
+ "marking": "the DV and mediator numbers are MEASURED (off the runs' own files); any inference over them is the analyst's, per the pre-registration's rule",
+ "prereg": "ops/lambda/P3-PREREG.md",
+ "result_node": "handoff-p3-livemode-result"
+}

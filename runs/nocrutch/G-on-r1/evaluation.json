@@ -1,0 +1,117 @@
+{
+ "arms": [
+  "G-on"
+ ],
+ "created_ts": "2026-09-30T02:10:54",
+ "dv": "windows to collapse: the first COMPLETE window whose mean outward content is at or below the measured floor \u2014 per run, with INSUFFICIENT when the floor is not derivable and NO_COLLAPSE_IN_HORIZON when none crossed",
+ "floor": {
+  "convention": "floor = 0.1 x mean(first complete window mean outward content over the runs); None (unscoreable) when no run yields a complete first window",
+  "from_runs": [],
+  "value": null
+ },
+ "gates": {
+  "manipulation": {
+   "convention": "the FIRST COMPLETE window's mean inward share, present (B) vs absent (A), per repeat; a strictly positive delta is PRESENT (the M-cell predicate reads its manipulation gate on the first window too \u2014 exp_selfmonitor.MSELF_PREDICATE_NOTES); disagreeing repeats are SPLIT, never averaged",
+   "per_repeat": {
+    "1": {
+     "reason": "the pair is not present (arms requested: ['G-on'])",
+     "repeat": 1,
+     "status": "INSUFFICIENT"
+    }
+   },
+   "status": "INSUFFICIENT"
+  },
+  "run": {
+   "note": "a run that is not a completed measurement (status, the 5.3 guard, a window that does not exist) BLOCKS and names itself",
+   "per_run": {
+    "G-on-r1": {
+     "reason": "no COMPLETE window (tau_S=100): rows exist, windows do not",
+     "status": "INSUFFICIENT"
+    }
+   },
+   "status": "INSUFFICIENT"
+  },
+  "task_health": {
+   "note": "the world's own ledger: at least one applied completion per COMPLETE window; INSUFFICIENT when no complete window exists",
+   "per_run": {
+    "G-on-r1": {
+     "note": "no complete window \u2014 the gate cannot read a partial window",
+     "status": "INSUFFICIENT",
+     "windows": 0
+    }
+   },
+   "status": "INSUFFICIENT"
+  }
+ },
+ "licences": {
+  "note": "NO LICENCE IS ISSUED BY THIS EVALUATION.  No licence predicate for the A/B campaign is pre-registered: the pre-registration node (handoff-selfreg-longhorizon-prereg2) states the gates (the run's own verdict, task-health, the 5.3 void guard, the manipulation conjunct) and the measured floor, and licenses nothing; and the tree's only licence predicate, exp_selfmonitor.evaluate_mself, reads M1-M8 cells of a DIFFERENT rig \u2014 applying it here would report INSUFFICIENT for every cell and would put another rig's licence names on this campaign's record.  The four seats are therefore carried with the honest value (NOT ISSUED) and the gates below are reported as GATES, exactly as pre-registered.  Issuing L1-L4 requires a pre-registration that states each predicate over these readings; until one exists, a licence here would be an invented claim.",
+  "slots": {
+   "L1": {
+    "reason": "no predicate for the A/B campaign is pre-registered; the gates above are the readings a pre-registration would have to map onto this seat",
+    "status": "NOT ISSUED"
+   },
+   "L2": {
+    "reason": "no predicate for the A/B campaign is pre-registered; the gates above are the readings a pre-registration would have to map onto this seat",
+    "status": "NOT ISSUED"
+   },
+   "L3": {
+    "reason": "no predicate for the A/B campaign is pre-registered; the gates above are the readings a pre-registration would have to map onto this seat",
+    "status": "NOT ISSUED"
+   },
+   "L4": {
+    "reason": "no predicate for the A/B campaign is pre-registered; the gates above are the readings a pre-registration would have to map onto this seat",
+    "status": "NOT ISSUED"
+   }
+  },
+  "status": "NOT ISSUED (no licence predicate is pre-registered)"
+ },
+ "marking": "MEASURED: the gates, the floor, the DV and the separation are computed from the runs' own recorded rows and summaries.  NOT ISSUED: the four licence seats (no predicate is pre-registered).  PROJECTION: nothing \u2014 no live run is implied by this record's existence",
+ "memory_regime": "naive",
+ "prediction_separation": {
+  "pairs": [],
+  "procedure": "ab_separation(summary_A, summary_B) over each repeat's pair, each run's prediction rebuilt from ITS OWN recorded derivation_loss_events",
+  "status": "NOT COMPUTED \u2014 the A/B pair is not present among the completed runs (arms requested: ['G-on'])"
+ },
+ "prereg_node": "handoff-selfreg-longhorizon-prereg2",
+ "repeats": 1,
+ "result_node": "handoff-selfreg-longhorizon-result",
+ "runner": "agent/exp_longhorizon.py",
+ "runs": [
+  {
+   "arm": "G-on",
+   "budget_guard": {
+    "empty_content_turns": 0,
+    "empty_rate": 0.0,
+    "n": 30,
+    "note": "within the budget guard's boundary",
+    "saturated_turns": 0,
+    "void": false
+   },
+   "dv": {
+    "verdict": "INSUFFICIENT (no floor derivable \u2014 the arms' own first complete windows are the floor's own source)",
+    "windows_to_collapse": null
+   },
+   "error": null,
+   "first_window_mean_inward": null,
+   "first_window_mean_outward": null,
+   "identity_tag": "424c11e56b3b55f6",
+   "n_compactions": 0,
+   "predicted_crossing_window": null,
+   "repeat": 1,
+   "rows": 30,
+   "rows_recorded": 30,
+   "run_gate": "INSUFFICIENT",
+   "run_gate_reason": "no COMPLETE window (tau_S=100): rows exist, windows do not",
+   "status": "OK",
+   "summary_rows_agree": true,
+   "task_health": {
+    "note": "no complete window \u2014 the gate cannot read a partial window",
+    "status": "INSUFFICIENT",
+    "windows": 0
+   },
+   "window_means_outward": []
+  }
+ ],
+ "tau_S": 100,
+ "turns": 30
+}

@@ -1,0 +1,553 @@
+{
+ "cells": [
+  {
+   "arm": "D1'",
+   "declared_over_competent": 0.125,
+   "dv": {
+    "per_target": {
+     "f1": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f10": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f11": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f12": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f2": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f3": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f4": [
+      "USEFUL",
+      1.0
+     ],
+     "f5": [
+      "USEFUL",
+      1.0
+     ],
+     "f6": [
+      "USEFUL",
+      1.0
+     ],
+     "f7": [
+      "USEFUL",
+      1.0
+     ],
+     "f8": [
+      "USEFUL",
+      1.0
+     ],
+     "f9": [
+      "NOT_COMPLETE",
+      0.0
+     ]
+    },
+    "scale_note": "0..len(targets) for this cell (SECONDARY, the artifact ordinal; the PRIMARY DV is dv_rate below)",
+    "sum": 6.5
+   },
+   "dv_rate": {
+    "completions_late_minus_first": 1,
+    "completions_per_window": [
+     1,
+     0,
+     0
+    ],
+    "declared_completions_past_last_window": 0,
+    "instrument": "declared-completion rate per window (world-adjudicated gate_log; P3-PREREG 2026-10-05)",
+    "status": "READ",
+    "total_declared_completions": 1,
+    "window": 20,
+    "windows": 3
+   },
+   "identity_tag": "7406d553a88d9909",
+   "mediator": {
+    "compaction_gap_turns": [
+     4,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mean_gap_turns": 2.0344827586206895,
+    "n_events_with_pair": 29,
+    "survival_pair_second_event_on": [
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [],
+      "turn": 6
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 8
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 10
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 12
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 14
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 16
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 18
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 19
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 21
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 23
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 25
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 27
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 29
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 31
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 33
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 35
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 37
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 39
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 41
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 43
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 45
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 47
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 49
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 51
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 53
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 55
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 57
+     },
+     {
+      "after": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "before": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "turn": 59
+     }
+    ]
+   },
+   "n_compactions": 29,
+   "reconstruction_cost_series": [],
+   "reconstruction_outcome_counts": {
+    "content_with_steps": 0,
+    "content_without_steps": 0,
+    "exhausted_inward": 0
+   },
+   "reconstruction_outcomes": [],
+   "repeat": 1,
+   "rows": 60,
+   "rows_recorded": 60,
+   "status": "OK",
+   "swe_final_error": null,
+   "turns_to_first_PASS": {
+    "f1": 3
+   }
+  }
+ ],
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "contrast_d1_d0": null,
+ "created_ts": "2026-10-03T13:48:07",
+ "dv": "PRIMARY: the declared-completion rate per window (world-adjudicated gate_log); SECONDARY: swe_final_score (P3-PREREG \u00a73 + the 2026-10-05 amendment)",
+ "independence": "the launcher's independence check gates the DV read (P3-PREREG \u00a77; a clone set is VOID)",
+ "marking": "the DV and mediator numbers are MEASURED (off the runs' own files); any inference over them is the analyst's, per the pre-registration's rule",
+ "prereg": "ops/lambda/P3-PREREG.md",
+ "result_node": "handoff-p3-livemode-result"
+}

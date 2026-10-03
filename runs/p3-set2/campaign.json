@@ -1,0 +1,21 @@
+{
+  "provider": "lambda",
+  "instance_type": "gpu_1x_a10",
+  "region": "us-east-1",
+  "arms": "D0 D1' D1",
+  "runner": "lh_agent",
+  "n_per_arm": 10,
+  "cells": 30,
+  "turns": 60,
+  "task_window": 20,
+  "model": "qwen3.5:9b",
+  "num_ctx": 32768,
+  "num_predict": 12000,
+  "keep_recent": 4,
+  "timeout_s": 900,
+  "seed_base": 4242,
+  "seed_stride": 1000,
+  "agent_sha": "bfbe5d07ab69c68e0de8f8731c0b821f7c9f6ec1",
+  "agent_dirty": "yes",
+  "written_at": "2026-10-03T17:11:25Z"
+}

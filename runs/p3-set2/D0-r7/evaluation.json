@@ -1,0 +1,269 @@
+{
+ "cells": [
+  {
+   "arm": "D0",
+   "declared_over_competent": 0.25,
+   "dv": {
+    "per_target": {
+     "f1": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f10": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f11": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f12": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f2": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f3": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f4": [
+      "USEFUL",
+      1.0
+     ],
+     "f5": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f6": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f7": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f8": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f9": [
+      "NOT_COMPLETE",
+      0.0
+     ]
+    },
+    "scale_note": "0..len(targets) for this cell (SECONDARY, the artifact ordinal; the PRIMARY DV is dv_rate below)",
+    "sum": 2.5
+   },
+   "dv_rate": {
+    "completions_late_minus_first": 0,
+    "completions_per_window": [
+     0,
+     1,
+     0
+    ],
+    "declared_completions_past_last_window": 0,
+    "instrument": "declared-completion rate per window (world-adjudicated gate_log; P3-PREREG 2026-10-05)",
+    "status": "READ",
+    "total_declared_completions": 1,
+    "window": 20,
+    "windows": 3
+   },
+   "identity_tag": "5131812926ea2079",
+   "mediator": {
+    "compaction_gap_turns": [
+     5,
+     3,
+     2,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     3,
+     2,
+     2,
+     3,
+     3,
+     1,
+     2,
+     2,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "mean_gap_turns": 2.4166666666666665,
+    "n_events_with_pair": 24,
+    "survival_pair_second_event_on": [
+     {
+      "after": [],
+      "before": [],
+      "turn": 8
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 10
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 12
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 14
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 16
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 17
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 18
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 19
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 22
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 24
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 26
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 29
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 32
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 33
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 35
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 37
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 40
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 43
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 46
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 49
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 52
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 55
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 58
+     }
+    ]
+   },
+   "n_compactions": 24,
+   "reconstruction_cost_series": [],
+   "reconstruction_outcome_counts": {
+    "content_with_steps": 0,
+    "content_without_steps": 0,
+    "exhausted_inward": 0
+   },
+   "reconstruction_outcomes": [],
+   "repeat": 1,
+   "rows": 60,
+   "rows_recorded": 60,
+   "status": "OK",
+   "swe_final_error": null,
+   "swe_heldout_fraction": {
+    "n_null_tasks": 1,
+    "n_targets": 12,
+    "per_target": {
+     "f1": null,
+     "f10": 0.0,
+     "f11": 0.0,
+     "f12": 0.0,
+     "f2": 0.6666666666666666,
+     "f3": 0.8888888888888888,
+     "f4": 1.0,
+     "f5": 0.8,
+     "f6": 0.3,
+     "f7": 0.0,
+     "f8": 0.0625,
+     "f9": 0.5
+    },
+    "scale_note": "CONTINUOUS 0..len(targets): the held-out pass fraction per task (len(passed)/len(collected)), summed; None = the task's held-out suite collected zero tests (explicit, never 0/0).  The coarse verdict ordinal is UNCHANGED and rides `dv` beside this.",
+    "sum": 4.218055555555556
+   },
+   "swe_heldout_fraction_sum": 4.218055555555556,
+   "turns_to_first_PASS": {
+    "f5": 34
+   }
+  }
+ ],
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "contrast_d1_d0": null,
+ "created_ts": "2026-10-03T17:57:25",
+ "dv": "PRIMARY: the declared-completion rate per window (world-adjudicated gate_log); SECONDARY: swe_final_score (P3-PREREG \u00a73 + the 2026-10-05 amendment)",
+ "independence": "the launcher's independence check gates the DV read (P3-PREREG \u00a77; a clone set is VOID)",
+ "marking": "the DV and mediator numbers are MEASURED (off the runs' own files); any inference over them is the analyst's, per the pre-registration's rule",
+ "prereg": "ops/lambda/P3-PREREG.md",
+ "result_node": "handoff-p3-livemode-result"
+}

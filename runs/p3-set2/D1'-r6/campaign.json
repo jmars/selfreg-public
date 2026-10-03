@@ -1,0 +1,66 @@
+{
+ "api": "chat",
+ "arm_identities": {
+  "D1'": {
+   "arm": "D1'",
+   "budget": 64,
+   "engine": "real",
+   "keep_recent": 4,
+   "label": "paper 3: seat ON, monitoring ON, inject \u2014 the pure-carrier control (cost without depletion)",
+   "memory": "naive",
+   "monitoring_para_sha16": "1293a970d85cece0",
+   "num_ctx": 32768,
+   "num_predict": 12000,
+   "paper3": {
+    "grounding": true,
+    "inject_regime": "inject",
+    "monitoring": true,
+    "seed_absent": false
+   },
+   "regulator": "none",
+   "seed_base": 19242,
+   "sn_activation_floor": 0.7,
+   "summarizer_think": false,
+   "surface": true,
+   "swe_queue_digest16": "941ef27341ddcf41",
+   "task_health_window": 20,
+   "tau_S": 100,
+   "temperature": 0.6,
+   "timeout": 900.0,
+   "turns": 60
+  }
+ },
+ "arms": [
+  "D1'"
+ ],
+ "budget": 64,
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "claim_marking": "PROJECTION \u2014 the rig assumes no outcome; the arms exist to measure the claim",
+ "created_ts": "2026-10-03T17:24:37",
+ "dv": "PRIMARY: the declared-completion RATE PER WINDOW (world-adjudicated gate_log, P3-PREREG's 2026-10-05 amendment; the window-gradient and the per-window rate are the pre-registered statistics).  SECONDARY: swe_final_score, the external evaluator's typed verdict per target (USEFUL 1 / TASK_COMPLETE_ONLY 0.5 / NOT_COMPLETE 0) \u2014 it alone carries the class-(C) axis and the competence-without-declaration shape.  SECONDARY-B (the p3-instr finer DV): the held-out PASS FRACTION per target (len(passed)/len(collected)), a continuous 0..1 summed to 0..len(targets) \u2014 the SAME instrument at finer granularity, reported BESIDE the coarse ordinal (never instead of it); a target whose held-out suite collected zero tests is None, never 0/0.  The declared/competent ratio is reported per arm (F14). turns_to_first_PASS is DROPPED (no discriminating power under a queue; author decision, stated in the amendment)",
+ "endpoint": "http://127.0.0.1:11455/api/chat",
+ "engine": "real",
+ "floor": "None BY DESIGN on this mode: the paper-3 arms are regulator=none (P3-PREREG \u00a72), and the window floor is an ACROSS-ARMS convention of the REGULATOR claims (run_campaign's LH.floor_from_arms).  The worker claim's DV is swe_final_score; no window floor is read.",
+ "keep_recent": 4,
+ "layout": "rows: <outdir>/cell-<arm>-r<repeat>/rows/<arm>-r<repeat>.jsonl; summary: <outdir>/cell-<arm>-r<repeat>/runs/<arm>-r<repeat>.json",
+ "mode": "run",
+ "model": "qwen3.5:9b",
+ "n": 1,
+ "not_built": [
+  "the OUT-OF-PROCESS TOOL OWNER (R6): the tool surface runs IN-PROCESS inside this loop; moving it behind the boundary daemon is a SEPARATE task's file (boundary_daemon.py / boundary_client.py) and is not done here (paper-3-scope 6)",
+  "a consolidation codec: the naive regime's only capacity term is the substrate's num_ctx; the engineered regime's codec is identity (paper-3-scope 3.4); the LE->codec supersession path is not on this loop",
+  "a live run: this build is exercised on OFFLINE FIXTURES only; the claim is PROJECTION until a live run measures it",
+  "theory evidence: the injected theory's evidence relations are seeded EMPTY by default (the shipped SWE suite has no blocking structure), so the derive path is LIVE but derives nothing until a caller seeds evidence \u2014 the gap is stated, not hidden behind a wider claim"
+ ],
+ "num_ctx": 32768,
+ "num_predict": 12000,
+ "prereg": "ops/lambda/P3-PREREG.md",
+ "result_node": "handoff-p3-livemode-result",
+ "seed_base": 19242,
+ "surface": true,
+ "task_health_window": 20,
+ "tau_S": 100,
+ "temperature": 0.6,
+ "timeout": 900.0,
+ "turns": 60
+}

@@ -1,107 +1,84 @@
-# The mechanism — paper 2's deposit
+# Self-Application Is Not Free — paper 3's deposit
 
-**Paper 2 of three: the model applied to a self-referential substrate, in a measurement rig.**
+**Paper 3 of three: the model applied to a self-referential substrate (a measurement rig)
+and to a working agent, unified.**
 
-> ### STATUS: NOT SUBMITTED — HELD, BY AUTHOR DECISION (2026-09-30)
->
-> This deposit is **complete and verified** (it meets paper 1's hygiene and metadata standard:
-> `.zenodo.json`, a rendered PDF, dual licence, a snapshot pin, a clean allowlist gate), and it is
-> **deliberately not published**. The reason is scope, not defects: the paper's measured content is
-> **one positive result (R1) plus four instrument findings (R3–R6)**, which is weaker than paper 1's
-> six quantitative laws — and the strength is limited **structurally**, not by effort, because the
-> instrument and the measurand share a channel on this substrate.
->
-> The author's decision is to **hold this paper and fold it into paper 3** as its methodological
-> half ("here is why the obvious instrument fails, and here is the one that works"), rather than
-> publish it standalone to make a set of three. Two strong papers are preferred to three where the
-> middle one is a negative standing alone. If it is ever published alone, this deposit is ready.
->
-> Revisiting it should begin at `paper2/paper-2-results-record.md` (R1–R6) and **§6.2** of the
-> paper, which is where the measurement finding lives.
+> *Self-Application Is Not Free: the Monitoring Channel Is Part of the Failure Channel,
+> and the Self Does Not Survive Its Own Reconstruction*
 
-This repository is paper 2's **evidence deposit**: the paper, the measurements it cites, and the
-three lab instruments its citation appendix names. It is one of three public artifacts.
+This repository is paper 3's **evidence deposit**: the unified paper, the methods half it
+folds in, the worker's code, the pre-registration, the held-out task suite, and the run
+data from which every headline number is re-derivable. It is one of three public artifacts.
 
 | | |
 |---|---|
 | **the model** | the five-state control model of self-regulation ([published](https://doi.org/10.5281/zenodo.22943642)) |
-| **the mechanism** | **this repository** — the model applied to a self-referential substrate, in a measurement rig — *paper 2* |
-| **the worker** | `setpoint` — the agent that does the work — *paper 3* (that repository is currently private; the `agent/` modules this paper cites are carried here so no citation depends on it) |
-
-## This deposit is DERIVED — do not hand-edit it
-
-Every file here is materialised from a private working tree by a sync script. Edit a file here
-and the next sync overwrites it: the working tree is the source. But this repository is a
-**snapshot taken at a stated revision** of that tree, not a live mirror of it. The revision is
-recorded in [`SNAPSHOT`](SNAPSHOT) at the root — the source tree's HEAD, the UTC time of the
-sync, and whether that tree was clean or dirty at the moment (if it was dirty, the file says so
-plainly, because a dirty snapshot is the working tree at that HEAD rather than the HEAD alone).
-Re-syncing from a **later** revision produces a **later** snapshot, and `SNAPSHOT` then names
-that later revision — so the deposit is pinned and reproducible, and which revision of the code
-a citation is pointing into is a fact written down here rather than one that moves silently
-under a reader.
-
-Regenerate it with (run from the working tree the deposit is derived from):
-
-```
-SYNC_PROFILE=selfreg bash ops/sync_setpoint.sh          # add --dry-run to preview
-```
-
-The sync is **one script with two profiles**: `setpoint` (the default) materialises the worker's
-repository, `selfreg` materialises this one. They share the rsync options, the allowlist gate,
-the content scan and the commit idiom. The sync script itself lives in the working tree, not
-here (as it does for the worker's repository), because publishing it would publish the map of
-what is *not* published. The script runs this repo's own `ops/check_tracked_set.sh` before it
-commits, and it never pushes — a push is a disclosure step and stays manual. For this profile it
-also writes `SNAPSHOT` and names the source revision in the commit message, so a re-sync from a
-later revision is legible as a new snapshot both in the tree and in the log.
+| **the mechanism** | the model applied to a self-referential substrate, in a measurement rig — paper 2's content, folded here as the methods half |
+| **the worker** | **this repository** — the unified paper: the rig's cost finding + the worker's self-loss finding + the honest work-score null — *paper 3* |
 
 ## What is here
 
 | path | what it is |
 |---|---|
-| `paper2/paper-2-draft.md` | the paper (markdown — the source of truth) |
-| `paper.pdf` | the paper rendered to PDF: `pandoc -f markdown-yaml_metadata_block paper2/paper-2-draft.md --pdf-engine=typst -o paper.pdf` |
-| `paper2/paper-2-results-record.md` | R1–R6 — the measurements the paper cites |
-| `paper2/load-bearing-self-design.md` | the load-bearing self design — the attempt the paper reports as falsified |
-| `paper2/future-work-axis-hunt.md` | the axis hunt behind the generalization study's failure (SR-22) |
-| `ops/density_test.py` | the self-reference density predictor (SR-22) |
-| `ops/generalization_screen.py` | the generalization screen, stage 1 — protocol, guard, NO-CHANNEL outcome (SR-22) |
-| `ops/ladder_defs.py` | the escalation-ladder rungs and the family-matched size ladder (SR-5) |
+| `paper-3.md` | the paper (markdown — the source of truth) |
+| `paper-3.pdf` | the paper rendered to PDF: `pandoc paper-3.md --pdf-engine=typst -o paper-3.pdf` |
+| `paper2/` | the methods half — `paper-2-draft.md` (held by author decision, folded here), `paper-2-results-record.md` (R1–R6), `load-bearing-self-design.md`, `future-work-axis-hunt.md` |
+| `design/` | `architecture.md`, `arch-open-plan.md` — the worker's design record |
+| `agent/` | the worker's code: `lh_agent.py`, `task_eval.py`, `harness.py`, the CEN, the boundary, the memory codecs, the stage-2 batteries, and `tasks/` (the 12-task suite with visible `tests/` and sealed `heldout/` tests) |
+| `ops/` | the rig's instruments: `density_test.py`, `generalization_screen.py`, `ladder_defs.py`, `check_tracked_set.sh`, and `ops/lambda/P3-PREREG.md` (the pre-registration, cited twice by the paper) |
+| `runs/` | the run data — for each cited run set: `campaign.json`, `state/` (.tsv), per-cell `evaluation.json`, `cell-*/runs/*.json` (summaries), `cell-*/rows/*.jsonl` (per-turn rows), `logs/*.rc` (exit codes). No `pinned/`, no `*.out`/`*.log`, no tunnels, no `*.tmp`. |
+| `held-out-task-suite.json` | the sealed held-out task suite definition (the v2 definition covering all 12 tasks) |
 | `README.md`, `LICENSE`, `LICENSE-paper` | this file and the licences |
-| `SNAPSHOT` | the revision of the working tree this deposit was taken from — the pin, generated by the sync |
+| `SNAPSHOT` | the revision of the working tree this deposit was taken from — the pin |
+
+## The held-out task suite
+
+The paper's evaluator is **sealed against a held-out task suite** whose definition lives at
+`held-out-task-suite.json` (the v2 definition covering all 12 tasks). Each task's
+`agent/tasks/<task>/heldout/` directory contains the held-out tests themselves. **These are
+included so a reader can re-run the evaluator.** A public deposit that includes them is normal
+and correct: a reader is not the agent under test, and the paper's design depends on the *agent*
+not reading them, not on a public reader not reading them. The README-as-requirement design
+(visible suites the agent can run, held-out suites it cannot read) is enforced at runtime by the
+boundary, not by withholding the tests from the deposit.
+
+## Where the headline numbers live
+
+Every headline number is re-derivable from `runs/` alone:
+
+| quantity | where in `runs/` |
+|---|---|
+| empty-self fraction (1.000 in every D1 cell) | `p3-set/*/cell-*/runs/*.json` → `reconstruction_outcomes` / `survival_pair_events` |
+| reconstruction calls/cell (184 + 258) | `p3-set/*/cell-*/runs/*.json` → `reconstruction_cost_series` |
+| self-directed thinking chars (medians ~400k) | `p3-set/*/cell-*/rows/*.jsonl` → `content_chars` (thinking vs returned) |
+| thinking:returned ratio (21.2x / 20.5x) | same rows, per-call `content_chars` medians |
+| the DV (ordinal work score 0–12) | `p3-set/*/evaluation.json` → `dv` / `contrast_d1_d0` |
+| the finer held-out DV (set 2) | `p3-set2/*/evaluation.json` → `dv` (held-out pass fraction) |
+| the 3,123-row fold (1,358 + 1,765) | `p3-set/` + `p3-set2/` per-cell `rows/*.jsonl` |
+| the fold signature (present-in-full or absent-entirely) | same rows, `self_steps` / `compaction` columns |
+| cell exit codes (the two dead cells) | `p3-set/logs/*.rc`, `p3-set2/logs/*.rc` |
+| the pre-fix smoke (D1 dies at first compaction) | `p3-span-smoke/*/cell-*/rows/*.jsonl` |
+| the route check (two routes to self-loss) | `p3-d1check/*/cell-*/runs/*.json` |
+| the cost probe | `p3-cost-probe/*/cell-*/runs/*.json` |
+| the rig's R1–R6 (lambda-official, audit-rec, nocrutch, choice-go) | the matching `runs/<set>/` |
 
 ## What is deliberately NOT here, and why
 
-- **The paper's process notes** — `paper-2-goal.md`, `paper-3-scope.md`, `finetune-proposal.md`,
-  `outreach-britton.md`, `cult-induction-lit.md`. They are working notes rather than evidence, and
-  one of them (`paper-3-scope.md`) alone carries 37 internal node handles that resolve to nothing
-  a reader can open.
-- **The private development record and the lab's operational tooling** — the tree this deposit is
-  derived from also holds material that must not be public, so the sync publishes an allowlist and
-  nothing else.
+- **`pinned/`** — the per-set code snapshots, redundant with `agent/` (~3.5 MB each).
+- **`logs/*.out` and `logs/*.log`** — the raw stdout and tunnel logs (large, not re-analyzable;
+  the `*.rc` exit-code files are kept, as they are tiny and record each cell's exit code).
+- **The paper's process notes** — `report/`, `staged-report.md`, `practical.md`,
+  `reference/transcripts/` (raw first-person source material). None of these are in the deposit.
 
-The three instruments under `ops/` were **cleaned for publication**: the internal `handoff-…`
-node handles and the lab's absolute paths were removed, or replaced by the paper's own `[SR-n]`
-citation key where the match was unambiguous. No substantive comment was dropped — the comment's
-meaning survives intact; only the pointer that a reader could not follow is gone.
+## This deposit is DERIVED — do not hand-edit it
 
-## Where a citation resolves
-
-The paper's Appendix B keys each `[SR-n]` citation to the artifact that carries the claim. Those
-artifacts live across three public trees:
-
-- **this repository** — the paper, its companion records, and the three instruments;
-- **the worker's repository** — `agent/`, `design/`, `dlb/`, `logical-english/`,
-  `docs/worker-scope.md`;
-- **paper 1's deposit** — `dpdr/`, `claim-audit.md`, `dual-control.md`.
-
-Four cited paths — the `exp9` and `exp21` drivers and caches, named by SR-7 and SR-9 — belong to
-paper 1's deposit domain and are not carried there; the appendix flags those two entries rather
-than leaving a reader to hit a dead path. Everything else cited in Appendix B resolves.
+Every file here is materialised from a private working tree. Edit a file here and the next sync
+overwrites it: the working tree is the source. But this repository is a **snapshot taken at a
+stated revision** of that tree, not a live mirror of it. The revision is recorded in
+[`SNAPSHOT`](SNAPSHOT) at the root.
 
 ## Licence
 
-MIT — see `LICENSE`. The paper and the companion records under `paper2/` are
-[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) — see `LICENSE-paper`, the same split
-paper 1's deposit uses.
+MIT — see `LICENSE`. The paper (`paper-3.md`, `paper-3.pdf`) and the companion records under
+`paper2/` are [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) — see `LICENSE-paper`,
+the same split paper 1's deposit uses.

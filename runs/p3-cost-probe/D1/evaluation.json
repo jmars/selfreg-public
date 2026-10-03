@@ -1,0 +1,276 @@
+{
+ "cells": [
+  {
+   "arm": "D1",
+   "declared_over_competent": 1.0,
+   "dv": {
+    "per_target": {
+     "f1": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f10": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f11": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f12": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f2": [
+      "TASK_COMPLETE_ONLY",
+      0.5
+     ],
+     "f3": [
+      "USEFUL",
+      1.0
+     ],
+     "f4": [
+      "USEFUL",
+      1.0
+     ],
+     "f5": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f6": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f7": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f8": [
+      "NOT_COMPLETE",
+      0.0
+     ],
+     "f9": [
+      "NOT_COMPLETE",
+      0.0
+     ]
+    },
+    "scale_note": "0..len(targets) for this cell (SECONDARY, the artifact ordinal; the PRIMARY DV is dv_rate below)",
+    "sum": 3.0
+   },
+   "dv_rate": {
+    "completions_late_minus_first": null,
+    "completions_per_window": [],
+    "declared_completions_past_last_window": 4,
+    "instrument": "declared-completion rate per window (world-adjudicated gate_log; P3-PREREG 2026-10-05)",
+    "status": "INSUFFICIENT",
+    "total_declared_completions": 4,
+    "window": 20,
+    "windows": 0
+   },
+   "identity_tag": "8f1a7d740c9d9cab",
+   "mediator": {
+    "compaction_gap_turns": [
+     4,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mean_gap_turns": 2.3333333333333335,
+    "n_events_with_pair": 6,
+    "survival_pair_second_event_on": [
+     {
+      "after": [],
+      "before": [],
+      "turn": 6
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 8
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 10
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 12
+     },
+     {
+      "after": [],
+      "before": [],
+      "turn": 14
+     }
+    ]
+   },
+   "n_compactions": 6,
+   "reconstruction_cost_series": [
+    {
+     "call": 1,
+     "cum_eval_count": 1252,
+     "eval_count": 1252,
+     "note": null,
+     "prompt_chars": 34540,
+     "returned_chars": 880,
+     "thinking_chars": 4828,
+     "turn": 5,
+     "window": {
+      "hi_turn": 7,
+      "lo_turn": 6,
+      "turns": 2
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 2,
+     "cum_eval_count": 7169,
+     "eval_count": 5917,
+     "note": null,
+     "prompt_chars": 36014,
+     "returned_chars": 1017,
+     "thinking_chars": 20327,
+     "turn": 7,
+     "window": {
+      "hi_turn": 9,
+      "lo_turn": 8,
+      "turns": 2
+     },
+     "work_in_window": 2
+    },
+    {
+     "call": 3,
+     "cum_eval_count": 11157,
+     "eval_count": 3988,
+     "note": null,
+     "prompt_chars": 34912,
+     "returned_chars": 824,
+     "thinking_chars": 17296,
+     "turn": 9,
+     "window": {
+      "hi_turn": 11,
+      "lo_turn": 10,
+      "turns": 2
+     },
+     "work_in_window": 1
+    },
+    {
+     "call": 4,
+     "cum_eval_count": 23157,
+     "eval_count": 12000,
+     "note": null,
+     "prompt_chars": null,
+     "returned_chars": 0,
+     "thinking_chars": null,
+     "turn": 11,
+     "window": {
+      "hi_turn": 13,
+      "lo_turn": 12,
+      "turns": 2
+     },
+     "work_in_window": 0
+    },
+    {
+     "call": 5,
+     "cum_eval_count": 28137,
+     "eval_count": 4980,
+     "note": null,
+     "prompt_chars": 32295,
+     "returned_chars": 1751,
+     "thinking_chars": 18106,
+     "turn": 13,
+     "window": {
+      "hi_turn": 14,
+      "lo_turn": 14,
+      "turns": 1
+     },
+     "work_in_window": 1
+    }
+   ],
+   "reconstruction_outcome_counts": {
+    "content_with_steps": 0,
+    "content_without_steps": 4,
+    "exhausted_inward": 1
+   },
+   "reconstruction_outcomes": [
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 1252,
+     "prompt_chars": 34540,
+     "restored": false,
+     "returned_chars": 880,
+     "route": "content_without_steps",
+     "thinking_chars": 4828,
+     "turn": 5
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 5917,
+     "prompt_chars": 36014,
+     "restored": false,
+     "returned_chars": 1017,
+     "route": "content_without_steps",
+     "thinking_chars": 20327,
+     "turn": 7
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 3988,
+     "prompt_chars": 34912,
+     "restored": false,
+     "returned_chars": 824,
+     "route": "content_without_steps",
+     "thinking_chars": 17296,
+     "turn": 9
+    },
+    {
+     "budget": 12000,
+     "done_reason": "length",
+     "eval_count": 12000,
+     "prompt_chars": null,
+     "restored": false,
+     "returned_chars": 0,
+     "route": "exhausted_inward",
+     "thinking_chars": null,
+     "turn": 11
+    },
+    {
+     "budget": null,
+     "done_reason": "stop",
+     "eval_count": 4980,
+     "prompt_chars": 32295,
+     "restored": false,
+     "returned_chars": 1751,
+     "route": "content_without_steps",
+     "thinking_chars": 18106,
+     "turn": 13
+    }
+   ],
+   "repeat": 1,
+   "rows": 14,
+   "rows_recorded": 14,
+   "status": "OK",
+   "swe_final_error": null,
+   "turns_to_first_PASS": {
+    "f1": 8,
+    "f2": 10,
+    "f3": 14,
+    "f4": 8
+   }
+  }
+ ],
+ "claim": "with the regulator acting on the model's prediction, the agent survives horizons at which the same agent without it collapses, and acting on the PREDICTION beats acting on the COLLAPSE",
+ "contrast_d1_d0": null,
+ "created_ts": "2026-10-03T09:01:42",
+ "dv": "PRIMARY: the declared-completion rate per window (world-adjudicated gate_log); SECONDARY: swe_final_score (P3-PREREG \u00a73 + the 2026-10-05 amendment)",
+ "independence": "the launcher's independence check gates the DV read (P3-PREREG \u00a77; a clone set is VOID)",
+ "marking": "the DV and mediator numbers are MEASURED (off the runs' own files); any inference over them is the analyst's, per the pre-registration's rule",
+ "prereg": "ops/lambda/P3-PREREG.md",
+ "result_node": "handoff-p3-livemode-result"
+}
