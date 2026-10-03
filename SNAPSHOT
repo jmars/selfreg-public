@@ -9,9 +9,9 @@
 # The lab tree is private, so this sha names code a reader cannot fetch: it is a
 # pin, not a link.
 
-revision:                 6e13eab43fa299866676323c24181d4c4c255cec
-revision_short:           6e13eab
-snapshot_utc:             2026-10-03T21:47:00Z
+revision:                 8c64961$(git -C /home/jaye/thing rev-parse HEAD | cut -c8-)
+revision_short:           8c64961
+snapshot_utc:             2026-10-03T22:30:00Z
 source_dirty:             true
 source_dirty_paths:       2
 published_paths_modified: false
