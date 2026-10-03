@@ -9,8 +9,8 @@
 # The lab tree is private, so this sha names code a reader cannot fetch: it is a
 # pin, not a link.
 
-revision:                 4098151bf7c9dc26ec5440e1386cd6c911408029
-revision_short:           4098151
+revision:                 311cda8c935c7974255dd9c9a0982ccec76a4639
+revision_short:           311cda8
 snapshot_utc:             2026-10-03T22:30:00Z
 source_dirty:             true
 source_dirty_paths:       2
