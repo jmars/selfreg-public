@@ -500,7 +500,7 @@ CEN-side observables only (the reasoner is *told* its state, never asked to asse
 reaches a frozen plant ODE through exactly one seat, `a_hold`, the model's own collapse
 trigger. Depletion was measured with its control: at fixed budget B = 6, growing the store
 thins the priced coverage 1.000 → 0.857 → 0.545 while zero retrieval charge stays flat at
-1.000. **MEASURED** [design/architecture.md §11c–d].
+1.000. **MEASURED** (the retrieval layer's own fixture battery — `agent/retrieval.py` implements the priced seat, and the numbers are recorded with the methods half).
 
 **The three corrections the rig's own history forced, each kept because the worker inherits
 it.** (i) The stopped campaign's prompt was **backwards on both axes** — it requested

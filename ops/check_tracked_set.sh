@@ -27,6 +27,7 @@ cd "$(dirname "$0")/.." || exit 1
 
 # THE ALLOWLIST — the only paths that may be tracked. Keep in step with
 # .gitignore's un-ignore rules; if they drift, this is the one that should win.
+# `design/` (the product's design record) is deliberately NOT published.
 # `dpdr/` carries the frozen model package (the revision the agent build imports) and
 # `dlb/` the engine binding (paper 1's deposit predates the model's opt-in variants,
 # and the CEN's real-engine path needs dlb).
@@ -35,7 +36,7 @@ cd "$(dirname "$0")/.." || exit 1
 # (campaign.json, state/, evaluation.json, per-cell runs/*.json and rows/*.jsonl,
 # logs/*.rc). `held-out-task-suite.json` is the sealed held-out definition.
 # `SNAPSHOT` is the revision pin. `paper-3.md` and `paper-3.pdf` are the unified paper.
-ALLOWED_DIRS=(paper2 ops agent design runs dpdr dlb)
+ALLOWED_DIRS=(paper2 ops agent runs dpdr dlb)
 ALLOWED_FILES=(README.md LICENSE LICENSE-paper .gitignore SNAPSHOT paper-3.md paper-3.pdf .zenodo.json held-out-task-suite.json)
 
 fail=0
