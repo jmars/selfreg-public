@@ -576,6 +576,22 @@ RECONSTRUCT_INSTRUCTION = (
     "are working towards. Write it as the description of yourself you "
     "would want to carry forward. Reply with that description only.")
 
+#: THE SUMMARIZER'S THINKING POLICY, ONE SOURCE (the p3-instr fix): the
+#: summarization call posts `think=False` — the summarizer is
+#: INFRASTRUCTURE (identical in every arm), so its reasoning channel is
+#: NOT the phenomenon under test (the RECONSTRUCT arm's own thinking IS,
+#: and stays ON).  Read by `_live_summarizer` (the seat) and recorded by
+#: lh_agent's identity/summary (the claim), so the claim and the
+#: behaviour cannot drift apart — the standing order's "a claim string is
+#: a falsifiable claim".  MEASURED (the 24-cell set): at the observed
+#: input the summarizer spent its WHOLE 9,875-token budget inward and
+#: emitted no summary (done_reason='length', thinking 34-41k chars),
+#: killing 2 of 24 cells; the larger-budget alternative was measured to
+#: NOT be budget-elastic but its tail is UNMEASURED, so suppression is
+#: the robust fix.  A DIFFERENT value here is a different campaign
+#: (recorded, so identity_tag changes).
+SUMMARIZER_THINK = False
+
 LH_ARMS: dict = {
     "A-inj": {"label": "NO monitoring, self INJECTED after each compaction",
               "monitoring": False, "inject_regime": "inject",
@@ -1033,7 +1049,29 @@ class NaiveMemoryDMN:
         fabricated summary — and the error carries the call's own
         observables (`done_reason`, `eval_count`, the trace's size) so a
         residual failure is attributable in one look instead of
-        re-derived."""
+        re-derived.
+
+        THE THINKING CHANNEL IS OFF FOR THIS CALL (the p3-instr fix,
+        MEASURED, the just-run 24-cell set): the SUMMARIZER IS
+        INFRASTRUCTURE — identical in every arm, so its thinking is NOT
+        the phenomenon under test (that is the RECONSTRUCT arm's own
+        inward processing, which stays think-ON).  At the observed input
+        size qwen3.5:9b spent the WHOLE 9,875-token budget inward and
+        emitted no summary (done_reason='length', thinking 34-41k chars),
+        killing 2 of 24 cells — the SAME inward-exhaustion signature as
+        the reconstruction call, but on a call that is a TRANSFORMATION,
+        not the arm.  The precedent is the judge/classification call
+        (also think=False): a summary is a summary.  The larger-budget
+        alternative was MEASURED first (a free local call at the observed
+        ~10.5k-token input): the model STOPPED on its own at ~4k eval
+        tokens with done_reason='stop' under BOTH the 9,875 and a 20,000
+        budget — the thinking is NOT budget-elastic (it does not grow to
+        fill the budget), but its per-input/seed draw is heavy-tailed
+        (13k chars here vs 34-41k chars in the two dead cells) and the
+        tail is UNMEASURED, so suppression is the ROBUST fix that removes
+        the summarizer's dependence on that draw entirely.  The summary
+        is STILL the model's own output; the fail-closed refusal for a
+        genuine no-content answer stays exactly as it is."""
         def _summarize(instruction: str, transcript: str) -> str:
             prompt = (f"{instruction}"
                       f"{naive_memory.SUMMARY_PROMPT_SEPARATOR}"
@@ -1047,6 +1085,7 @@ class NaiveMemoryDMN:
             msgs = [{"role": "user", "content": prompt}]
             raw = self.inner.complete_messages(
                 msgs, turn=0,   # turn 0: not a run turn (seed offset)
+                think=SUMMARIZER_THINK,  # the summarizer is infrastructure
                 num_predict=opts["num_predict"], num_ctx=opts["num_ctx"])
             out = json.loads(raw)
             out = out if isinstance(out, dict) else {}

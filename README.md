@@ -27,7 +27,7 @@ data from which every headline number is re-derivable. It is one of three public
 | `paper-3.md` | the paper (markdown — the source of truth) |
 | `paper-3.pdf` | the paper rendered to PDF: `pandoc paper-3.md --pdf-engine=typst -o paper-3.pdf` |
 | `paper2/` | the methods half's record — `paper-2-results-record.md` (R1–R6, the measurements the methods half rests on), `future-work-axis-hunt.md` (a falsified predictor, kept as the record), `cult-induction-lit.md` (the coercive-induction literature note the paper's boundary section cites) |
-| `agent/` | the worker's code: `lh_agent.py`, `task_eval.py`, `harness.py`, the CEN, the boundary, the memory codecs, the stage-2 batteries, and `tasks/` (the 12-task suite with visible `tests/` and sealed `heldout/` tests) |
+| `agent/` | the worker's code as the runs executed it: `lh_agent.py` (the runner), `task_eval.py`, `harness.py`, `dmn_llm.py` (the generator), `cen.py`/`cen_real_engine.py` (the checker), `entail.py`/`interleave.py` (the LE bridge), `selfmodel.py`, `retrieval.py`, `realtools.py`, and `tasks/` (the 12-task suite with visible `tests/` and sealed `heldout/` tests) |
 | `ops/` | the rig's instruments: `density_test.py`, `generalization_screen.py`, `ladder_defs.py`, `check_tracked_set.sh`, and `ops/lambda/P3-PREREG.md` (the pre-registration, cited twice by the paper) |
 | `runs/` | the run data — for each cited run set: `campaign.json`, `state/` (.tsv), per-cell `evaluation.json`, `cell-*/runs/*.json` (summaries), `cell-*/rows/*.jsonl` (per-turn rows), `logs/*.rc` (exit codes). No `pinned/`, no `*.out`/`*.log`, no tunnels, no `*.tmp`. |
 | `dpdr/` | the frozen five-state model package, at the revision the agent build imports (paper 1's deposit is the model's canonical home; it predates the opt-in variants — `consolidation`, `p2_backlog`, `values`, `composed*` — that this deposit carries) |
@@ -53,9 +53,8 @@ PYTHONPATH="$PWD:$PWD/agent:$PWD/dpdr" python -c "import lh_agent, task_eval, ce
 ```
 
 A cell is one `lh_agent.py --mode run` invocation (see `ops/lambda/P3-PREREG.md` §5 for the
-pre-registered argv and `runs/*/campaign.json` for the exact per-set configuration). The
-batteries that verify the shipped modules are under `agent/` (`stage2_intagent_tests.py`,
-`stage2_taskeval_tests.py`); run them with the same `PYTHONPATH`.
+pre-registered argv and `runs/*/campaign.json` for the exact per-set configuration). The deposit
+ships the code the runs executed, plus the surrounding modules the paper cites — see `SNAPSHOT`.
 
 ## The held-out task suite
 
@@ -66,7 +65,7 @@ included so a reader can re-run the evaluator.** A public deposit that includes 
 and correct: a reader is not the agent under test, and the paper's design depends on the *agent*
 not reading them, not on a public reader not reading them. The README-as-requirement design
 (visible suites the agent can run, held-out suites it cannot read) is enforced at runtime by the
-boundary, not by withholding the tests from the deposit.
+agent's own build, not by withholding the tests from the deposit.
 
 ## Where the headline numbers live
 
