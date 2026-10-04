@@ -1,6 +1,6 @@
 # Self-Application Is Not Free: the Monitoring Channel Is Part of the Failure Channel, and the Self Does Not Survive Its Own Reconstruction
 
-Jaye Timothy Marshall — ORCID 0009-0002-5209-8161 — doi:10.5281/zenodo.23128114
+Jaye Timothy Marshall — ORCID 0009-0002-5209-8161 — doi:10.5281/zenodo.23128113
 
 **Status.** Unified paper (2026-10-03). Two linked claims, one measured honestly at full size
 and one measured honestly at null. Everything substantive is marked **MEASURED** /

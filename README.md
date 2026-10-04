@@ -6,9 +6,8 @@ and to a working agent, unified.**
 > *Self-Application Is Not Free: the Monitoring Channel Is Part of the Failure Channel,
 > and the Self Does Not Survive Its Own Reconstruction*
 
-**Published: [doi:10.5281/zenodo.23128114](https://doi.org/10.5281/zenodo.23128114)**
-(concept DOI [10.5281/zenodo.23128113](https://doi.org/10.5281/zenodo.23128113), which always
-resolves to the latest version) — cite the paper by the concept DOI.
+**Published: concept doi [10.5281/zenodo.23128113](https://doi.org/10.5281/zenodo.23128113)** —
+it always resolves to the latest archived version. Cite the paper by the concept DOI.
 
 This repository is paper 3's **evidence deposit**: the unified paper, the methods half it
 folds in, the worker's code, the pre-registration, the held-out task suite, and the run
@@ -18,7 +17,7 @@ data from which every headline number is re-derivable. It is one of three public
 |---|---|
 | **the model** | the five-state control model of self-regulation ([published](https://doi.org/10.5281/zenodo.22943642)) |
 | **the mechanism** | the model applied to a self-referential substrate, in a measurement rig — paper 2's content, folded here as the methods half |
-| **the worker** | **this repository** — the unified paper: the rig's cost finding + the worker's self-loss finding + the honest work-score null — *paper 3* ([doi:10.5281/zenodo.23128114](https://doi.org/10.5281/zenodo.23128114)) |
+| **the worker** | **this repository** — the unified paper: the rig's cost finding + the worker's self-loss finding + the honest work-score null — *paper 3* ([doi:10.5281/zenodo.23128113](https://doi.org/10.5281/zenodo.23128113)) |
 
 ## What is here
 
